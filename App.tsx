@@ -10,9 +10,8 @@ const App: React.FC = () => {
   const renderPage = () => {
     switch (path) {
       case '/terminos-y-condiciones':
-        return <LegalPage type="terms" />;
       case '/politica-de-privacidad':
-        return <LegalPage type="privacy" />;
+        return <LegalPage />;
       default:
         return <HomePage />;
     }

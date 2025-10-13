@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             <p>&copy; {new Date().getFullYear()} {t.footer_copyright}</p>
             <div className="flex flex-col sm:flex-row sm:space-x-4 mt-1">
               <a href="/terminos-y-condiciones" className="text-sm hover:text-white underline">{t.footer_terms}</a>
-              <a href="/politica-de-privacidad" className="text-sm hover:text-white underline">{t.footer_privacy_policy}</a>
+              <a href="/terminos-y-condiciones#privacy-policy" className="text-sm hover:text-white underline">{t.footer_privacy_policy}</a>
             </div>
           </div>
           <div>

@@ -149,10 +149,26 @@ export const translations: Translations = {
       <p>Las cookies son pequeños archivos de texto, que se descargan a su navegador cuando accede a internet. Son usados por los promotores de páginas web para ayudar a los usuarios a navegar por las mismas de forma eficiente y así poder ejecutar ciertas funciones. Debido a que su papel central es mejorar/posibilitar el uso o los procesos de la página web, inutilizar los cookies podría impedir a los usuarios ejecutar ciertas funciones. Las cookies se crean cuando el navegador del usuario carga alguna página web en particular. La página web manda información al navegador el cual crea un archivo de texto. Cada vez que el usuario vuelve a la misma página web, el navegador recupera y envía este archivo al servidor de la página web. Usamos algunos tipos de cookies estrictamente necesarias para el correcto funcionamiento de nuestro sitio web (ver tabla). Esta categoría de cookies incluye aquellas que permiten a los servidores web establecer si usted ha iniciado o no sesión en el sistema, responder a acciones siempre que usted mantenga una sesión activa, o configurar el idioma de la página web según su ubicación. En consecuencia, si no permite la descarga de dichas cookies en su navegador, no podrá acceder a algunos servicios proporcionados por nuestro sitio web. Asimismo, utilizamos un Cookie Analítico de Google el cual lleva a cabo análisis estadísticos. Utilizamos este cookie para controlar y evaluar el uso de nuestra página Web (como el uso del navegador, la cantidad de nuevos visitantes y las respuestas a las actividades de marketing) Esto ayuda a informar de cualquier mejoría realizada en la página Web.</p>
       
       <h3>Nuestro sitio web emplea las siguientes cookies:</h3>
-      <p><strong>Cookie Name:</strong> _utma,utmb,utmc,_utmz (Google Analytics)<br><strong>Utilidad:</strong> Estas cookies habilitan la utilización de Google Analytics. Este software nos permite recopilar y utilizar información sobre cómo interactúan con nuestro sitio web los usuarios, o cifras de nuevos usuarios. Esta información nos permite mejorar el sitio web y su experiencia como usuario.</p>
-      <p><strong>Cookie Name:</strong> web_session_id<br><strong>Utilidad:</strong> Esta cookie permite al servidor web saber si usted ha iniciado o no sesión.</p>
-      
-      <h3>Cómo deshabilitar las Cookies:</h3>
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr>
+            <th class="border-b-2 p-2">Cookie Name</th>
+            <th class="border-b-2 p-2">Utilidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border-b p-2">_utma,utmb,utmc,_utmz (Google Analytics)</td>
+            <td class="border-b p-2">Estas cookies habilitan la utilización de Google Analytics. Este software nos permite recopilar y utilizar información sobre cómo interactúan con nuestro sitio web los usuarios, o cifras de nuevos usuarios. Esta información nos permite mejorar el sitio web y su experiencia como usuario.</td>
+          </tr>
+          <tr>
+            <td class="border-b p-2">web_session_id</td>
+            <td class="border-b p-2">Esta cookie permite al servidor web saber si usted ha iniciado o no sesión.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="mt-6">Cómo deshabilitar las Cookies:</h3>
       <p>Dependiendo del navegador utilizado, el método para deshabilitar las cookies es distinto. A continuación se enumeran los principales navegadores.</p>
       <ul>
         <li>Google Chrome</li>
