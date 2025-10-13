@@ -45,18 +45,24 @@ const App: React.FC = () => {
       
       event.preventDefault();
       
-      // If path is different, push to history and update state.
+      // If path is different, push to history and update state to navigate.
       if (url.pathname !== window.location.pathname || url.search !== window.location.search) {
         window.history.pushState({}, '', anchor.href);
         onLocationChange();
-      } else if (url.hash !== window.location.hash) {
-        // If only hash is different, scroll to it and update URL hash.
-        const element = document.getElementById(url.hash.substring(1));
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+      } else { // If path is the same, we handle scrolling.
+        if (url.hash) {
+          // If there is a hash, scroll to that element.
+          const element = document.getElementById(url.hash.substring(1));
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            window.history.replaceState(null, '', anchor.href);
+          }
+        } else {
+          // If there is no hash, scroll to the top of the page.
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          // Also remove any existing hash from the URL
+          window.history.replaceState(null, '', url.pathname + url.search);
         }
-        // Use replaceState for hash changes to not clutter browser history
-        window.history.replaceState(null, '', anchor.href);
       }
     };
 
