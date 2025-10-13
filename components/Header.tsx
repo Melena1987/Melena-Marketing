@@ -1,21 +1,31 @@
-
 import React, { useState } from 'react';
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS_STRUCTURE } from '../constants';
 import SocialIcons from './SocialIcons';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslations } from '../hooks/useTranslations';
 
-const LanguageSwitcher: React.FC = () => (
-  <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm shadow-md rounded-full px-3 py-1.5">
-    <button>
-      <img src="https://flagcdn.com/es.svg" width="24" alt="Español" />
-    </button>
-    <button>
-      <img src="https://flagcdn.com/gb.svg" width="24" alt="English" />
-    </button>
-    <button>
-      <img src="https://flagcdn.com/ru.svg" width="24" alt="Русский" />
-    </button>
-  </div>
-);
+const LanguageSwitcher: React.FC = () => {
+    const { language, setLanguage } = useLanguage();
+    const languages = [
+        { code: 'es', flag: 'https://flagcdn.com/es.svg', alt: 'Español' },
+        { code: 'en', flag: 'https://flagcdn.com/gb.svg', alt: 'English' },
+        { code: 'ru', flag: 'https://flagcdn.com/ru.svg', alt: 'Русский' },
+    ];
+
+    return (
+        <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm shadow-md rounded-full px-3 py-1.5">
+            {languages.map(lang => (
+                <button
+                    key={lang.code}
+                    onClick={() => setLanguage(lang.code as 'es' | 'en' | 'ru')}
+                    className={`transition-opacity duration-300 ${language === lang.code ? 'opacity-100' : 'opacity-50 hover:opacity-100'}`}
+                >
+                    <img src={lang.flag} width="24" alt={lang.alt} />
+                </button>
+            ))}
+        </div>
+    );
+};
 
 const Logo: React.FC = () => (
   <div className="flex-shrink-0">
@@ -29,6 +39,7 @@ const Logo: React.FC = () => (
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const t = useTranslations();
 
     return (
         <header id="inicio" className="relative pt-8 pb-20">
@@ -57,7 +68,7 @@ const Header: React.FC = () => {
                         {/* Desktop: Right side */}
                         <div className="hidden lg:flex flex-col items-end gap-2 text-right">
                             <SocialIcons />
-                            <p className="text-blue-800 font-bold text-lg tracking-wide">Impulsando Pymes</p>
+                            <p className="text-blue-800 font-bold text-lg tracking-wide">{t.header_slogan}</p>
                         </div>
                          {/* Mobile: Right Side (Language) */}
                         <div className="lg:hidden">
@@ -67,16 +78,16 @@ const Header: React.FC = () => {
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex justify-between items-center mt-20 px-8">
                        <div className="flex space-x-8">
-                            {NAV_LINKS.slice(0, 2).map(link => (
-                                <a key={link.name} href={link.href} className="text-gray-700 hover:text-blue-800 font-medium pb-2 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
-                                    {link.name}
+                            {NAV_LINKS_STRUCTURE.slice(0, 2).map(link => (
+                                <a key={link.key} href={link.href} className="text-gray-700 hover:text-blue-800 font-medium pb-2 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
+                                    {t.nav_links[link.key]}
                                 </a>
                             ))}
                        </div>
                        <div className="flex space-x-8">
-                             {NAV_LINKS.slice(2).map(link => (
-                                <a key={link.name} href={link.href} className="text-gray-700 hover:text-blue-800 font-medium pb-2 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
-                                    {link.name}
+                             {NAV_LINKS_STRUCTURE.slice(2).map(link => (
+                                <a key={link.key} href={link.href} className="text-gray-700 hover:text-blue-800 font-medium pb-2 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
+                                    {t.nav_links[link.key]}
                                 </a>
                             ))}
                        </div>
@@ -92,9 +103,9 @@ const Header: React.FC = () => {
                         </svg>
                     </button>
                     <nav className="flex flex-col items-center gap-6">
-                        {NAV_LINKS.map(link => (
-                            <a key={link.name} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-2xl text-blue-800 font-bold">
-                                {link.name}
+                        {NAV_LINKS_STRUCTURE.map(link => (
+                            <a key={link.key} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-2xl text-blue-800 font-bold">
+                                {t.nav_links[link.key]}
                             </a>
                         ))}
                     </nav>

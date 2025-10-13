@@ -1,6 +1,7 @@
 import React from 'react';
 
 export interface Service {
+  id: string;
   title: string;
   color: 'blue' | 'yellow';
 }
@@ -20,7 +21,6 @@ export interface BlogPost {
 
 export interface SocialLink {
   name: string;
-  // Fix: Replaced JSX.Element with React.ReactNode to resolve issues with JSX namespace resolution.
   icon: React.ReactNode;
   href: string;
 }

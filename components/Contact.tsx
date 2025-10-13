@@ -1,19 +1,21 @@
-
 import React from 'react';
+import { useTranslations } from '../hooks/useTranslations';
 
 const Contact: React.FC = () => {
+  const t = useTranslations();
+
   return (
     <section id="contacto" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-900">Hablemos de tu Proyecto</h2>
+          <h2 className="text-4xl font-bold text-blue-900">{t.contact_title}</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Rellena el formulario o contáctanos directamente. Estamos listos para escuchar tus ideas e impulsar tu negocio.
+            {t.contact_subtitle}
           </p>
         </div>
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 bg-gray-50 p-8 rounded-lg shadow-xl">
           <div>
-            <h3 className="text-2xl font-bold text-blue-900 mb-6">Información de Contacto</h3>
+            <h3 className="text-2xl font-bold text-blue-900 mb-6">{t.contact_info_title}</h3>
             <div className="space-y-4 text-gray-700">
               <p className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
@@ -32,19 +34,19 @@ const Contact: React.FC = () => {
           <form>
             <div className="space-y-4">
               <div>
-                <label htmlFor="name" className="sr-only">Nombre</label>
-                <input type="text" id="name" placeholder="Tu Nombre" className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+                <label htmlFor="name" className="sr-only">{t.contact_form_name}</label>
+                <input type="text" id="name" placeholder={t.contact_form_name} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
               </div>
               <div>
-                <label htmlFor="email" className="sr-only">Email</label>
-                <input type="email" id="email" placeholder="Tu Email" className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+                <label htmlFor="email" className="sr-only">{t.contact_form_email}</label>
+                <input type="email" id="email" placeholder={t.contact_form_email} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
               </div>
               <div>
-                <label htmlFor="message" className="sr-only">Mensaje</label>
-                <textarea id="message" rows={4} placeholder="Cuéntanos sobre tu proyecto" className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                <label htmlFor="message" className="sr-only">{t.contact_form_message}</label>
+                <textarea id="message" rows={4} placeholder={t.contact_form_message} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
               </div>
               <button type="submit" className="w-full bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-md hover:bg-yellow-500 transition duration-300">
-                Enviar Mensaje
+                {t.contact_form_submit}
               </button>
             </div>
           </form>

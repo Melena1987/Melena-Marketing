@@ -1,66 +1,51 @@
+import { Service } from './types';
 
-import { Service, Testimonial, BlogPost } from './types';
-
-export const SERVICES: Service[] = [
-  { title: 'DISEÑO GRÁFICO', color: 'blue' },
-  { title: 'PÁGINA WEB', color: 'yellow' },
-  { title: 'GESTIÓN DE GOOGLE', color: 'blue' },
-  { title: 'REDES SOCIALES', color: 'yellow' },
-  { title: 'LOGOTIPO Y MARCA', color: 'yellow' },
-  { title: 'EMAILS CORPORATIVOS', color: 'blue' },
-  { title: 'PUBLICIDAD ONLINE', color: 'yellow' },
-  { title: 'TRADUCCIONES INGLÉS ESPAÑOL RUSO', color: 'blue' },
-  { title: 'ARTÍCULOS DE PRENSA', color: 'blue' },
-  { title: 'TIENDA ONLINE', color: 'yellow' },
-  { title: 'DISEÑOS DE CARTELERÍA', color: 'blue' },
-  { title: 'TARJETAS DE VISITA INTELIGENTES', color: 'yellow' },
-  { title: 'SESIONES FOTOGRÁFICAS', color: 'blue' },
-  { title: 'VIDEO REPORTAJES', color: 'yellow' },
+// The text 'title' is now handled by the translation file. We use an 'id' for mapping.
+export const SERVICES_STRUCTURE: Omit<Service, 'title'>[] = [
+  { id: 'graphic_design', color: 'blue' },
+  { id: 'web_page', color: 'yellow' },
+  { id: 'google_management', color: 'blue' },
+  { id: 'social_media', color: 'yellow' },
+  { id: 'logo_brand', color: 'yellow' },
+  { id: 'corp_emails', color: 'blue' },
+  { id: 'online_ads', color: 'yellow' },
+  { id: 'translations', color: 'blue' },
+  { id: 'press_articles', color: 'blue' },
+  { id: 'online_store', color: 'yellow' },
+  { id: 'signage_design', color: 'blue' },
+  { id: 'smart_cards', color: 'yellow' },
+  { id: 'photo_sessions', color: 'blue' },
+  { id: 'video_reports', color: 'yellow' },
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-    {
-        quote: "Melena Marketing transformó nuestra presencia online. Su enfoque en PYMES es justo lo que necesitábamos. ¡Los resultados hablan por sí solos!",
-        author: "Ana García",
-        company: "CEO de Tienda Local"
-    },
-    {
-        quote: "El equipo es increíblemente profesional y cercano. Entendieron nuestras necesidades desde el primer día y nos guiaron en cada paso del proceso.",
-        author: "Carlos Pérez",
-        company: "Fundador de Café del Sol"
-    },
-    {
-        quote: "Gracias a su gestión de redes sociales y publicidad, hemos visto un aumento significativo en nuestras ventas. Totalmente recomendados.",
-        author: "Lucía Fernández",
-        company: "Gerente de Boutique Chic"
-    }
-];
+// Text content for these is now in i18n/translations.ts
+export const TESTIMONIALS_KEYS = ['testimonial1', 'testimonial2', 'testimonial3'];
 
-export const BLOG_POSTS: BlogPost[] = [
+// Text content is in i18n/translations.ts, images are kept here.
+export const BLOG_POSTS_STRUCTURE = [
   {
-    title: '5 Consejos de SEO Local para Tiendas en Málaga',
-    excerpt: 'Atrae a más clientes de tu zona optimizando tu presencia en búsquedas locales. Te mostramos cómo empezar hoy mismo.',
+    id: 'blog1',
     imageUrl: 'https://picsum.photos/600/400?random=1',
     link: '#',
   },
   {
-    title: 'Cómo Usar Instagram para tu Restaurante y Llenar Mesas',
-    excerpt: 'Descubre estrategias visuales y de contenido para convertir seguidores en comensales fieles para tu negocio de hostelería.',
+    id: 'blog2',
     imageUrl: 'https://picsum.photos/600/400?random=2',
     link: '#',
   },
   {
-    title: 'La Importancia de un Logotipo Profesional para tu PYME',
-    excerpt: 'Tu marca es más que un nombre. Analizamos por qué una identidad visual sólida es una inversión crucial para el éxito.',
+    id: 'blog3',
     imageUrl: 'https://picsum.photos/600/400?random=3',
     link: '#',
   },
 ];
 
-export const NAV_LINKS = [
-  { name: 'Inicio', href: '#inicio' },
-  { name: 'Servicios', href: '#servicios' },
-  { name: 'Sobre Nosotros', href: '#sobre-nosotros' },
-  { name: 'Blog', href: '#blog' },
-  { name: 'Contacto', href: '#contacto' },
+
+// Navigation links text is now handled by the translation file.
+export const NAV_LINKS_STRUCTURE = [
+  { key: 'home', href: '#inicio' },
+  { key: 'services', href: '#servicios' },
+  { key: 'about', href: '#sobre-nosotros' },
+  { key: 'blog', href: '#blog' },
+  { key: 'contact', href: '#contacto' },
 ];

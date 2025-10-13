@@ -1,8 +1,9 @@
-
 import React from 'react';
 import SocialIcons from './SocialIcons';
+import { useTranslations } from '../hooks/useTranslations';
 
 const Footer: React.FC = () => {
+  const t = useTranslations();
   return (
     <footer className="bg-blue-900 text-blue-200">
       <div className="container mx-auto px-6 py-12">
@@ -10,12 +11,12 @@ const Footer: React.FC = () => {
           <div className="mb-6 md:mb-0">
             <h3 className="text-2xl font-bold text-white">Melena.</h3>
             <p className="text-yellow-400 text-sm">MARKETING COMPANY</p>
-            <p className="mt-2 text-sm">Impulsando Pymes</p>
+            <p className="mt-2 text-sm">{t.header_slogan}</p>
           </div>
           <div className="mb-6 md:mb-0">
-            <p>&copy; {new Date().getFullYear()} Melena Marketing. Todos los derechos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} {t.footer_copyright}</p>
             <p className="text-sm">CIF: F16945909</p>
-            <a href="#" className="text-sm hover:text-white underline">Términos y Condiciones</a>
+            <a href="#" className="text-sm hover:text-white underline">{t.footer_terms}</a>
           </div>
           <div>
             <SocialIcons />
