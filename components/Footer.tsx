@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div>
-            <SocialIcons />
+            <SocialIcons variant="light" />
           </div>
         </div>
       </div>
