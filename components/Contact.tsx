@@ -16,6 +16,14 @@ const Contact: React.FC = () => {
       alert('Por favor, completa todos los campos.');
       return;
     }
+    
+    // Si la base de datos no está inicializada (faltan las claves), no intentar enviar.
+    if (!db) {
+      console.error("Firebase no está configurado. No se puede enviar el mensaje.");
+      setStatus('error');
+      return;
+    }
+    
     setStatus('sending');
     try {
       // Añade un nuevo documento a la colección "messages"

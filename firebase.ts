@@ -15,22 +15,39 @@ declare global {
 }
 
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, Firestore } from "firebase/firestore";
 
-// Your web app's Firebase configuration.
-// Using placeholder values because import.meta.env is not available in this environment.
-// This prevents the app from crashing with a black screen.
 const firebaseConfig = {
-  apiKey: "AIzaSyYOUR_API_KEY_HERE",
-  authDomain: "your-project-id.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project-id.appspot.com",
-  messagingSenderId: "your-sender-id",
-  appId: "your-app-id"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+let db: Firestore | null = null;
 
-// Initialize Cloud Firestore and get a reference to the service
-export const db = getFirestore(app);
+// Check if all required config values are present and are non-empty strings
+const isConfigValid = Object.values(firebaseConfig).every(
+  (value) => typeof value === 'string' && value.length > 0
+);
+
+if (isConfigValid) {
+  try {
+    const app = initializeApp(firebaseConfig);
+    db = getFirestore(app);
+  } catch (error) {
+    console.error("Firebase initialization failed:", error);
+    db = null; // Ensure db is null if initialization fails
+  }
+} else {
+  // This message is helpful for developers in the console.
+  console.warn(
+    "Firebase configuration is incomplete. Contact form will be disabled. " +
+    "Ensure all VITE_FIREBASE_* environment variables are set correctly."
+  );
+}
+
+// Export the db instance, which will be null if initialization fails
+export { db };
