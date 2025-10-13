@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NAV_LINKS_STRUCTURE } from '../constants';
 import SocialIcons from './SocialIcons';
 import { useLanguage } from '../context/LanguageContext';
@@ -28,93 +28,88 @@ const LanguageSwitcher: React.FC = () => {
 };
 
 const Logo: React.FC = () => (
-  <div className="flex-shrink-0">
-    <div className="bg-white rounded-full shadow-lg p-4 flex flex-col items-center justify-center w-36 h-36 border-4 border-blue-100">
-      <span className="text-3xl font-bold text-blue-800" style={{ fontFamily: "'Oswald', sans-serif" }}>Melena.</span>
-      <span className="text-xs text-yellow-500 tracking-widest font-semibold">MARKETING COMPANY</span>
+  <a href="#inicio" className="flex-shrink-0 flex items-center gap-2">
+    <div className="flex flex-col">
+      <span className="text-2xl font-bold text-blue-800 leading-none" style={{ fontFamily: "'Oswald', sans-serif" }}>Melena.</span>
+      <span className="text-[10px] text-yellow-500 tracking-widest font-semibold leading-none">MARKETING COMPANY</span>
     </div>
-  </div>
+  </a>
 );
 
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const t = useTranslations();
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <header id="inicio" className="relative pt-8 pb-20">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl mt-4">
-                <div className="bg-blue-200/80 backdrop-blur-lg rounded-full shadow-xl p-4">
-                    <div className="flex items-center justify-between px-4">
-                        {/* Desktop: Left side */}
-                        <div className="hidden lg:flex items-center gap-4">
-                           <LanguageSwitcher />
-                        </div>
-
-                        {/* Mobile: Hamburger Menu */}
-                        <div className="lg:hidden">
-                            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-blue-800 focus:outline-none">
-                                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                                </svg>
-                            </button>
-                        </div>
-
-                         {/* Center Logo */}
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:translate-y-0 lg:top-auto lg:bottom-0">
-                           <Logo />
-                        </div>
-                        
-                        {/* Desktop: Right side */}
-                        <div className="hidden lg:flex flex-col items-end gap-2 text-right">
-                            <SocialIcons />
-                            <p className="text-blue-800 font-bold text-lg tracking-wide">{t.header_slogan}</p>
-                        </div>
-                         {/* Mobile: Right Side (Language) */}
-                        <div className="lg:hidden">
-                           <LanguageSwitcher />
-                        </div>
+        <>
+            <header 
+              id="inicio" 
+              className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-white/95 backdrop-blur-lg shadow-md py-2' : 'bg-transparent py-4'}`}
+            >
+                <div className="container mx-auto px-6 flex justify-between items-center">
+                    {/* Left Side: Logo */}
+                    <div className="flex-1 lg:flex-none">
+                        <Logo />
                     </div>
-                    {/* Desktop Navigation */}
-                    <nav className="hidden lg:flex justify-between items-center mt-20 px-8">
-                       <div className="flex space-x-8">
-                            {NAV_LINKS_STRUCTURE.slice(0, 2).map(link => (
-                                <a key={link.key} href={link.href} className="text-gray-700 hover:text-blue-800 font-medium pb-2 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
-                                    {t.nav_links[link.key]}
-                                </a>
-                            ))}
-                       </div>
-                       <div className="flex space-x-8">
-                             {NAV_LINKS_STRUCTURE.slice(2).map(link => (
-                                <a key={link.key} href={link.href} className="text-gray-700 hover:text-blue-800 font-medium pb-2 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
-                                    {t.nav_links[link.key]}
-                                </a>
-                            ))}
-                       </div>
+
+                    {/* Center: Desktop Navigation */}
+                    <nav className="hidden lg:flex justify-center items-center gap-6 absolute left-1/2 -translate-x-1/2">
+                        {NAV_LINKS_STRUCTURE.map(link => (
+                            <a key={link.key} href={link.href} className="text-gray-700 hover:text-blue-800 font-medium pb-1 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
+                                {t.nav_links[link.key]}
+                            </a>
+                        ))}
                     </nav>
+
+                    {/* Right Side: Language & Social */}
+                    <div className="hidden lg:flex items-center justify-end gap-4 flex-1">
+                        <LanguageSwitcher />
+                        <SocialIcons />
+                    </div>
+
+                    {/* Mobile: Hamburger Menu */}
+                    <div className="lg:hidden">
+                        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-blue-800 focus:outline-none">
+                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            {/* Mobile Menu */}
-             {isMenuOpen && (
-                <div className="lg:hidden bg-blue-100/95 backdrop-blur-md fixed top-0 left-0 w-full h-full z-40 flex flex-col items-center justify-center">
+            </header>
+
+            {/* Mobile Menu Overlay */}
+            <div className={`lg:hidden fixed inset-0 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+                <div className="bg-blue-100/95 backdrop-blur-md w-full h-full flex flex-col items-center justify-center">
                     <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-6 text-blue-800">
                          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                    <nav className="flex flex-col items-center gap-6">
+                    <nav className="flex flex-col items-center gap-6 text-center">
                         {NAV_LINKS_STRUCTURE.map(link => (
                             <a key={link.key} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-2xl text-blue-800 font-bold">
                                 {t.nav_links[link.key]}
                             </a>
                         ))}
                     </nav>
-                    <div className="mt-8">
+                    <div className="mt-8 flex items-center gap-4">
+                       <LanguageSwitcher />
                        <SocialIcons />
                     </div>
                 </div>
-            )}
-        </header>
+            </div>
+        </>
     );
 };
 

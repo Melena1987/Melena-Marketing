@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -13,7 +12,7 @@ const App: React.FC = () => {
   return (
     <div className="bg-white text-gray-800">
       <Header />
-      <main>
+      <main className="pt-24">
         <Hero />
         <Services />
         <About />
