@@ -333,8 +333,148 @@ export const translations: Translations = {
     footer_copyright: "Melena Marketing. All rights reserved.",
     footer_terms: "Terms and Conditions",
     footer_privacy_policy: "Privacy Policy",
-    privacy_content: "Privacy Policy content will be available soon.",
-    terms_content: "Terms and Conditions content will be available soon.",
+    privacy_content: `
+      <h2>1.- DATA CONTROLLER</h2>
+      <p>Melena Marketing<br>GRUPO INFINITY, S.COOP.AND<br>CIF: F16945909<br>29679, Benahavís, Málaga, Spain<br>Phone: 660532823<br>Email: info@melenamarketing.com</p>
+      
+      <h2>CONSENT TO PROCESS YOUR DATA FOR THE MANAGEMENT OF YOUR ENERGY BILL</h2>
+      <p>To offer you our free energy bill management service, we need your authorization to transfer your data to Observatorio Energético (Llanquihue Inversiones SL, Calle los olivos 300 Marbella, España CIF: B93717973), a partner company of Melena Marketing, acting as energy advisors. This transfer will be made for the sole purpose of them contacting you to offer information and advice on energy saving and managing your bills.</p>
+      <p>We want to inform you that your personal data will be treated confidentially and will be used exclusively for the aforementioned purpose. Under no circumstances will your data be transferred to third parties without your express consent.</p>
+      <p>We guarantee that we comply with all legal obligations regarding personal data protection, as established in current regulations.</p>
+      <p>If you wish to exercise your rights of access, rectification, cancellation, or opposition, you can do so at any time by sending an email to info@melenamarketing.com.</p>
+      <p>If you agree to this transfer of your data, please check the corresponding box on the service registration form.</p>
+
+      <h2>2.- GENERAL PURPOSES OF PROCESSING FOR OTHER SERVICES</h2>
+      <p>Through this website, Melena Marketing may collect your data for various purposes; at the time of collection, the necessary information about its purpose will be provided. In any case, the data you provide may be processed to address your queries, complaints, or suggestions if you use the forms provided for this purpose, as well as the specific email addresses. In this case, your data will be processed for the time necessary to respond to your request. If it is necessary to keep the data for a longer period, Melena Marketing will inform you. If you send us your resume, your data will be processed to study your candidacy for possible selection processes. The data will be processed for a period of one year from their receipt.</p>
+      
+      <h2>3.- BASIS OF PROCESSING</h2>
+      <p>The processing of personal data you provide through contact forms or emails will be based on your consent. If a prior contractual relationship exists, the data may be processed based on the contract.</p>
+      
+      <h2>4.- DATA RECIPIENTS</h2>
+      <p>Melena Marketing does not provide information to third parties except when legally required.</p>
+
+      <h2>5.- RIGHTS</h2>
+      <p>The interested party may at any time request from Melena Marketing access to their personal data, its rectification, or its deletion. In turn, the user can request the limitation of processing, their opposition, or the portability of their data. To exercise any of the described rights, the interested party must send a communication to Melena Marketing, or by email to info@melenamarketing.com. In the communication, the interested party must indicate which right they wish to exercise and attach a photocopy of their ID or equivalent document that proves their identity. If you believe your rights have been violated, you can file a complaint with the Spanish Data Protection Agency (www.aepd.es).</p>
+      
+      <h2>7.- THIRD-PARTY DATA</h2>
+      <p>If the User provides personal data of third parties for any purpose, they guarantee that they have previously informed the affected parties and have obtained their consent for the communication of their data to Melena Marketing. The User guarantees that the affected parties are of legal age and that the information provided is accurate and truthful. If responsibilities arise from a breach of these conditions by the User, they must answer for the consequences of said breach.</p>
+      
+      <h2>COOKIE POLICY</h2>
+      <p>Cookies are small text files that are downloaded to your browser when you access the internet. They are used by website promoters to help users navigate them efficiently and to perform certain functions. Because their central role is to improve/enable the use or processes of the website, disabling cookies could prevent users from performing certain functions. Cookies are created when the user's browser loads a particular website. The website sends information to the browser which creates a text file. Each time the user returns to the same website, the browser retrieves and sends this file to the website's server. We use some types of strictly necessary cookies for the proper functioning of our website (see table). This category of cookies includes those that allow web servers to determine whether you are logged in, respond to actions while you are logged in, or set the website language according to your location. Consequently, if you do not allow these cookies to be downloaded to your browser, you will not be able to access some services provided by our website. We also use a Google Analytics Cookie which performs statistical analysis. We use this cookie to monitor and evaluate the use of our website (such as browser usage, number of new visitors, and responses to marketing activities). This helps to inform any improvements made to the website.</p>
+      
+      <h3>Our website uses the following cookies:</h3>
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr>
+            <th class="border-b-2 p-2">Cookie Name</th>
+            <th class="border-b-2 p-2">Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border-b p-2">_utma,utmb,utmc,_utmz (Google Analytics)</td>
+            <td class="border-b p-2">These cookies enable the use of Google Analytics. This software allows us to collect and use information about how users interact with our website, or numbers of new users. This information allows us to improve the website and your user experience.</td>
+          </tr>
+          <tr>
+            <td class="border-b p-2">web_session_id</td>
+            <td class="border-b p-2">This cookie allows the web server to know if you are logged in or not.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="mt-6">How to disable Cookies:</h3>
+      <p>Depending on the browser used, the method for disabling cookies is different. The main browsers are listed below.</p>
+      <ul>
+        <li>Google Chrome</li>
+        <li>Mozilla Firefox</li>
+        <li>Internet Explorer</li>
+        <li>Safari</li>
+        <li>Safari for iOS</li>
+      </ul>
+    `,
+    terms_content: `
+      <p>Welcome to MelenaMarketing.com!</p>
+      <p>These terms and conditions outline the rules and regulations for the use of Melena Marketing's (Grupo Infinity S:COOP.AND) Website, located at https://www.melenamarketing.com/.</p>
+      <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use MelenaMarketing.com if you do not agree to take all of the terms and conditions stated on this page.</p>
+      
+      <h3>Cookies:</h3>
+      <p>The website uses cookies to help personalize your online experience. By accessing MelenaMarketing.com, you agreed to use the necessary cookies.</p>
+      <p>A cookie is a text file that is placed on your hard disk by a web page server. Cookies cannot be used to run programs or deliver viruses to your computer. Cookies are uniquely assigned to you and can only be read by a web server in the domain that issued the cookie to you.</p>
+      <p>We may use cookies to collect, store, and track information for statistical or marketing purposes to operate our website. You have the ability to accept or decline optional Cookies. There are some required Cookies that are necessary for the operation of our website. These cookies do not require your consent as they always work. Please keep in mind that by accepting required Cookies, you also accept third-party Cookies, which might be used via third-party provided services if you use such services on our website, for example, a video display window provided by third parties and integrated into our website.</p>
+      
+      <h3>License:</h3>
+      <p>Unless otherwise stated, Melena Marketing (Grupo Infinity S:COOP.AND) and/or its licensors own the intellectual property rights for all material on MelenaMarketing.com. All intellectual property rights are reserved. You may access this from MelenaMarketing.com for your own personal use subjected to restrictions set in these terms and conditions.</p>
+      <p>You must not:</p>
+      <ul>
+        <li>Copy or republish material from MelenaMarketing.com</li>
+        <li>Sell, rent, or sub-license material from MelenaMarketing.com</li>
+        <li>Reproduce, duplicate or copy material from MelenaMarketing.com</li>
+        <li>Redistribute content from MelenaMarketing.com</li>
+      </ul>
+      <p>This Agreement shall begin on the date hereof.</p>
+      <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Melena Marketing (Grupo Infinity S:COOP.AND) does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Melena Marketing (Grupo Infinity S:COOP.AND), its agents, and/or affiliates. Comments reflect the views and opinions of the person who posts their views and opinions. To the extent permitted by applicable laws, Melena Marketing (Grupo Infinity S:COOP.AND) shall not be liable for the Comments or for any liability, damages, or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+      <p>Melena Marketing (Grupo Infinity S:COOP.AND) reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive, or causes breach of these Terms and Conditions.</p>
+      <p>You warrant and represent that:</p>
+      <ul>
+        <li>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;</li>
+        <li>The Comments do not invade any intellectual property right, including without limitation copyright, patent, or trademark of any third party;</li>
+        <li>The Comments do not contain any defamatory, libelous, offensive, indecent, or otherwise unlawful material, which is an invasion of privacy.</li>
+        <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
+      </ul>
+      <p>You hereby grant Melena Marketing (Grupo Infinity S:COOP.AND) a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats, or media.</p>
+      
+      <h3>Hyperlinking to our Content:</h3>
+      <p>The following organizations may link to our Website without prior written approval:</p>
+      <ul>
+        <li>Government agencies;</li>
+        <li>Search engines;</li>
+        <li>News organizations;</li>
+        <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and</li>
+        <li>System-wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</li>
+      </ul>
+      <p>These organizations may link to our home page, to publications, or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement, or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.</p>
+      <p>We may consider and approve other link requests from the following types of organizations:</p>
+      <ul>
+        <li>commonly-known consumer and/or business information sources;</li>
+        <li>dot.com community sites;</li>
+        <li>associations or other groups representing charities;</li>
+        <li>online directory distributors;</li>
+        <li>internet portals;</li>
+        <li>accounting, law, and consulting firms; and</li>
+        <li>educational institutions and trade associations.</li>
+      </ul>
+      <p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Melena Marketing (Grupo Infinity S:COOP.AND); and (d) the link is in the context of general resource information.</p>
+      <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement, or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.</p>
+      <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Melena Marketing (Grupo Infinity S:COOP.AND). Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+      <p>Approved organizations may hyperlink to our Website as follows:</p>
+      <ul>
+        <li>By use of our corporate name; or</li>
+        <li>By use of the uniform resource locator being linked to; or</li>
+        <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.</li>
+      </ul>
+      <p>No use of Melena Marketing's (Grupo Infinity S:COOP.AND) logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+      
+      <h3>Content Liability:</h3>
+      <p>We shall not be held responsible for any content that appears on your Website. You agree to protect and defend us against all claims that are rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene, or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+      
+      <h3>Reservation of Rights:</h3>
+      <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
+      
+      <h3>Removal of links from our website:</h3>
+      <p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us at any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
+      <p>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.</p>
+      
+      <h3>Disclaimer:</h3>
+      <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
+      <ul>
+        <li>limit or exclude our or your liability for death or personal injury;</li>
+        <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+        <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+        <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+      </ul>
+      <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort, and for breach of statutory duty.</p>
+      <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+    `,
   },
   ru: {
     header_slogan: "Продвижение МСП",
@@ -407,7 +547,147 @@ export const translations: Translations = {
     footer_copyright: "Melena Marketing. Все права защищены.",
     footer_terms: "Условия и положения",
     footer_privacy_policy: "Политика конфиденциальности",
-    privacy_content: "Содержание Политики конфиденциальности скоро будет доступно.",
-    terms_content: "Содержание Условий и положений скоро будет доступно.",
+    privacy_content: `
+      <h2>1.- ДАННЫЕ ОТВЕТСТВЕННОГО ЛИЦА</h2>
+      <p>Melena Marketing<br>GRUPO INFINITY, S.COOP.AND<br>CIF: F16945909<br>29679, Benahavís, Málaga, Испания<br>Телефон: 660532823<br>Электронная почта: info@melenamarketing.com</p>
+      
+      <h2>СОГЛАСИЕ НА ОБРАБОТКУ ВАШИХ ДАННЫХ ДЛЯ УПРАВЛЕНИЯ ВАШИМ СЧЕТОМ ЗА ЭЛЕКТРОЭНЕРГИЮ</h2>
+      <p>Чтобы предложить вам нашу бесплатную услугу по управлению счетами за электроэнергию, нам необходимо ваше разрешение на передачу ваших данных компании Observatorio Energético (Llanquihue Inversiones SL, Calle los olivos 300 Marbella, España CIF: B93717973), компании-партнеру Melena Marketing, выступающей в качестве консультантов по энергетике. Эта передача будет осуществляться с единственной целью — чтобы они могли связаться с вами для предоставления информации и консультаций по вопросам энергосбережения и управления вашими счетами.</p>
+      <p>Мы хотим сообщить вам, что ваши личные данные будут обрабатываться конфиденциально и использоваться исключительно в вышеупомянутых целях. Ни при каких обстоятельствах ваши данные не будут переданы третьим лицам без вашего явного согласия.</p>
+      <p>Мы гарантируем, что соблюдаем все юридические обязательства по защите персональных данных, установленные действующим законодательством.</p>
+      <p>Если вы хотите воспользоваться своими правами на доступ, исправление, удаление или возражение, вы можете сделать это в любое время, отправив электронное письмо по адресу info@melenamarketing.com.</p>
+      <p>Если вы согласны на передачу ваших данных, пожалуйста, отметьте соответствующее поле в форме регистрации услуги.</p>
+
+      <h2>2.- ОБЩИЕ ЦЕЛИ ОБРАБОТКИ ДЛЯ ДРУГИХ УСЛУГ</h2>
+      <p>Через этот веб-сайт Melena Marketing может собирать ваши данные для различных целей; в момент сбора будет предоставлена необходимая информация о цели. В любом случае, предоставленные вами данные могут обрабатываться для ответа на ваши запросы, жалобы или предложения, если вы используете предоставленные для этого формы, а также указанные адреса электронной почты. В этом случае ваши данные будут обрабатываться в течение времени, необходимого для ответа на ваш запрос. Если потребуется хранить данные дольше, Melena Marketing сообщит вам об этом. Если вы отправите нам свое резюме, ваши данные будут обработаны для рассмотрения вашей кандидатуры в возможных процессах отбора. Данные будут обрабатываться в течение одного года с момента их получения.</p>
+      
+      <h2>3.- ОСНОВАНИЯ ДЛЯ ОБРАБОТКИ</h2>
+      <p>Обработка персональных данных, которые вы предоставляете через контактные формы или по электронной почте, будет основана на вашем согласии. При наличии предварительных договорных отношений данные могут обрабатываться на основании договора.</p>
+      
+      <h2>4.- ПОЛУЧАТЕЛИ ДАННЫХ</h2>
+      <p>Melena Marketing не предоставляет информацию третьим лицам, за исключением случаев, предусмотренных законом.</p>
+
+      <h2>5.- ПРАВА</h2>
+      <p>Заинтересованное лицо может в любое время запросить у Melena Marketing доступ к своим персональным данным, их исправление или удаление. В свою очередь, пользователь может запросить ограничение обработки, возразить против нее или запросить переносимость своих данных. Для осуществления любого из описанных прав заинтересованное лицо должно направить сообщение в Melena Marketing или по электронной почте на info@melenamarketing.com. В сообщении заинтересованное лицо должно указать, какое право оно желает осуществить, и приложить ксерокопию своего удостоверения личности или эквивалентного документа, подтверждающего личность. Если вы считаете, что ваши права были нарушены, вы можете подать жалобу в Испанское агентство по защите данных (www.aepd.es).</p>
+      
+      <h2>7.- ДАННЫЕ ТРЕТЬИХ ЛИЦ</h2>
+      <p>В случае, если Пользователь предоставляет персональные данные третьих лиц для каких-либо целей, он гарантирует, что предварительно проинформировал затронутых лиц и получил их согласие на передачу их данных в Melena Marketing. Пользователь гарантирует, что затронутые лица являются совершеннолетними и предоставленная информация является точной и достоверной. В случае возникновения ответственности за нарушение этих условий Пользователем, он должен будет нести ответственность за последствия такого нарушения.</p>
+      
+      <h2>ПОЛИТИКА ИСПОЛЬЗОВАНИЯ ФАЙЛОВ COOKIE</h2>
+      <p>Файлы cookie — это небольшие текстовые файлы, которые загружаются в ваш браузер при доступе в интернет. Они используются разработчиками веб-сайтов для помощи пользователям в эффективной навигации и выполнения определенных функций. Поскольку их основная роль заключается в улучшении/обеспечении использования или процессов веб-сайта, отключение файлов cookie может помешать пользователям выполнять определенные функции. Файлы cookie создаются, когда браузер пользователя загружает определенный веб-сайт. Веб-сайт отправляет информацию в браузер, который создает текстовый файл. Каждый раз, когда пользователь возвращается на тот же веб-сайт, браузер извлекает и отправляет этот файл на сервер веб-сайта. Мы используем некоторые типы строго необходимых файлов cookie для правильной работы нашего веб-сайта (см. таблицу). Эта категория файлов cookie включает те, которые позволяют веб-серверам определять, вошли ли вы в систему, отвечать на действия, пока вы находитесь в системе, или настраивать язык веб-сайта в соответствии с вашим местоположением. Следовательно, если вы не разрешите загрузку этих файлов cookie в ваш браузер, вы не сможете получить доступ к некоторым услугам, предоставляемым нашим веб-сайтом. Мы также используем аналитический файл cookie Google, который выполняет статистический анализ. Мы используем этот файл cookie для мониторинга и оценки использования нашего веб-сайта (например, использование браузера, количество новых посетителей и реакция на маркетинговые мероприятия). Это помогает информировать о любых улучшениях, внесенных на веб-сайт.</p>
+      
+      <h3>Наш сайт использует следующие файлы cookie:</h3>
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr>
+            <th class="border-b-2 p-2">Имя cookie</th>
+            <th class="border-b-2 p-2">Назначение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border-b p-2">_utma,utmb,utmc,_utmz (Google Analytics)</td>
+            <td class="border-b p-2">Эти файлы cookie обеспечивают работу Google Analytics. Это программное обеспечение позволяет нам собирать и использовать информацию о том, как пользователи взаимодействуют с нашим сайтом, или о количестве новых пользователей. Эта информация позволяет нам улучшать сайт и ваш пользовательский опыт.</td>
+          </tr>
+          <tr>
+            <td class="border-b p-2">web_session_id</td>
+            <td class="border-b p-2">Этот файл cookie позволяет веб-серверу узнать, вошли ли вы в систему.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="mt-6">Как отключить файлы cookie:</h3>
+      <p>В зависимости от используемого браузера способ отключения файлов cookie различается. Ниже перечислены основные браузеры.</p>
+      <ul>
+        <li>Google Chrome</li>
+        <li>Mozilla Firefox</li>
+        <li>Internet Explorer</li>
+        <li>Safari</li>
+        <li>Safari для iOS</li>
+      </ul>
+    `,
+    terms_content: `
+      <p>Добро пожаловать на MelenaMarketing.com!</p>
+      <p>Настоящие правила и условия определяют порядок использования веб-сайта компании Melena Marketing (Grupo Infinity S:COOP.AND), расположенного по адресу https://www.melenamarketing.com/.</p>
+      <p>Заходя на этот веб-сайт, мы предполагаем, что вы принимаете эти правила и условия. Не продолжайте использовать MelenaMarketing.com, если вы не согласны со всеми правилами и условиями, изложенными на этой странице.</p>
+      
+      <h3>Файлы cookie:</h3>
+      <p>Веб-сайт использует файлы cookie для персонализации вашего онлайн-опыта. Заходя на MelenaMarketing.com, вы согласились использовать необходимые файлы cookie.</p>
+      <p>Файл cookie — это текстовый файл, который размещается на вашем жестком диске сервером веб-страницы. Файлы cookie не могут использоваться для запуска программ или доставки вирусов на ваш компьютер. Файлы cookie уникально присваиваются вам и могут быть прочитаны только веб-сервером в домене, который выдал вам файл cookie.</p>
+      <p>Мы можем использовать файлы cookie для сбора, хранения и отслеживания информации в статистических или маркетинговых целях для работы нашего веб-сайта. У вас есть возможность принять или отклонить необязательные файлы cookie. Существуют некоторые обязательные файлы cookie, которые необходимы для работы нашего веб-сайта. Эти файлы cookie не требуют вашего согласия, так как они всегда работают. Пожалуйста, имейте в виду, что, принимая обязательные файлы cookie, вы также принимаете файлы cookie третьих сторон, которые могут использоваться через услуги, предоставляемые третьими сторонами, если вы используете такие услуги на нашем веб-сайте, например, окно для просмотра видео, предоставленное третьими сторонами и интегрированное в наш веб-сайт.</p>
+      
+      <h3>Лицензия:</h3>
+      <p>Если не указано иное, Melena Marketing (Grupo Infinity S:COOP.AND) и/или ее лицензиары владеют правами интеллектуальной собственности на все материалы на MelenaMarketing.com. Все права интеллектуальной собственности защищены. Вы можете получить доступ к этому с MelenaMarketing.com для личного использования с учетом ограничений, установленных в настоящих правилах и условиях.</p>
+      <p>Вы не должны:</p>
+      <ul>
+        <li>Копировать или переиздавать материалы с MelenaMarketing.com</li>
+        <li>Продавать, сдавать в аренду или сублицензировать материалы с MelenaMarketing.com</li>
+        <li>Воспроизводить, дублировать или копировать материалы с MelenaMarketing.com</li>
+        <li>Перераспределять контент с MelenaMarketing.com</li>
+      </ul>
+      <p>Настоящее Соглашение вступает в силу с даты его заключения.</p>
+      <p>Части этого веб-сайта предоставляют пользователям возможность публиковать и обмениваться мнениями и информацией в определенных областях веб-сайта. Melena Marketing (Grupo Infinity S:COOP.AND) не фильтрует, не редактирует, не публикует и не просматривает Комментарии до их появления на веб-сайте. Комментарии не отражают взгляды и мнения Melena Marketing (Grupo Infinity S:COOP.AND), ее агентов и/или аффилированных лиц. Комментарии отражают взгляды и мнения лица, которое их публикует. В пределах, разрешенных действующим законодательством, Melena Marketing (Grupo Infinity S:COOP.AND) не несет ответственности за Комментарии или за какую-либо ответственность, ущерб или расходы, вызванные и/или понесенные в результате любого использования и/или публикации и/или появления Комментариев на этом веб-сайте.</p>
+      <p>Melena Marketing (Grupo Infinity S:COOP.AND) оставляет за собой право отслеживать все Комментарии и удалять любые Комментарии, которые могут быть сочтены неуместными, оскорбительными или нарушающими настоящие Условия и положения.</p>
+      <p>Вы гарантируете и заявляете, что:</p>
+      <ul>
+        <li>Вы имеете право публиковать Комментарии на нашем веб-сайте и имеете все необходимые лицензии и согласия для этого;</li>
+        <li>Комментарии не нарушают никаких прав интеллектуальной собственности, включая, без ограничений, авторское право, патент или товарный знак любой третьей стороны;</li>
+        <li>Комментарии не содержат клеветнических, оскорбительных, непристойных или иных незаконных материалов, которые являются вторжением в частную жизнь.</li>
+        <li>Комментарии не будут использоваться для привлечения или продвижения бизнеса или обычаев, а также для представления коммерческой деятельности или незаконной деятельности.</li>
+      </ul>
+      <p>Настоящим вы предоставляете Melena Marketing (Grupo Infinity S:COOP.AND) неисключительную лицензию на использование, воспроизведение, редактирование и разрешение другим лицам использовать, воспроизводить и редактировать любые ваши Комментарии в любых формах, форматах или средствах массовой информации.</p>
+      
+      <h3>Гиперссылки на наш контент:</h3>
+      <p>Следующие организации могут ссылаться на наш Веб-сайт без предварительного письменного разрешения:</p>
+      <ul>
+        <li>Государственные учреждения;</li>
+        <li>Поисковые системы;</li>
+        <li>Новостные организации;</li>
+        <li>Распространители онлайн-каталогов могут ссылаться на наш Веб-сайт так же, как они делают гиперссылки на веб-сайты других перечисленных предприятий; и</li>
+        <li>Аккредитованные на всю систему предприятия, за исключением некоммерческих организаций, благотворительных торговых центров и групп по сбору благотворительных средств, которые не могут делать гиперссылки на наш Веб-сайт.</li>
+      </ul>
+      <p>Эти организации могут ссылаться на нашу домашнюю страницу, на публикации или на другую информацию Веб-сайта, если ссылка: (а) никоим образом не вводит в заблуждение; (b) не подразумевает ложно спонсорство, одобрение или утверждение связывающей стороны и ее продуктов и/или услуг; и (c) соответствует контексту сайта связывающей стороны.</p>
+      <p>Мы можем рассматривать и утверждать другие запросы на ссылки от следующих типов организаций:</p>
+      <ul>
+        <li>общеизвестные источники потребительской и/или деловой информации;</li>
+        <li>сайты сообщества dot.com;</li>
+        <li>ассоциации или другие группы, представляющие благотворительные организации;</li>
+        <li>распространители онлайн-каталогов;</li>
+        <li>интернет-порталы;</li>
+        <li>бухгалтерские, юридические и консалтинговые фирмы; и</li>
+        <li>учебные заведения и торговые ассоциации.</li>
+      </ul>
+      <p>Мы одобрим запросы на ссылки от этих организаций, если решим, что: (а) ссылка не создаст неблагоприятного впечатления о нас или наших аккредитованных предприятиях; (b) у организации нет отрицательных записей о нас; (c) выгода для нас от видимости гиперссылки компенсирует отсутствие Melena Marketing (Grupo Infinity S:COOP.AND); и (d) ссылка находится в контексте общей информации о ресурсах.</p>
+      <p>Эти организации могут ссылаться на нашу домашнюю страницу, если ссылка: (а) никоим образом не вводит в заблуждение; (b) не подразумевает ложно спонсорство, одобрение или утверждение связывающей стороны и ее продуктов или услуг; и (c) соответствует контексту сайта связывающей стороны.</p>
+      <p>Если вы являетесь одной из организаций, перечисленных в пункте 2 выше, и заинтересованы в ссылке на наш веб-сайт, вы должны сообщить нам об этом, отправив электронное письмо в Melena Marketing (Grupo Infinity S:COOP.AND). Пожалуйста, укажите ваше имя, название вашей организации, контактную информацию, а также URL-адрес вашего сайта, список URL-адресов, с которых вы собираетесь ссылаться на наш Веб-сайт, и список URL-адресов на нашем сайте, на которые вы хотели бы сослаться. Подождите 2-3 недели для ответа.</p>
+      <p>Утвержденные организации могут делать гиперссылки на наш Веб-сайт следующим образом:</p>
+      <ul>
+        <li>Используя наше корпоративное название; или</li>
+        <li>Используя унифицированный указатель ресурса, на который делается ссылка; или</li>
+        <li>Используя любое другое описание нашего Веб-сайта, на который делается ссылка, которое имеет смысл в контексте и формате контента на сайте связывающей стороны.</li>
+      </ul>
+      <p>Использование логотипа Melena Marketing (Grupo Infinity S:COOP.AND) или других произведений искусства для ссылок не допускается без лицензионного соглашения на товарный знак.</p>
+      
+      <h3>Ответственность за контент:</h3>
+      <p>Мы не несем ответственности за любой контент, который появляется на вашем Веб-сайте. Вы соглашаетесь защищать нас от всех претензий, возникающих на вашем Веб-сайте. Никакие ссылки не должны появляться на любом Веб-сайте, который может быть истолкован как клеветнический, непристойный или преступный, или который нарушает, иным образом нарушает или пропагандирует нарушение или иное нарушение прав третьих лиц.</p>
+      
+      <h3>Сохранение прав:</h3>
+      <p>Мы оставляем за собой право потребовать, чтобы вы удалили все ссылки или любую конкретную ссылку на наш Веб-сайт. Вы обязуетесь немедленно удалить все ссылки на наш Веб-сайт по запросу. Мы также оставляем за собой право в любое время вносить поправки в эти условия и положения и свою политику ссылок. Постоянно ссылаясь на наш Веб-сайт, вы соглашаетесь быть связанными и соблюдать эти условия и положения о ссылках.</p>
+      
+      <h3>Удаление ссылок с нашего веб-сайта:</h3>
+      <p>Если вы найдете на нашем Веб-сайте какую-либо ссылку, которая по какой-либо причине является оскорбительной, вы можете связаться с нами и сообщить нам об этом в любой момент. Мы рассмотрим запросы на удаление ссылок, но мы не обязаны делать это или отвечать вам напрямую.</p>
+      <p>Мы не гарантируем, что информация на этом веб-сайте является верной, мы не гарантируем ее полноту или точность; мы также не обещаем обеспечивать доступность веб-сайта или актуальность материалов на нем.</p>
+      
+      <h3>Отказ от ответственности:</h3>
+      <p>В максимальной степени, разрешенной действующим законодательством, мы исключаем все заявления, гарантии и условия, касающиеся нашего веб-сайта и его использования. Ничто в этом отказе от ответственности не будет:</p>
+      <ul>
+        <li>ограничивать или исключать нашу или вашу ответственность за смерть или телесные повреждения;</li>
+        <li>ограничивать или исключать нашу или вашу ответственность за мошенничество или мошенническое введение в заблуждение;</li>
+        <li>ограничивать любую из наших или ваших ответственностей любым способом, который не разрешен действующим законодательством; или</li>
+        <li>исключать любую из наших или ваших ответственностей, которые не могут быть исключены в соответствии с действующим законодательством.</li>
+      </ul>
+      <p>Ограничения и запреты ответственности, установленные в этом разделе и в других частях этого отказа от ответственности: (а) подпадают под действие предыдущего пункта; и (b) регулируют все обязательства, возникающие в соответствии с отказом от ответственности, включая обязательства, возникающие по договору, в результате деликта и за нарушение установленных законом обязанностей.</p>
+      <p>Пока веб-сайт и информация и услуги на нем предоставляются бесплатно, мы не несем ответственности за любые убытки или ущерб любого характера.</p>
+    `,
   },
 };
