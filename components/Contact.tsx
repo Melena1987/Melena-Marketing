@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
+import { db } from '../firebase'; // Importa la base de datos
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'; // Funciones de Firebase
 
 const Contact: React.FC = () => {
   const t = useTranslations();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!name || !email || !message) {
+      alert('Por favor, completa todos los campos.');
+      return;
+    }
+    setStatus('sending');
+    try {
+      // Añade un nuevo documento a la colección "messages"
+      await addDoc(collection(db, "messages"), {
+        name: name,
+        email: email,
+        message: message,
+        sentAt: serverTimestamp() // Añade la fecha de envío
+      });
+      setStatus('success');
+      // Limpia el formulario
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      console.error("Error al enviar el mensaje: ", error);
+      setStatus('error');
+    }
+  };
 
   return (
     <section id="contacto" className="py-20 bg-white">
@@ -17,7 +49,7 @@ const Contact: React.FC = () => {
           <div>
             <h3 className="text-2xl font-bold text-blue-900 mb-6">{t.contact_info_title}</h3>
             <div className="space-y-4 text-gray-700">
-              <p className="flex items-center">
+               <p className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 29679, Benahavís, Málaga, España
               </p>
@@ -31,23 +63,25 @@ const Contact: React.FC = () => {
               </p>
             </div>
           </div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="space-y-4">
               <div>
                 <label htmlFor="name" className="sr-only">{t.contact_form_name}</label>
-                <input type="text" id="name" placeholder={t.contact_form_name} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+                <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder={t.contact_form_name} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
               </div>
               <div>
                 <label htmlFor="email" className="sr-only">{t.contact_form_email}</label>
-                <input type="email" id="email" placeholder={t.contact_form_email} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+                <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t.contact_form_email} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
               </div>
               <div>
                 <label htmlFor="message" className="sr-only">{t.contact_form_message}</label>
-                <textarea id="message" rows={4} placeholder={t.contact_form_message} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                <textarea id="message" rows={4} value={message} onChange={(e) => setMessage(e.target.value)} placeholder={t.contact_form_message} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
               </div>
-              <button type="submit" className="w-full bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-md hover:bg-yellow-500 transition duration-300">
-                {t.contact_form_submit}
+              <button type="submit" disabled={status === 'sending'} className="w-full bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-md hover:bg-yellow-500 transition duration-300 disabled:bg-gray-400">
+                {status === 'sending' ? 'Enviando...' : t.contact_form_submit}
               </button>
+              {status === 'success' && <p className="text-green-600">¡Mensaje enviado con éxito!</p>}
+              {status === 'error' && <p className="text-red-600">Hubo un error al enviar el mensaje. Inténtalo de nuevo.</p>}
             </div>
           </form>
         </div>
