@@ -39,6 +39,7 @@ interface Translations {
     contact_form_email: string;
     contact_form_message: string;
     contact_form_submit: string;
+    contact_whatsapp: string;
     footer_copyright: string;
     footer_terms: string;
     footer_privacy_policy: string;
@@ -119,6 +120,7 @@ export const translations: Translations = {
     contact_form_email: "Tu Email",
     contact_form_message: "Cuéntanos sobre tu proyecto",
     contact_form_submit: "Enviar Mensaje",
+    contact_whatsapp: "Contactar por WhatsApp",
     footer_copyright: "Melena Marketing. Todos los derechos reservados.",
     footer_terms: "Términos y Condiciones",
     footer_privacy_policy: "Política de Privacidad",
@@ -336,6 +338,7 @@ export const translations: Translations = {
     contact_form_email: "Your Email",
     contact_form_message: "Tell us about your project",
     contact_form_submit: "Send Message",
+    contact_whatsapp: "Contact via WhatsApp",
     footer_copyright: "Melena Marketing. All rights reserved.",
     footer_terms: "Terms and Conditions",
     footer_privacy_policy: "Privacy Policy",
@@ -553,6 +556,7 @@ export const translations: Translations = {
     contact_form_email: "Ваш Email",
     contact_form_message: "Расскажите нам о вашем проекте",
     contact_form_submit: "Отправить сообщение",
+    contact_whatsapp: "Связаться по WhatsApp",
     footer_copyright: "Melena Marketing. Все права защищены.",
     footer_terms: "Условия и положения",
     footer_privacy_policy: "Политика конфиденциальности",

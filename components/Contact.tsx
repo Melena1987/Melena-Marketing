@@ -57,19 +57,28 @@ const Contact: React.FC = () => {
           <div>
             <h3 className="text-2xl font-bold text-blue-900 mb-6">{t.contact_info_title}</h3>
             <div className="space-y-4 text-gray-700">
-               <p className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                29679, Benahavís, Málaga, España
-              </p>
               <p className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                 660 532 823
               </p>
-              <p className="flex items-center">
+              <a href="mailto:info@melenamarketing.com" className="flex items-center hover:text-blue-800 transition-colors">
                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 info@melenamarketing.com
-              </p>
+              </a>
             </div>
+             <a 
+              href="https://api.whatsapp.com/send?phone=34660532823&text="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-3 bg-green-500 text-white font-bold py-3 px-6 rounded-md hover:bg-green-600 transition duration-300 transform hover:scale-105"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                  <g transform="scale(1.1) translate(-1.2, -1.2)">
+                      <path d="M16.6 14.2c-.3-.2-1.8-1-2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-1-1.4-1.7-1.5-2-.2-.3 0-.5.1-.6s.3-.4.4-.5c.1-.1.2-.3.2-.4.1-.1.1-.3 0-.4-.1-.1-.7-1.7-.9-2.3-.2-.6-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.2 4.9 4.3.6.3 1.2.4 1.6.5.6.1 1.1.1 1.5-.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.4z M12.1 2.1C6.6 2.1 2.2 6.5 2.2 12c0 1.8.5 3.5 1.4 5l-1.5 5.3 5.5-1.4c1.4.9 3 1.3 4.7 1.3h.1c5.5 0 9.9-4.4 9.9-9.9s-4.4-9.8-9.9-9.8zM12.1 20.2c-1.5 0-3-.4-4.3-1.1l-.3-.2-3.2.8.8-3.1-.2-.3c-.8-1.3-1.2-2.8-1.2-4.4 0-4.5 3.7-8.2 8.2-8.2 2.2 0 4.3.9 5.8 2.4 1.6 1.5 2.4 3.6 2.4 5.8.1 4.5-3.6 8.2-8.1 8.2z"/>
+                  </g>
+              </svg>
+              {t.contact_whatsapp}
+            </a>
           </div>
           <form onSubmit={handleSubmit}>
             <div className="space-y-4">
