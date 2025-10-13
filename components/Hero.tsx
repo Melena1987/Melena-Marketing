@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 uppercase tracking-wider leading-tight animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <h1 className="text-4xl md:text-6xl font-extrabold text-blue-800 uppercase tracking-wider leading-tight animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           {t.hero_title}
         </h1>
         <p className="mt-4 text-xl md:text-2xl text-blue-800 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
         <div className="mt-10 animate-fade-in-up" style={{ animationDelay: '1s' }}>
           <a
             href="#contacto"
-            className="bg-yellow-400 text-blue-900 font-bold py-4 px-10 rounded-full text-lg hover:bg-yellow-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+            className="bg-yellow-400 text-blue-800 font-bold py-4 px-10 rounded-full text-lg hover:bg-yellow-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
           >
             {t.hero_cta}
           </a>

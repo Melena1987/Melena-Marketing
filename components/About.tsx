@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
@@ -6,7 +7,7 @@ const FeatureCard: React.FC<{ title: string; description: string; icon: React.Re
         <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-800 mx-auto mb-4">
             {icon}
         </div>
-        <h3 className="text-xl font-bold text-blue-900 mb-2">{title}</h3>
+        <h3 className="text-xl font-bold text-blue-800 mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>
     </div>
 );
@@ -18,7 +19,7 @@ const About: React.FC = () => {
     <section id="sobre-nosotros" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-900">{t.about_title}</h2>
+          <h2 className="text-4xl font-bold text-blue-800">{t.about_title}</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
             {t.about_subtitle}
           </p>

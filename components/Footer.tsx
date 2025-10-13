@@ -1,3 +1,4 @@
+
 import React from 'react';
 import SocialIcons from './SocialIcons';
 import { useTranslations } from '../hooks/useTranslations';
@@ -5,7 +6,7 @@ import { useTranslations } from '../hooks/useTranslations';
 const Footer: React.FC = () => {
   const t = useTranslations();
   return (
-    <footer className="bg-blue-900 text-blue-200">
+    <footer className="bg-blue-800 text-blue-200">
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <div className="mb-6 md:mb-0">

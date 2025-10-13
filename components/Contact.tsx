@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 import { db } from '../firebase'; // Importa la base de datos
@@ -48,14 +49,14 @@ const Contact: React.FC = () => {
     <section id="contacto" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-900">{t.contact_title}</h2>
+          <h2 className="text-4xl font-bold text-blue-800">{t.contact_title}</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
             {t.contact_subtitle}
           </p>
         </div>
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 bg-gray-50 p-8 rounded-lg shadow-xl">
           <div>
-            <h3 className="text-2xl font-bold text-blue-900 mb-6">{t.contact_info_title}</h3>
+            <h3 className="text-2xl font-bold text-blue-800 mb-6">{t.contact_info_title}</h3>
             <div className="space-y-4 text-gray-700">
               <p className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
@@ -94,7 +95,7 @@ const Contact: React.FC = () => {
                 <label htmlFor="message" className="sr-only">{t.contact_form_message}</label>
                 <textarea id="message" rows={4} value={message} onChange={(e) => setMessage(e.target.value)} placeholder={t.contact_form_message} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
               </div>
-              <button type="submit" disabled={status === 'sending'} className="w-full bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-md hover:bg-yellow-500 transition duration-300 disabled:bg-gray-400">
+              <button type="submit" disabled={status === 'sending'} className="w-full bg-yellow-400 text-blue-800 font-bold py-3 px-6 rounded-md hover:bg-yellow-500 transition duration-300 disabled:bg-gray-400">
                 {status === 'sending' ? 'Enviando...' : t.contact_form_submit}
               </button>
               {status === 'success' && <p className="text-green-600">¡Mensaje enviado con éxito!</p>}
