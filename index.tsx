@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { LanguageProvider } from './context/LanguageContext';
-import './firebase'; // Import to initialize Firebase
+// import './firebase'; // Import to initialize Firebase
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
