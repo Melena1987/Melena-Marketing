@@ -6,12 +6,6 @@ export interface Service {
   color: 'blue' | 'yellow';
 }
 
-export interface Testimonial {
-  quote: string;
-  author: string;
-  company: string;
-}
-
 export interface BlogPost {
   title: string;
   excerpt: string;

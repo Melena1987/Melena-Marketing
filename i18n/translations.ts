@@ -1,4 +1,10 @@
-import { Testimonial, BlogPost } from '../types';
+// Fix: Removed unused 'Testimonial' type from import as it does not exist in '../types'.
+import { BlogPost } from '../types';
+
+interface Project {
+  title: string;
+  description: string;
+}
 
 interface Translations {
   [key: string]: {
@@ -19,9 +25,9 @@ interface Translations {
     about_feature2_desc: string;
     about_feature3_title: string;
     about_feature3_desc: string;
-    testimonials_title: string;
-    testimonials_subtitle: string;
-    testimonials: Testimonial[];
+    projects_title: string;
+    projects_subtitle: string;
+    projects_list: Project[];
     blog_title: string;
     blog_subtitle: string;
     blog_read_more: string;
@@ -72,12 +78,25 @@ export const translations: Translations = {
     about_feature2_desc: "Sin rodeos ni tecnicismos. Te ofrecemos soluciones directas para mejorar tu presencia online y atraer más clientes.",
     about_feature3_title: "Servicio Cercano y Transparente",
     about_feature3_desc: "Creemos en la comunicación constante y la confianza. Seremos tu equipo de marketing de confianza, siempre accesible.",
-    testimonials_title: "Lo que Dicen Nuestros Clientes",
-    testimonials_subtitle: "La confianza y los resultados son la base de nuestra relación con cada PYME.",
-    testimonials: [
-      { quote: "Melena Marketing transformó nuestra presencia online. Su enfoque en PYMES es justo lo que necesitábamos. ¡Los resultados hablan por sí solos!", author: "Ana García", company: "CEO de Tienda Local" },
-      { quote: "El equipo es increíblemente profesional y cercano. Entendieron nuestras necesidades desde el primer día y nos guiaron en cada paso del proceso.", author: "Carlos Pérez", company: "Fundador de Café del Sol" },
-      { quote: "Gracias a su gestión de redes sociales y publicidad, hemos visto un aumento significativo en nuestras ventas. Totalmente recomendados.", author: "Lucía Fernández", company: "Gerente de Boutique Chic" }
+    projects_title: "Algunos de nuestros proyectos deportivos",
+    projects_subtitle: "Nos enorgullece colaborar en eventos de primer nivel que fomentan el deporte y posicionan a Marbella como un destino de referencia.",
+    projects_list: [
+      { 
+        title: "SBE Marbella Media Maratón", 
+        description: "Un evento icónico que reúne a miles de corredores. Gestionamos la comunicación y el marketing para posicionarlo como una de las medias maratones más importantes de la Costa del Sol." 
+      },
+      { 
+        title: "Marbella THE ONE", 
+        description: "El torneo Pro-Am de pádel y golf más exclusivo. Un evento de lujo que fusiona deporte de élite con networking al más alto nivel, atrayendo a personalidades y grandes marcas." 
+      },
+      { 
+        title: "Copa del Rey de Voley Playa 2025", 
+        description: "Marbella se convierte en la capital nacional del vóley playa. Un prestigioso torneo que traerá a los mejores jugadores de España a nuestras costas, consolidando la ciudad como destino deportivo." 
+      },
+      {
+        title: "Colaboradores del CB Marbella",
+        description: "Apoyamos al principal club de baloncesto de la ciudad. Colaboramos en su comunicación y marketing para fortalecer su conexión con la afición y promover el deporte base en la comunidad."
+      }
     ],
     blog_title: "Desde Nuestro Blog",
     blog_subtitle: "Ideas, consejos y estrategias para que tu PYME destaque en el mundo digital.",
@@ -130,12 +149,25 @@ export const translations: Translations = {
     about_feature2_desc: "No jargon or technicalities. We offer you direct solutions to improve your online presence and attract more customers.",
     about_feature3_title: "Close and Transparent Service",
     about_feature3_desc: "We believe in constant communication and trust. We will be your trusted marketing team, always accessible.",
-    testimonials_title: "What Our Clients Say",
-    testimonials_subtitle: "Trust and results are the foundation of our relationship with every SME.",
-    testimonials: [
-      { quote: "Melena Marketing transformed our online presence. Their focus on SMEs was exactly what we needed. The results speak for themselves!", author: "Ana García", company: "CEO of Local Store" },
-      { quote: "The team is incredibly professional and approachable. They understood our needs from day one and guided us through every step of the process.", author: "Carlos Pérez", company: "Founder of Café del Sol" },
-      { quote: "Thanks to their social media and advertising management, we've seen a significant increase in our sales. Highly recommended.", author: "Lucía Fernández", company: "Manager of Boutique Chic" }
+    projects_title: "Some of Our Sports Projects",
+    projects_subtitle: "We are proud to collaborate on top-level events that promote sport and position Marbella as a benchmark destination.",
+    projects_list: [
+      { 
+        title: "SBE Marbella Half Marathon", 
+        description: "An iconic event that brings together thousands of runners. We manage communication and marketing to position it as one of the most important half marathons on the Costa del Sol." 
+      },
+      { 
+        title: "Marbella THE ONE", 
+        description: "The most exclusive padel and golf Pro-Am tournament. A luxury event that merges elite sports with top-level networking, attracting personalities and major brands." 
+      },
+      { 
+        title: "King's Cup of Beach Volleyball 2025", 
+        description: "Marbella becomes the national capital of beach volleyball. A prestigious tournament that will bring the best players from Spain to our shores, consolidating the city as a top-tier sports destination." 
+      },
+      {
+        title: "Partners of CB Marbella",
+        description: "We support the city's main basketball club. We collaborate on their communication and marketing to strengthen their connection with fans and promote grassroots sports in the community."
+      }
     ],
     blog_title: "From Our Blog",
     blog_subtitle: "Ideas, tips, and strategies for your SME to stand out in the digital world.",
@@ -188,12 +220,25 @@ export const translations: Translations = {
     about_feature2_desc: "Без лишних слов и технических терминов. Мы предлагаем вам прямые решения для улучшения вашего онлайн-присутствия и привлечения клиентов.",
     about_feature3_title: "Близкий и прозрачный сервис",
     about_feature3_desc: "Мы верим в постоянное общение и доверие. Мы будем вашей надежной маркетинговой командой, всегда доступной.",
-    testimonials_title: "Что говорят наши клиенты",
-    testimonials_subtitle: "Доверие и результаты — основа наших отношений с каждым МСП.",
-    testimonials: [
-      { quote: "Melena Marketing преобразили наше онлайн-присутствие. Их фокус на МСП — это именно то, что нам было нужно. Результаты говорят сами за себя!", author: "Анна Гарсия", company: "Ген. директор 'Местный магазин'" },
-      { quote: "Команда невероятно профессиональна и отзывчива. Они поняли наши потребности с первого дня и направляли нас на каждом этапе процесса.", author: "Карлос Перес", company: "Основатель 'Кафе дель Соль'" },
-      { quote: "Благодаря их управлению социальными сетями и рекламой, мы увидели значительный рост продаж. Настоятельно рекомендуем.", author: "Люсия Фернандес", company: "Менеджер 'Бутик Шик'" }
+    projects_title: "Некоторые из наших спортивных проектов",
+    projects_subtitle: "Мы гордимся сотрудничеством в проведении мероприятий высшего уровня, которые продвигают спорт и позиционируют Марбелью как эталонное направление.",
+    projects_list: [
+      { 
+        title: "SBE Полумарафон Марбельи", 
+        description: "Знаковое событие, собирающее тысячи бегунов. Мы управляем коммуникациями и маркетингом, чтобы позиционировать его как один из самых важных полумарафонов на Коста-дель-Соль." 
+      },
+      { 
+        title: "Marbella THE ONE", 
+        description: "Самый эксклюзивный турнир Pro-Am по паделу и гольфу. Роскошное мероприятие, сочетающее элитный спорт с нетворкингом на высшем уровне, привлекающее знаменитостей и крупные бренды." 
+      },
+      { 
+        title: "Кубок Короля по пляжному волейболу 2025", 
+        description: "Марбелья становится национальной столицей пляжного волейбола. Престижный турнир, который соберет лучших игроков Испании, укрепляя город как первоклассное спортивное направление." 
+      },
+      {
+        title: "Партнеры КБ Марбелья",
+        description: "Мы поддерживаем главный баскетбольный клуб города. Мы сотрудничаем в их коммуникациях и маркетинге, чтобы укрепить связь с болельщиками и продвигать массовый спорт."
+      }
     ],
     blog_title: "Из нашего блога",
     blog_subtitle: "Идеи, советы и стратегии, чтобы ваше МСП выделялось в цифровом мире.",
