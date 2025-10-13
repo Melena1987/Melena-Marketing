@@ -2,11 +2,11 @@ import React from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
 const ProjectCard: React.FC<{ title: string; description: string; imageUrl: string }> = ({ title, description, imageUrl }) => (
-    <div className="bg-blue-700 rounded-lg shadow-lg overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-transform duration-300">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-transform duration-300">
         <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
         <div className="p-6 flex flex-col flex-grow">
-            <h3 className="text-xl font-bold text-yellow-400 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>{title}</h3>
-            <p className="text-blue-100 text-sm flex-grow">{description}</p>
+            <h3 className="text-xl font-bold text-blue-800 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>{title}</h3>
+            <p className="text-gray-700 text-sm flex-grow">{description}</p>
         </div>
     </div>
 );
