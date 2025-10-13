@@ -18,13 +18,11 @@ interface Translations {
     services_subtitle: string;
     services: { [key: string]: string };
     about_title: string;
-    about_subtitle: string;
-    about_feature1_title: string;
-    about_feature1_desc: string;
-    about_feature2_title: string;
-    about_feature2_desc: string;
-    about_feature3_title: string;
-    about_feature3_desc: string;
+    about_p1: string;
+    about_p2: string;
+    about_p3: string;
+    about_founder_alt_female: string;
+    about_founder_alt_male: string;
     projects_title: string;
     projects_subtitle: string;
     projects_list: Project[];
@@ -77,14 +75,12 @@ export const translations: Translations = {
         photo_sessions: "SESIONES FOTOGRÁFICAS",
         video_reports: "VIDEO REPORTAJES",
     },
-    about_title: "¿Por Qué Elegir Melena Marketing?",
-    about_subtitle: "Entendemos los desafíos de las PYMES porque somos especialistas en ellas. Nuestro éxito es ver crecer tu negocio.",
-    about_feature1_title: "Especialistas en PYMES",
-    about_feature1_desc: "No somos una agencia más. Nos centramos exclusivamente en las necesidades y presupuestos de pequeñas y medianas empresas.",
-    about_feature2_title: "Propuesta de Valor Clara",
-    about_feature2_desc: "Sin rodeos ni tecnicismos. Te ofrecemos soluciones directas para mejorar tu presencia online y atraer más clientes.",
-    about_feature3_title: "Servicio Cercano y Transparente",
-    about_feature3_desc: "Creemos en la comunicación constante y la confianza. Seremos tu equipo de marketing de confianza, siempre accesible.",
+    about_title: "¿Quiénes Somos?",
+    about_p1: "Melena Marketing es una empresa de marketing digital especializada en ayudar a pequeñas y medianas empresas a mejorar su presencia en Internet y a atraer a más clientes potenciales. Contamos con un equipo de profesionales altamente cualificados en áreas como <strong>diseño gráfico, diseño web, marketing digital y publicidad online.</strong>",
+    about_p2: "Ofrecemos una amplia gama de servicios personalizados para <strong>adaptarnos a las necesidades de cada uno de nuestros clientes.</strong> Desde la creación de una página web profesional hasta la gestión de redes sociales, pasando por el diseño de cartelería y la realización de sesiones fotográficas, trabajamos de la mano con nuestros clientes para ayudarles a mejorar su presencia en Internet y a alcanzar sus objetivos de negocio.",
+    about_p3: "Si estás interesado en nuestros servicios y quieres saber cómo podemos ayudar a tu empresa, no dudes en ponerte en contacto con nosotros. <strong>Estaremos encantados de atenderte y ofrecerte una solución a medida.</strong>",
+    about_founder_alt_female: "Cofundadora de Melena Marketing",
+    about_founder_alt_male: "Cofundador de Melena Marketing",
     projects_title: "Algunos de nuestros proyectos deportivos",
     projects_subtitle: "Nos enorgullece colaborar en eventos de primer nivel que fomentan el deporte y posicionan a Marbella como un destino de referencia.",
     projects_list: [
@@ -295,14 +291,12 @@ export const translations: Translations = {
         photo_sessions: "PHOTO SESSIONS",
         video_reports: "VIDEO REPORTS",
     },
-    about_title: "Why Choose Melena Marketing?",
-    about_subtitle: "We understand the challenges of SMEs because we specialize in them. Our success is seeing your business grow.",
-    about_feature1_title: "SME Specialists",
-    about_feature1_desc: "We are not just another agency. We focus exclusively on the needs and budgets of small and medium-sized businesses.",
-    about_feature2_title: "Clear Value Proposition",
-    about_feature2_desc: "No jargon or technicalities. We offer you direct solutions to improve your online presence and attract more customers.",
-    about_feature3_title: "Close and Transparent Service",
-    about_feature3_desc: "We believe in constant communication and trust. We will be your trusted marketing team, always accessible.",
+    about_title: "Who We Are",
+    about_p1: "Melena Marketing is a digital marketing company specializing in helping small and medium-sized businesses improve their online presence and attract more potential customers. We have a team of highly qualified professionals in areas such as <strong>graphic design, web design, digital marketing, and online advertising.</strong>",
+    about_p2: "We offer a wide range of personalized services to <strong>adapt to the needs of each of our clients.</strong> From creating a professional website to managing social media, designing posters, and conducting photo shoots, we work hand-in-hand with our clients to help them improve their online presence and achieve their business goals.",
+    about_p3: "If you are interested in our services and want to know how we can help your company, do not hesitate to contact us. <strong>We will be delighted to assist you and offer you a tailor-made solution.</strong>",
+    about_founder_alt_female: "Co-founder of Melena Marketing",
+    about_founder_alt_male: "Co-founder of Melena Marketing",
     projects_title: "Some of Our Sports Projects",
     projects_subtitle: "We are proud to collaborate on top-level events that promote sport and position Marbella as a benchmark destination.",
     projects_list: [
@@ -513,14 +507,12 @@ export const translations: Translations = {
         photo_sessions: "ФОТОСЕССИИ",
         video_reports: "ВИДЕОРЕПОРТАЖИ",
     },
-    about_title: "Почему выбирают Melena Marketing?",
-    about_subtitle: "Мы понимаем проблемы МСП, потому что мы специализируемся на них. Наш успех — это рост вашего бизнеса.",
-    about_feature1_title: "Специалисты по МСП",
-    about_feature1_desc: "Мы не просто очередное агентство. Мы фокусируемся исключительно на потребностях и бюджетах малых и средних предприятий.",
-    about_feature2_title: "Четкое ценностное предложение",
-    about_feature2_desc: "Без лишних слов и технических терминов. Мы предлагаем вам прямые решения для улучшения вашего онлайн-присутствия и привлечения клиентов.",
-    about_feature3_title: "Близкий и прозрачный сервис",
-    about_feature3_desc: "Мы верим в постоянное общение и доверие. Мы будем вашей надежной маркетинговой командой, всегда доступной.",
+    about_title: "Кто мы",
+    about_p1: "Melena Marketing — это компания цифрового маркетинга, специализирующаяся на помощи малым и средним предприятиям в улучшении их онлайн-присутствия и привлечении большего числа потенциальных клиентов. У нас есть команда высококвалифицированных профессионалов в таких областях, как <strong>графический дизайн, веб-дизайн, цифровой маркетинг и онлайн-реклама.</strong>",
+    about_p2: "Мы предлагаем широкий спектр персонализированных услуг, чтобы <strong>адаптироваться к потребностям каждого из наших клиентов.</strong> От создания профессионального веб-сайта до управления социальными сетями, разработки плакатов и проведения фотосессий — мы работаем рука об руку с нашими клиентами, чтобы помочь им улучшить свое онлайн-присутствие и достичь своих бизнес-целей.",
+    about_p3: "Если вы заинтересованы в наших услугах и хотите узнать, как мы можем помочь вашей компании, не стесняйтесь обращаться к нам. <strong>Мы будем рады помочь вам и предложить индивидуальное решение.</strong>",
+    about_founder_alt_female: "Сооснователь Melena Marketing",
+    about_founder_alt_male: "Сооснователь Melena Marketing",
     projects_title: "Некоторые из наших спортивных проектов",
     projects_subtitle: "Мы гордимся сотрудничеством в проведении мероприятий высшего уровня, которые продвигают спорт и позиционируют Марбелью как эталонное направление.",
     projects_list: [

@@ -1,45 +1,60 @@
-
 import React from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
-const FeatureCard: React.FC<{ title: string; description: string; icon: React.ReactNode }> = ({ title, description, icon }) => (
-    <div className="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
-        <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-800 mx-auto mb-4">
-            {icon}
-        </div>
-        <h3 className="text-xl font-bold text-blue-800 mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+const Logo: React.FC = () => (
+    <div className="flex flex-col items-center px-4 py-2">
+      <span className="text-3xl font-bold text-blue-800 leading-none" style={{ fontFamily: "'Oswald', sans-serif" }}>Melena.</span>
+      <span className="text-xs text-yellow-500 tracking-widest font-semibold leading-none">MARKETING COMPANY</span>
     </div>
 );
+
+// Using pre-cutout image placeholders for a clean look, mimicking the screenshot.
+const womanImageUrl = 'https://i.ibb.co/68v8z50/founder-woman-cutout.png';
+const manImageUrl = 'https://i.ibb.co/d2FFVtk/founder-man-cutout.png';
+
 
 const About: React.FC = () => {
   const t = useTranslations();
 
   return (
-    <section id="sobre-nosotros" className="py-20 bg-gray-50">
+    <section id="sobre-nosotros" className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-800">{t.about_title}</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            {t.about_subtitle}
-          </p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          <FeatureCard
-            title={t.about_feature1_title}
-            description={t.about_feature1_desc}
-            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" /></svg>}
-          />
-          <FeatureCard
-            title={t.about_feature2_title}
-            description={t.about_feature2_desc}
-            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
-          />
-          <FeatureCard
-            title={t.about_feature3_title}
-            description={t.about_feature3_desc}
-            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h4M5 8h2m4 0h2" /></svg>}
-          />
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          
+          {/* Left Column: Visuals */}
+          <div className="flex flex-col items-center text-center">
+            <h2 
+              className="title-lined text-7xl md:text-8xl font-extrabold text-blue-800 uppercase mb-10" 
+              style={{fontFamily: "'Oswald', sans-serif", lineHeight: '1'}}
+            >
+              {t.about_title}
+            </h2>
+            <div className="relative w-full max-w-lg h-64 md:h-80 mt-8">
+              <div 
+                className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 z-10 bg-white rounded-full shadow-xl border-2 border-blue-200"
+                style={{
+                  clipPath: 'ellipse(50% 40% at 50% 50%)'
+                }}
+              >
+                  <Logo />
+              </div>
+              
+              <div className="absolute bottom-0 left-0 w-[45%] h-full">
+                  <img src={womanImageUrl} alt={t.about_founder_alt_female} className="w-full h-full object-contain object-bottom" />
+              </div>
+              <div className="absolute bottom-0 right-0 w-[45%] h-full">
+                  <img src={manImageUrl} alt={t.about_founder_alt_male} className="w-full h-full object-contain object-bottom" />
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Text */}
+          <div className="space-y-6 text-gray-700 md:text-lg leading-relaxed">
+            <p dangerouslySetInnerHTML={{ __html: t.about_p1 }} />
+            <p dangerouslySetInnerHTML={{ __html: t.about_p2 }} />
+            <p dangerouslySetInnerHTML={{ __html: t.about_p3 }} />
+          </div>
+
         </div>
       </div>
     </section>
