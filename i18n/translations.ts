@@ -42,6 +42,9 @@ interface Translations {
     footer_copyright: string;
     footer_terms: string;
     footer_privacy_policy: string;
+    cookie_message: string;
+    cookie_accept: string;
+    cookie_learn_more: string;
     terms_content: string;
     privacy_content: string;
   };
@@ -119,6 +122,9 @@ export const translations: Translations = {
     footer_copyright: "Melena Marketing. Todos los derechos reservados.",
     footer_terms: "Términos y Condiciones",
     footer_privacy_policy: "Política de Privacidad",
+    cookie_message: "Usamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.",
+    cookie_accept: "Aceptar",
+    cookie_learn_more: "Saber más",
     privacy_content: `
       <h2>1.- DATOS DEL RESPONSABLE</h2>
       <p>Melena Marketing<br>GRUPO INFINITY, S.COOP.AND<br>Cif: F16945909<br>29679, Benahavís, Málaga<br>Teléfono: 660532823<br>Correo electrónico: info@melenamarketing.com</p>
@@ -333,6 +339,9 @@ export const translations: Translations = {
     footer_copyright: "Melena Marketing. All rights reserved.",
     footer_terms: "Terms and Conditions",
     footer_privacy_policy: "Privacy Policy",
+    cookie_message: "We use cookies to enhance your experience. By continuing to browse, you agree to our use of cookies.",
+    cookie_accept: "Accept",
+    cookie_learn_more: "Learn more",
     privacy_content: `
       <h2>1.- DATA CONTROLLER</h2>
       <p>Melena Marketing<br>GRUPO INFINITY, S.COOP.AND<br>CIF: F16945909<br>29679, Benahavís, Málaga, Spain<br>Phone: 660532823<br>Email: info@melenamarketing.com</p>
@@ -547,6 +556,9 @@ export const translations: Translations = {
     footer_copyright: "Melena Marketing. Все права защищены.",
     footer_terms: "Условия и положения",
     footer_privacy_policy: "Политика конфиденциальности",
+    cookie_message: "Мы используем файлы cookie для улучшения вашего опыта. Продолжая просмотр, вы соглашаетесь на использование нами файлов cookie.",
+    cookie_accept: "Принять",
+    cookie_learn_more: "Узнать больше",
     privacy_content: `
       <h2>1.- ДАННЫЕ ОТВЕТСТВЕННОГО ЛИЦА</h2>
       <p>Melena Marketing<br>GRUPO INFINITY, S.COOP.AND<br>CIF: F16945909<br>29679, Benahavís, Málaga, Испания<br>Телефон: 660532823<br>Электронная почта: info@melenamarketing.com</p>

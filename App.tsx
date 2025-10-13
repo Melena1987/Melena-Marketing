@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import LegalPage from './pages/LegalPage';
+import CookieConsent from './components/CookieConsent';
 
 const App: React.FC = () => {
   const [pathname, setPathname] = useState(window.location.pathname);
@@ -85,6 +86,7 @@ const App: React.FC = () => {
         {renderPage()}
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 };
