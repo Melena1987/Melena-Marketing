@@ -15,8 +15,10 @@ const Footer: React.FC = () => {
           </div>
           <div className="mb-6 md:mb-0">
             <p>&copy; {new Date().getFullYear()} {t.footer_copyright}</p>
-            <p className="text-sm">CIF: F16945909</p>
-            <a href="#" className="text-sm hover:text-white underline">{t.footer_terms}</a>
+            <div className="flex flex-col sm:flex-row sm:space-x-4 mt-1">
+              <a href="/terminos-y-condiciones" className="text-sm hover:text-white underline">{t.footer_terms}</a>
+              <a href="/politica-de-privacidad" className="text-sm hover:text-white underline">{t.footer_privacy_policy}</a>
+            </div>
           </div>
           <div>
             <SocialIcons />

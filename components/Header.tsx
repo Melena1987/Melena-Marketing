@@ -28,7 +28,7 @@ const LanguageSwitcher: React.FC = () => {
 };
 
 const Logo: React.FC = () => (
-  <a href="#inicio" className="flex-shrink-0 flex items-center gap-2">
+  <a href="/" className="flex-shrink-0 flex items-center gap-2">
     <div className="flex flex-col">
       <span className="text-2xl font-bold text-blue-800 leading-none" style={{ fontFamily: "'Oswald', sans-serif" }}>Melena.</span>
       <span className="text-[10px] text-yellow-500 tracking-widest font-semibold leading-none">MARKETING COMPANY</span>
@@ -41,6 +41,7 @@ const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const t = useTranslations();
+    const isHomePage = window.location.pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -49,6 +50,14 @@ const Header: React.FC = () => {
         window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+    
+    const getLinkHref = (href: string) => {
+        if (href.startsWith('#') && !isHomePage) {
+            return `/${href}`;
+        }
+        return href;
+    }
+
 
     return (
         <>
@@ -65,7 +74,7 @@ const Header: React.FC = () => {
                     {/* Center: Desktop Navigation */}
                     <nav className="hidden lg:flex justify-center items-center gap-6 absolute left-1/2 -translate-x-1/2">
                         {NAV_LINKS_STRUCTURE.map(link => (
-                            <a key={link.key} href={link.href} className="text-gray-700 hover:text-blue-800 font-medium pb-1 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
+                            <a key={link.key} href={getLinkHref(link.href)} className="text-gray-700 hover:text-blue-800 font-medium pb-1 border-b-2 border-transparent hover:border-yellow-400 transition-all duration-300">
                                 {t.nav_links[link.key]}
                             </a>
                         ))}
@@ -98,7 +107,7 @@ const Header: React.FC = () => {
                     </button>
                     <nav className="flex flex-col items-center gap-6 text-center">
                         {NAV_LINKS_STRUCTURE.map(link => (
-                            <a key={link.key} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-2xl text-blue-800 font-bold">
+                            <a key={link.key} href={getLinkHref(link.href)} onClick={() => setIsMenuOpen(false)} className="text-2xl text-blue-800 font-bold">
                                 {t.nav_links[link.key]}
                             </a>
                         ))}

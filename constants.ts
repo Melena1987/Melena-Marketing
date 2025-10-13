@@ -43,7 +43,7 @@ export const BLOG_POSTS_STRUCTURE = [
 
 // Navigation links text is now handled by the translation file.
 export const NAV_LINKS_STRUCTURE = [
-  { key: 'home', href: '#inicio' },
+  { key: 'home', href: '/' },
   { key: 'services', href: '#servicios' },
   { key: 'about', href: '#sobre-nosotros' },
   { key: 'blog', href: '#blog' },

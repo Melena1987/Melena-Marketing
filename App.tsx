@@ -1,24 +1,28 @@
 import React from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import About from './components/About';
-import Testimonials from './components/Testimonials';
-import BlogPreview from './components/BlogPreview';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import LegalPage from './pages/LegalPage';
 
 const App: React.FC = () => {
+  const path = window.location.pathname;
+
+  const renderPage = () => {
+    switch (path) {
+      case '/terminos-y-condiciones':
+        return <LegalPage type="terms" />;
+      case '/politica-de-privacidad':
+        return <LegalPage type="privacy" />;
+      default:
+        return <HomePage />;
+    }
+  };
+
   return (
     <div className="bg-white text-gray-800">
       <Header />
-      <main className="pt-24">
-        <Hero />
-        <Services />
-        <About />
-        <Testimonials />
-        <BlogPreview />
-        <Contact />
+      <main>
+        {renderPage()}
       </main>
       <Footer />
     </div>
