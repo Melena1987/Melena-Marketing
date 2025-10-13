@@ -30,19 +30,13 @@
         opacity: 0; /* Start hidden to prevent flash of unstyled content */
         animation: fade-in-up 0.8s ease-out forwards;
       }
-      .title-lined {
-        background: repeating-linear-gradient(
-            #1e40af 0px,
-            #1e40af 4px,
-            transparent 4px,
-            transparent 9px
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        /* Fallback for browsers not supporting background-clip */
-        paint-order: stroke fill;
-        -webkit-text-stroke: 2px #1e40af;
+      @keyframes reveal-bg {
+        from {
+          clip-path: circle(0% at 50% 50%);
+        }
+        to {
+          clip-path: circle(75% at 50% 50%);
+        }
       }
     </style>
 <script type="importmap">

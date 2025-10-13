@@ -1,60 +1,66 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
-const Logo: React.FC = () => (
-    <div className="flex flex-col items-center px-4 py-2">
-      <span className="text-3xl font-bold text-blue-800 leading-none" style={{ fontFamily: "'Oswald', sans-serif" }}>Melena.</span>
-      <span className="text-xs text-yellow-500 tracking-widest font-semibold leading-none">MARKETING COMPANY</span>
-    </div>
-);
-
-// Using pre-cutout image placeholders for a clean look, mimicking the screenshot.
-const womanImageUrl = 'https://i.ibb.co/68v8z50/founder-woman-cutout.png';
-const manImageUrl = 'https://i.ibb.co/d2FFVtk/founder-man-cutout.png';
-
+const aboutBgUrl = 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop';
 
 const About: React.FC = () => {
   const t = useTranslations();
+  const sectionRef = useRef<HTMLElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target); // Observe only once
+        }
+      },
+      {
+        rootMargin: '0px',
+        threshold: 0.3, // Trigger when 30% of the element is visible
+      }
+    );
+
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
 
   return (
-    <section id="sobre-nosotros" className="py-20 bg-white overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          
-          {/* Left Column: Visuals */}
-          <div className="flex flex-col items-center text-center">
-            <h2 
-              className="title-lined text-7xl md:text-8xl font-extrabold text-blue-800 uppercase mb-10" 
-              style={{fontFamily: "'Oswald', sans-serif", lineHeight: '1'}}
-            >
-              {t.about_title}
-            </h2>
-            <div className="relative w-full max-w-lg h-64 md:h-80 mt-8">
-              <div 
-                className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 z-10 bg-white rounded-full shadow-xl border-2 border-blue-200"
-                style={{
-                  clipPath: 'ellipse(50% 40% at 50% 50%)'
-                }}
-              >
-                  <Logo />
-              </div>
-              
-              <div className="absolute bottom-0 left-0 w-[45%] h-full">
-                  <img src={womanImageUrl} alt={t.about_founder_alt_female} className="w-full h-full object-contain object-bottom" />
-              </div>
-              <div className="absolute bottom-0 right-0 w-[45%] h-full">
-                  <img src={manImageUrl} alt={t.about_founder_alt_male} className="w-full h-full object-contain object-bottom" />
-              </div>
-            </div>
-          </div>
+    <section ref={sectionRef} id="sobre-nosotros" className="relative py-24 md:py-32 bg-blue-800 overflow-hidden">
+      {/* Background Image & Overlay with Reveal Effect */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${isVisible ? 'opacity-20' : 'opacity-0'}`}
+          style={{ 
+            backgroundImage: `url(${aboutBgUrl})`,
+            animation: isVisible ? 'reveal-bg 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' : 'none'
+          }}
+        ></div>
+      </div>
 
-          {/* Right Column: Text */}
-          <div className="space-y-6 text-gray-700 md:text-lg leading-relaxed">
+      {/* Content */}
+      <div className="container mx-auto px-6 relative z-10">
+        <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: isVisible ? '400ms' : '0ms' }}>
+          <h2 
+            className="text-5xl md:text-7xl font-extrabold text-white uppercase mb-10" 
+            style={{fontFamily: "'Oswald', sans-serif"}}
+          >
+            {t.about_title}
+          </h2>
+          <div className="space-y-6 text-blue-100 md:text-lg leading-relaxed">
             <p dangerouslySetInnerHTML={{ __html: t.about_p1 }} />
             <p dangerouslySetInnerHTML={{ __html: t.about_p2 }} />
             <p dangerouslySetInnerHTML={{ __html: t.about_p3 }} />
           </div>
-
         </div>
       </div>
     </section>
