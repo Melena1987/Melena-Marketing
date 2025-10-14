@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import LegalPage from './pages/LegalPage';
 import CookieConsent from './components/CookieConsent';
+import EnergyPage from './pages/EnergyPage';
 
 const App: React.FC = () => {
   const [pathname, setPathname] = useState(window.location.pathname);
@@ -80,6 +81,8 @@ const App: React.FC = () => {
       case '/terminos-y-condiciones':
         // The privacy policy is a hash on this page, so it should render the same component
         return <LegalPage />;
+      case '/gestion-de-tu-factura-energetica':
+        return <EnergyPage />;
       default:
         return <HomePage />;
     }
