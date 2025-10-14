@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 import { db } from '../firebase'; // Importa la base de datos
@@ -10,12 +9,27 @@ const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [termsAccepted, setTermsAccepted] = useState(false);
+  const [honeypot, setHoneypot] = useState(''); // Anti-spam field
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !email || !message) {
-      alert('Por favor, completa todos los campos.');
+
+    // 1. Anti-spam honeypot check
+    if (honeypot) {
+      console.log("Honeypot field filled. Submission blocked as likely spam.");
+      // Silently pretend success to not alert the bot
+      setStatus('success');
+      setName('');
+      setEmail('');
+      setMessage('');
+      setTermsAccepted(false);
+      return;
+    }
+
+    if (!name || !email || !message || !termsAccepted) {
+      alert(t.contact_form_validation_error);
       return;
     }
     
@@ -59,6 +73,7 @@ const Contact: React.FC = () => {
       setName('');
       setEmail('');
       setMessage('');
+      setTermsAccepted(false);
     } catch (error) {
       console.error("Error al enviar el mensaje: ", error);
       setStatus('error');
@@ -101,8 +116,21 @@ const Contact: React.FC = () => {
               {t.contact_whatsapp}
             </a>
           </div>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} noValidate>
             <div className="space-y-4">
+              {/* Honeypot field for spam prevention */}
+              <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+                <label htmlFor="honeypot">Do not fill this out if you are human</label>
+                <input 
+                  type="text" 
+                  id="honeypot" 
+                  name="honeypot" 
+                  tabIndex={-1} 
+                  value={honeypot} 
+                  onChange={(e) => setHoneypot(e.target.value)} 
+                  autoComplete="off"
+                />
+              </div>
               <div>
                 <label htmlFor="name" className="sr-only">{t.contact_form_name}</label>
                 <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder={t.contact_form_name} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" required />
@@ -114,6 +142,18 @@ const Contact: React.FC = () => {
               <div>
                 <label htmlFor="message" className="sr-only">{t.contact_form_message}</label>
                 <textarea id="message" rows={4} value={message} onChange={(e) => setMessage(e.target.value)} placeholder={t.contact_form_message} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" required></textarea>
+              </div>
+              <div className="flex items-start gap-3">
+                <input
+                  id="contact-terms"
+                  name="contact-terms"
+                  type="checkbox"
+                  checked={termsAccepted}
+                  onChange={(e) => setTermsAccepted(e.target.checked)}
+                  className="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500 mt-1 flex-shrink-0"
+                  required
+                />
+                <label htmlFor="contact-terms" className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: t.contact_form_terms }} />
               </div>
               <button type="submit" disabled={status === 'sending'} className="w-full bg-yellow-400 text-blue-800 font-bold py-3 px-6 rounded-md hover:bg-yellow-500 transition duration-300 disabled:bg-gray-400">
                 {status === 'sending' ? 'Enviando...' : t.contact_form_submit}

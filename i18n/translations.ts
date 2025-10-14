@@ -1,3 +1,4 @@
+
 import { BlogPost } from '../types';
 
 interface Project {
@@ -39,6 +40,8 @@ interface Translations {
     contact_form_message: string;
     contact_form_submit: string;
     contact_form_sending: string;
+    contact_form_terms: string;
+    contact_form_validation_error: string;
     contact_whatsapp: string;
     footer_copyright: string;
     footer_terms: string;
@@ -171,6 +174,8 @@ export const translations: Translations = {
     contact_form_message: "Cuéntanos sobre tu proyecto",
     contact_form_submit: "Enviar",
     contact_form_sending: "Enviando...",
+    contact_form_terms: "He leído y acepto los <a href=\"/terminos-y-condiciones\" class=\"underline hover:text-blue-700\">Términos y Condiciones</a> y la <a href=\"/terminos-y-condiciones#privacy-policy\" class=\"underline hover:text-blue-700\">Política de Privacidad</a>.",
+    contact_form_validation_error: "Por favor, completa todos los campos obligatorios y acepta los términos.",
     contact_whatsapp: "Contactar por WhatsApp",
     footer_copyright: "Melena Marketing. Todos los derechos reservados.",
     footer_terms: "Términos y Condiciones",
@@ -300,6 +305,8 @@ export const translations: Translations = {
     contact_form_message: "Tell us about your project",
     contact_form_submit: "Send",
     contact_form_sending: "Sending...",
+    contact_form_terms: "I have read and accept the <a href=\"/terminos-y-condiciones\" class=\"underline hover:text-blue-700\">Terms and Conditions</a> and the <a href=\"/terminos-y-condiciones#privacy-policy\" class=\"underline hover:text-blue-700\">Privacy Policy</a>.",
+    contact_form_validation_error: "Please fill in all required fields and accept the terms.",
     contact_whatsapp: "Contact via WhatsApp",
     footer_copyright: "Melena Marketing. All rights reserved.",
     footer_terms: "Terms and Conditions",
@@ -429,6 +436,8 @@ export const translations: Translations = {
     contact_form_message: "Расскажите нам о вашем проекте",
     contact_form_submit: "Отправить",
     contact_form_sending: "Отправка...",
+    contact_form_terms: "Я прочитал(а) и принимаю <a href=\"/terminos-y-condiciones\" class=\"underline hover:text-blue-700\">Условия и положения</a> и <a href=\"/terminos-y-condiciones#privacy-policy\" class=\"underline hover:text-blue-700\">Политику конфиденциальности</a>.",
+    contact_form_validation_error: "Пожалуйста, заполните все обязательные поля и примите условия.",
     contact_whatsapp: "Связаться по WhatsApp",
     footer_copyright: "Melena Marketing. Все права защищены.",
     footer_terms: "Условия и положения",
