@@ -1,0 +1,27 @@
+# netlify.toml
+
+# Configuración de construcción (Build settings)
+# Esto le dice a Netlify cómo preparar tu sitio para publicarlo.
+[build]
+  # Comando para construir tu sitio web. Coincide con el script en tu package.json.
+  command = "npm run build"
+  
+  # Directorio donde se guardan los archivos finales después de la construcción.
+  # Para proyectos con Vite, este directorio es siempre "dist".
+  publish = "dist"
+  
+  # Versión de Node.js a utilizar. Es bueno especificarla para evitar inconsistencias.
+  [build.environment]
+    NODE_VERSION = "20"
+
+# Regla de redirección para Single Page Applications (SPA)
+# Esto soluciona el error "Page not found" al recargar o acceder a URLs directas.
+[[redirects]]
+  # Redirige cualquier ruta que no sea un archivo existente...
+  from = "/*"
+  
+  # ...al archivo principal de tu aplicación.
+  to = "/index.html"
+  
+  # Responde con un estado 200 (OK), manteniendo la URL original en el navegador.
+  status = 200
