@@ -27,13 +27,13 @@ const ProjectCard: React.FC<{ title: string; description: string; imageUrl: stri
 const Testimonials: React.FC = () => {
   const t = useTranslations();
   
-  // Placeholder images for the projects
+  // Specific images for the projects
   const projectImages = [
-    'https://picsum.photos/seed/marathon/600/400',
-    'https://picsum.photos/seed/golf/600/400',
-    'https://picsum.photos/seed/voley/600/400',
-    'https://picsum.photos/seed/basketball/600/400',
-    'https://picsum.photos/seed/basketball-embassy/600/400'
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1759258933122_idP_MARBELLA-116.jpg?alt=media&token=d1f9faf0-f992-49b4-b572-cac41ad9e7a3',
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1760372783660_ATALAYA-263.jpg?alt=media&token=ed30545d-d387-4330-abfc-fa67e97c7ab9',
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757279516770_COPA-144.jpg?alt=media&token=cad899d1-3ef2-4b32-9644-b127058bfd37',
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1758464596036_DSC_8149.JPG?alt=media&token=e4a6919b-2261-4d42-b558-65e1e230aae4',
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757441458744_THE_EMBASSY_FUENGIROLA_NBA_1.jpg?alt=media&token=41a8229a-907d-42c5-9652-608fbba59b73'
   ];
 
   return (
