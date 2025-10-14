@@ -20,7 +20,14 @@ const BlogPreview: React.FC = () => {
             const postContent = t.blog_posts[index];
             return (
               <div key={postStructure.id} className="bg-white rounded-lg shadow-lg overflow-hidden group">
-                <img src={postStructure.imageUrl} alt={postContent.title} className="w-full h-48 object-cover" />
+                <img 
+                  src={postStructure.imageUrl} 
+                  alt={postContent.title} 
+                  className="w-full h-48 object-cover bg-gray-200"
+                  loading="lazy"
+                  width="288"
+                  height="192"
+                />
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-blue-800 mb-2">{postContent.title}</h3>
                   <p className="text-gray-600 mb-4">{postContent.excerpt}</p>

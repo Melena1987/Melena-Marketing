@@ -4,7 +4,14 @@ import { useTranslations } from '../hooks/useTranslations';
 const ProjectCard: React.FC<{ title: string; description: string; imageUrl: string; href?: string }> = ({ title, description, imageUrl, href }) => {
     const cardContent = (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full group transform hover:-translate-y-2 transition-transform duration-300">
-            <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+            <img 
+              src={imageUrl} 
+              alt={title} 
+              className="w-full h-48 object-cover bg-gray-200" 
+              loading="lazy" 
+              width="288" 
+              height="192"
+            />
             <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-blue-800 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>{title}</h3>
                 <p className="text-gray-700 text-sm flex-grow">{description}</p>
