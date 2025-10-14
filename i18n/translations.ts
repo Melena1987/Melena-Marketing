@@ -48,6 +48,9 @@ interface Translations {
     cookie_learn_more: string;
     terms_content: string;
     privacy_content: string;
+    collaboration_title: string;
+    collaboration_subtitle: string;
+    collaboration_cta: string;
   };
 }
 
@@ -292,6 +295,9 @@ export const translations: Translations = {
         <li>Safari para iOS</li>
       </ul>
     `,
+    collaboration_title: "¿Quieres trabajar o colaborar con nosotros?",
+    collaboration_subtitle: "Rellena este formulario y nos pondremos en contacto contigo.",
+    collaboration_cta: "Trabaja con nosotros",
   },
   en: {
     header_slogan: "Boosting SMEs",
@@ -533,6 +539,9 @@ export const translations: Translations = {
         <li>Safari for iOS</li>
       </ul>
     `,
+    collaboration_title: "Want to work or collaborate with us?",
+    collaboration_subtitle: "Fill out this form and we will get in touch with you.",
+    collaboration_cta: "Work with us",
   },
   ru: {
     header_slogan: "Продвижение МСП",
@@ -774,5 +783,8 @@ export const translations: Translations = {
         <li>Safari для iOS</li>
       </ul>
     `,
+    collaboration_title: "Хотите работать или сотрудничать с нами?",
+    collaboration_subtitle: "Заполните эту форму, и мы свяжемся с вами.",
+    collaboration_cta: "Работать с нами",
   },
 };
