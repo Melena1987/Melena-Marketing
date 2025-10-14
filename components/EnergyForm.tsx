@@ -4,6 +4,24 @@ import { db, storage } from '../firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
+// Helper function to determine MIME type from file extension as a fallback
+const getMimeType = (fileName: string): string | undefined => {
+  const extension = fileName.split('.').pop()?.toLowerCase();
+  if (!extension) return undefined;
+  
+  const mimeTypes: { [key: string]: string } = {
+    pdf: 'application/pdf',
+    jpg: 'image/jpeg',
+    jpeg: 'image/jpeg',
+    png: 'image/png',
+    doc: 'application/msword',
+    docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+  };
+  
+  return mimeTypes[extension];
+};
+
+
 const EnergyForm: React.FC = () => {
   const t = useTranslations();
   const [name, setName] = useState('');
@@ -50,10 +68,14 @@ const EnergyForm: React.FC = () => {
         filePath = `energy-bills/${Date.now()}_${file.name}`;
         const fileRef = ref(storage, filePath);
         
-        // Add metadata with the correct content type to ensure rules are met.
+        // Robustly determine content type, falling back to extension if browser fails to provide it.
+        const contentType = file.type || getMimeType(file.name);
+        
         const metadata = {
-          contentType: file.type,
+          // Pass contentType only if it could be determined.
+          ...(contentType && { contentType }),
         };
+        
         const uploadResult = await uploadBytes(fileRef, file, metadata);
         fileDownloadURL = await getDownloadURL(uploadResult.ref);
       }
