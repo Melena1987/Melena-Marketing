@@ -1,15 +1,28 @@
 import React from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
-const ProjectCard: React.FC<{ title: string; description: string; imageUrl: string }> = ({ title, description, imageUrl }) => (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-transform duration-300">
-        <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
-        <div className="p-6 flex flex-col flex-grow">
-            <h3 className="text-xl font-bold text-blue-800 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>{title}</h3>
-            <p className="text-gray-700 text-sm flex-grow">{description}</p>
+const ProjectCard: React.FC<{ title: string; description: string; imageUrl: string; href?: string }> = ({ title, description, imageUrl, href }) => {
+    const cardContent = (
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full group transform hover:-translate-y-2 transition-transform duration-300">
+            <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+            <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-blue-800 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>{title}</h3>
+                <p className="text-gray-700 text-sm flex-grow">{description}</p>
+            </div>
         </div>
-    </div>
-);
+    );
+
+    if (href) {
+        return (
+            <a href={href} target="_blank" rel="noopener noreferrer" className="block h-full">
+                {cardContent}
+            </a>
+        );
+    }
+    
+    // Fallback for projects without links.
+    return cardContent;
+};
 
 const Testimonials: React.FC = () => {
   const t = useTranslations();
@@ -19,7 +32,8 @@ const Testimonials: React.FC = () => {
     'https://picsum.photos/seed/marathon/600/400',
     'https://picsum.photos/seed/golf/600/400',
     'https://picsum.photos/seed/voley/600/400',
-    'https://picsum.photos/seed/basketball/600/400'
+    'https://picsum.photos/seed/basketball/600/400',
+    'https://picsum.photos/seed/basketball-embassy/600/400'
   ];
 
   return (
@@ -38,6 +52,7 @@ const Testimonials: React.FC = () => {
               title={project.title} 
               description={project.description} 
               imageUrl={projectImages[index]}
+              href={project.link}
             />
           ))}
         </div>

@@ -4,6 +4,7 @@ import { BlogPost } from '../types';
 interface Project {
   title: string;
   description: string;
+  link?: string;
 }
 
 interface Translations {
@@ -73,7 +74,7 @@ export const translations: Translations = {
         online_store: "TIENDA ONLINE",
         signage_design: "DISEÑOS DE CARTELERÍA",
         smart_cards: "TARJETAS DE VISITA INTELIGENTES",
-        photo_sessions: "SESIONES FOTOGRÁFICAS",
+        photo_sessions: "SESIONES FOTOGRÁFicas",
         video_reports: "VIDEO REPORTAJES",
     },
     services_descriptions: {
@@ -103,19 +104,28 @@ export const translations: Translations = {
     projects_list: [
       { 
         title: "SBE Marbella Media Maratón", 
-        description: "Un evento icónico que reúne a miles de corredores. Gestionamos la comunicación y el marketing para posicionarlo como una de las medias maratones más importantes de la Costa del Sol." 
+        description: "Un evento icónico que reúne a miles de corredores. Gestionamos la comunicación y el marketing para posicionarlo como una de las medias maratones más importantes de la Costa del Sol.",
+        link: "https://www.run-on.es/sbe-marbella-2025-galer%C3%ADa-oficial"
       },
       { 
         title: "Marbella THE ONE", 
-        description: "El torneo Pro-Am de pádel y golf más exclusivo. Un evento de lujo que fusiona deporte de élite con networking al más alto nivel, atrayendo a personalidades y grandes marcas." 
+        description: "El torneo Pro-Am de pádel y golf más exclusivo. Un evento de lujo que fusiona deporte de élite con networking al más alto nivel, atrayendo a personalidades y grandes marcas.",
+        link: "https://www.showtimeexperience.com/the-one"
       },
       { 
         title: "Copa del Rey de Voley Playa 2025", 
-        description: "Marbella se convierte en la capital nacional del vóley playa. Un prestigioso torneo que traerá a los mejores jugadores de España a nuestras costas, consolidando la ciudad como destino deportivo." 
+        description: "Marbella se convierte en la capital nacional del vóley playa. Un prestigioso torneo que traerá a los mejores jugadores de España a nuestras costas, consolidando la ciudad como destino deportivo.",
+        link: "https://www.showtimeexperience.com/eventos/copa-del-rey-y-de-la-reina-de-voley-playa"
       },
       {
         title: "Colaboradores del CB Marbella",
-        description: "Apoyamos al principal club de baloncesto de la ciudad. Colaboramos en su comunicación y marketing para fortalecer su conexión con la afición y promover el deporte base en la comunidad."
+        description: "Apoyamos al principal club de baloncesto de la ciudad. Colaboramos en su comunicación y marketing para fortalecer su conexión con la afición y promover el deporte base en la comunidad.",
+        link: "https://www.instagram.com/cbmarbella/"
+      },
+      {
+        title: "The Embassy Basketball Centre",
+        description: "Colaboramos con The Embassy, el centro de alto rendimiento de baloncesto en Fuengirola, un referente internacional en la formación de jugadores de élite.",
+        link: "https://www.theembassytc.com/"
       }
     ],
     blog_title: "Desde Nuestro Blog",
@@ -335,19 +345,28 @@ export const translations: Translations = {
     projects_list: [
       { 
         title: "SBE Marbella Half Marathon", 
-        description: "An iconic event that brings together thousands of runners. We manage communication and marketing to position it as one of the most important half marathons on the Costa del Sol." 
+        description: "An iconic event that brings together thousands of runners. We manage communication and marketing to position it as one of the most important half marathons on the Costa del Sol.",
+        link: "https://www.run-on.es/sbe-marbella-2025-galer%C3%ADa-oficial"
       },
       { 
         title: "Marbella THE ONE", 
-        description: "The most exclusive padel and golf Pro-Am tournament. A luxury event that merges elite sports with top-level networking, attracting personalities and major brands." 
+        description: "The most exclusive padel and golf Pro-Am tournament. A luxury event that merges elite sports with top-level networking, attracting personalities and major brands.",
+        link: "https://www.showtimeexperience.com/the-one"
       },
       { 
         title: "King's Cup of Beach Volleyball 2025", 
-        description: "Marbella becomes the national capital of beach volleyball. A prestigious tournament that will bring the best players from Spain to our shores, consolidating the city as a top-tier sports destination." 
+        description: "Marbella becomes the national capital of beach volleyball. A prestigious tournament that will bring the best players from Spain to our shores, consolidating the city as a top-tier sports destination.",
+        link: "https://www.showtimeexperience.com/eventos/copa-del-rey-y-de-la-reina-de-voley-playa"
       },
       {
         title: "Partners of CB Marbella",
-        description: "We support the city's main basketball club. We collaborate on their communication and marketing to strengthen their connection with fans and promote grassroots sports in the community."
+        description: "We support the city's main basketball club. We collaborate on their communication and marketing to strengthen their connection with fans and promote grassroots sports in the community.",
+        link: "https://www.instagram.com/cbmarbella/"
+      },
+      {
+        title: "The Embassy Basketball Centre",
+        description: "We collaborate with The Embassy, the high-performance basketball center in Fuengirola, an international benchmark in training elite players.",
+        link: "https://www.theembassytc.com/"
       }
     ],
     blog_title: "From Our Blog",
@@ -567,19 +586,28 @@ export const translations: Translations = {
     projects_list: [
       { 
         title: "SBE Полумарафон Марбельи", 
-        description: "Знаковое событие, собирающее тысячи бегунов. Мы управляем коммуникациями и маркетингом, чтобы позиционировать его как один из самых важных полумарафонов на Коста-дель-Соль." 
+        description: "Знаковое событие, собирающее тысячи бегунов. Мы управляем коммуникациями и маркетингом, чтобы позиционировать его как один из самых важных полумарафонов на Коста-дель-Соль.",
+        link: "https://www.run-on.es/sbe-marbella-2025-galer%C3%ADa-oficial"
       },
       { 
         title: "Marbella THE ONE", 
-        description: "Самый эксклюзивный турнир Pro-Am по паделу и гольфу. Роскошное мероприятие, сочетающее элитный спорт с нетворкингом на высшем уровне, привлекающее знаменитостей и крупные бренды." 
+        description: "Самый эксклюзивный турнир Pro-Am по паделу и гольфу. Роскошное мероприятие, сочетающее элитный спорт с нетворкингом на высшем уровне, привлекающее знаменитостей и крупные бренды.",
+        link: "https://www.showtimeexperience.com/the-one"
       },
       { 
         title: "Кубок Короля по пляжному волейболу 2025", 
-        description: "Марбелья становится национальной столицей пляжного волейбола. Престижный турнир, который соберет лучших игроков Испании, укрепляя город как первоклассное спортивное направление." 
+        description: "Марбелья становится национальной столицей пляжного волейбола. Престижный турнир, который соберет лучших игроков Испании, укрепляя город как первоклассное спортивное направление.",
+        link: "https://www.showtimeexperience.com/eventos/copa-del-rey-y-de-la-reina-de-voley-playa"
       },
       {
         title: "Партнеры КБ Марбелья",
-        description: "Мы поддерживаем главный баскетбольный клуб города. Мы сотрудничаем в их коммуникациях и маркетинге, чтобы укрепить связь с болельщиками и продвигать массовый спорт."
+        description: "Мы поддерживаем главный баскетбольный клуб города. Мы сотрудничаем в их коммуникациях и маркетинге, чтобы укрепить связь с болельщиками и продвигать массовый спорт.",
+        link: "https://www.instagram.com/cbmarbella/"
+      },
+      {
+        title: "Баскетбольный центр The Embassy",
+        description: "Мы сотрудничаем с The Embassy, центром высокоэффективной подготовки по баскетболу в Фуэнхироле, международным эталоном в обучении элитных игроков.",
+        link: "https://www.theembassytc.com/"
       }
     ],
     blog_title: "Из нашего блога",
@@ -698,7 +726,7 @@ export const translations: Translations = {
       <p>Если вы хотите воспользоваться своими правами на доступ, исправление, удаление или возражение, вы можете сделать это в любое время, отправив электронное письмо по адресу info@melenamarketing.com.</p>
       <p>Если вы согласны на передачу ваших данных, пожалуйста, отметьте соответствующее поле в форме регистрации услуги.</p>
 
-      <h2>2.- ОБЩИЕ ЦЕЛИ ОБРАБОТКИ ДЛЯ ДРУГИХ УСЛУГ</h2>
+      <h2>2.- ОБЩИЕ ЦЕЛИ ОБРАБОТКИ ДЛЯ ДРУХИХ УСЛУГ</h2>
       <p>Через этот веб-сайт Melena Marketing может собирать ваши данные для различных целей; в момент сбора будет предоставлена необходимая информация о цели. В любом случае, предоставленные вами данные могут обрабатываться для ответа на ваши запросы, жалобы или предложения, если вы используете предоставленные для этого формы, а также указанные адреса электронной почты. В этом случае ваши данные будут обрабатываться в течение времени, необходимого для ответа на ваш запрос. Если потребуется хранить данные дольше, Melena Marketing сообщит вам об этом. Если вы отправите нам свое резюме, ваши данные будут обработаны для рассмотрения вашей кандидатуры в возможных процессах отбора. Данные будут обрабатываться в течение одного года с момента их получения.</p>
       
       <h2>3.- ОСНОВАНИЯ ДЛЯ ОБРАБОТКИ</h2>
