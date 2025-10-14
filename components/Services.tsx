@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SERVICES_STRUCTURE } from '../constants';
 import ServiceCard from './ServiceCard';
+import ServiceModal from './ServiceModal';
 import { useTranslations } from '../hooks/useTranslations';
 
 const Services: React.FC = () => {
   const t = useTranslations();
+  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
+
+  const handleCardClick = (serviceId: string) => {
+    setSelectedServiceId(serviceId);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedServiceId(null);
+  };
+
 
   return (
     <section id="servicios" className="py-20 bg-white">
@@ -20,10 +31,24 @@ const Services: React.FC = () => {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-1 max-w-7xl mx-auto">
           {SERVICES_STRUCTURE.map((service) => (
-            <ServiceCard key={service.id} service={service} title={t.services[service.id]} />
+            <div
+              key={service.id}
+              onClick={() => handleCardClick(service.id)}
+              onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && handleCardClick(service.id)}
+              className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2"
+              role="button"
+              tabIndex={0}
+              aria-label={`Más información sobre ${t.services[service.id]}`}
+            >
+              <ServiceCard service={service} title={t.services[service.id]} />
+            </div>
           ))}
         </div>
       </div>
+      
+      {selectedServiceId && (
+        <ServiceModal serviceId={selectedServiceId} onClose={handleCloseModal} />
+      )}
     </section>
   );
 };
