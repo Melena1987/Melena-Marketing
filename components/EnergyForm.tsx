@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 import { db, storage } from '../firebase';
@@ -50,7 +49,12 @@ const EnergyForm: React.FC = () => {
       if (file) {
         filePath = `energy-bills/${Date.now()}_${file.name}`;
         const fileRef = ref(storage, filePath);
-        const uploadResult = await uploadBytes(fileRef, file);
+        
+        // Add metadata with the correct content type to ensure rules are met.
+        const metadata = {
+          contentType: file.type,
+        };
+        const uploadResult = await uploadBytes(fileRef, file, metadata);
         fileDownloadURL = await getDownloadURL(uploadResult.ref);
       }
 
