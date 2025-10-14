@@ -1,4 +1,3 @@
-// Fix: Removed unused 'Testimonial' type from import as it does not exist in '../types'.
 import { BlogPost } from '../types';
 
 interface Project {
@@ -52,6 +51,10 @@ interface Translations {
     collaboration_title: string;
     collaboration_subtitle: string;
     collaboration_cta: string;
+    // Energy Promo Section on Home Page
+    energy_promo_title: string;
+    energy_promo_description: string;
+    energy_promo_cta: string;
     // Energy Page
     energy_form_title: string;
     energy_form_subtitle1: string;
@@ -178,6 +181,10 @@ export const translations: Translations = {
     collaboration_title: "¿Quieres trabajar o colaborar con nosotros?",
     collaboration_subtitle: "Rellena este formulario y nos pondremos en contacto contigo.",
     collaboration_cta: "Trabaja con nosotros",
+    // Energy Promo Section on Home Page
+    energy_promo_title: "Ahorra en tu factura de la luz",
+    energy_promo_description: "Ofrecemos un servicio gratuito para analizar tu factura energética y ayudarte a pagar menos. Sin costes ni compromiso. Descubre cuánto puedes ahorrar.",
+    energy_promo_cta: "Saber más",
     // Energy Page
     energy_form_title: "Mejoramos tu factura energética",
     energy_form_subtitle1: "¿Quieres empezar a ahorrar en tu factura de la luz hoy mismo?",
@@ -301,6 +308,10 @@ export const translations: Translations = {
     collaboration_title: "Want to work or collaborate with us?",
     collaboration_subtitle: "Fill out this form and we will get in touch with you.",
     collaboration_cta: "Work with us",
+    // Energy Promo Section on Home Page
+    energy_promo_title: "Save on Your Electricity Bill",
+    energy_promo_description: "We offer a free service to analyze your energy bill and help you pay less. No costs, no commitment. Find out how much you can save.",
+    energy_promo_cta: "Learn More",
     // Energy Page
     energy_form_title: "We improve your energy bill",
     energy_form_subtitle1: "Do you want to start saving on your electricity bill today?",
@@ -424,6 +435,10 @@ export const translations: Translations = {
     collaboration_title: "Хотите работать или сотрудничать с нами?",
     collaboration_subtitle: "Заполните эту форму, и мы свяжемся с вами.",
     collaboration_cta: "Работать с нами",
+    // Energy Promo Section on Home Page
+    energy_promo_title: "Экономьте на счетах за электричество",
+    energy_promo_description: "Мы предлагаем бесплатную услугу по анализу ваших счетов за электроэнергию, чтобы помочь вам платить меньше. Без затрат и обязательств. Узнайте, сколько вы можете сэкономить.",
+    energy_promo_cta: "Узнать больше",
     // Energy Page
     energy_form_title: "Мы улучшаем ваш счет за электроэнергию",
     energy_form_subtitle1: "Хотите начать экономить на счетах за электричество уже сегодня?",

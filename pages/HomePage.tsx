@@ -7,6 +7,28 @@ import BlogPreview from '../components/BlogPreview';
 import Contact from '../components/Contact';
 import { useTranslations } from '../hooks/useTranslations';
 
+const EnergyPromo: React.FC = () => {
+  const t = useTranslations();
+  return (
+    <section className="bg-blue-50 py-20">
+      <div className="container mx-auto px-6 text-center max-w-4xl">
+        <h2 className="text-4xl md:text-5xl font-bold text-blue-800 uppercase mb-4" style={{fontFamily: "'Oswald', sans-serif"}}>
+          {t.energy_promo_title}
+        </h2>
+        <p className="text-lg text-gray-700 mb-8">
+          {t.energy_promo_description}
+        </p>
+        <a
+          href="/gestion-de-tu-factura-energetica"
+          className="inline-block bg-yellow-400 text-blue-800 font-bold py-3 px-10 rounded-full text-lg hover:bg-yellow-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+        >
+          {t.energy_promo_cta}
+        </a>
+      </div>
+    </section>
+  );
+};
+
 const CollaborationCTA: React.FC = () => {
   const t = useTranslations();
   return (
@@ -53,6 +75,7 @@ const HomePage: React.FC = () => {
       <About />
       <Testimonials />
       <BlogPreview />
+      <EnergyPromo />
       <Contact />
       <CollaborationCTA />
     </div>
