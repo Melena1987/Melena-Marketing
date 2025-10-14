@@ -89,9 +89,15 @@ const Header: React.FC = () => {
                     {/* Mobile: Hamburger Menu */}
                     <div className="lg:hidden">
                         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-blue-800 focus:outline-none">
-                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                            </svg>
+                            {isMenuOpen ? (
+                                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            ) : (
+                                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                </svg>
+                            )}
                         </button>
                     </div>
                 </div>
@@ -100,11 +106,6 @@ const Header: React.FC = () => {
             {/* Mobile Menu Overlay */}
             <div className={`lg:hidden fixed inset-0 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 <div className="bg-blue-100/95 backdrop-blur-md w-full h-full flex flex-col items-center justify-center">
-                    <button onClick={() => setIsMenuOpen(false)} className="absolute top-6 right-6 text-blue-800">
-                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
                     <nav className="flex flex-col items-center gap-6 text-center">
                         {NAV_LINKS_STRUCTURE.map(link => (
                             <a key={link.key} href={getLinkHref(link.href)} onClick={() => setIsMenuOpen(false)} className="text-2xl text-blue-800 font-bold">
