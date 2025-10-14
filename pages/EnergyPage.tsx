@@ -12,7 +12,7 @@ const EnergyPage: React.FC = () => {
   return (
     <div className="pt-24 pb-16 bg-gray-50">
       <EnergyForm />
-      <section className="container mx-auto px-6 mt-16">
+      <section id="energy-info-section" className="container mx-auto px-6 mt-16 scroll-mt-24">
         <article className="prose prose-lg max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-3xl font-bold text-blue-800" style={{fontFamily: "'Oswald', sans-serif"}}>{t.energy_page_content_title}</h2>
           <p>{t.energy_page_content_p1}</p>
