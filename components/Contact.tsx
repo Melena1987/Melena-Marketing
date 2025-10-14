@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 import { db } from '../firebase'; // Importa la base de datos
@@ -44,7 +45,7 @@ const Contact: React.FC = () => {
             <div style="font-family: Arial, sans-serif; line-height: 1.6;">
               <h2>Nuevo mensaje desde el formulario de contacto</h2>
               <p><strong>Nombre:</strong> ${name}</p>
-              <p><strong>Email:</strong> ${email || 'No proporcionado'}</p>
+              <p><strong>Email:</strong> ${email}</p>
               <hr>
               <p><strong>Mensaje:</strong></p>
               <p style="white-space: pre-wrap;">${message}</p>
@@ -104,15 +105,15 @@ const Contact: React.FC = () => {
             <div className="space-y-4">
               <div>
                 <label htmlFor="name" className="sr-only">{t.contact_form_name}</label>
-                <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder={t.contact_form_name} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+                <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder={t.contact_form_name} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" required />
               </div>
               <div>
                 <label htmlFor="email" className="sr-only">{t.contact_form_email}</label>
-                <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t.contact_form_email} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" />
+                <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t.contact_form_email} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" required />
               </div>
               <div>
                 <label htmlFor="message" className="sr-only">{t.contact_form_message}</label>
-                <textarea id="message" rows={4} value={message} onChange={(e) => setMessage(e.target.value)} placeholder={t.contact_form_message} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                <textarea id="message" rows={4} value={message} onChange={(e) => setMessage(e.target.value)} placeholder={t.contact_form_message} className="w-full px-4 py-3 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500" required></textarea>
               </div>
               <button type="submit" disabled={status === 'sending'} className="w-full bg-yellow-400 text-blue-800 font-bold py-3 px-6 rounded-md hover:bg-yellow-500 transition duration-300 disabled:bg-gray-400">
                 {status === 'sending' ? 'Enviando...' : t.contact_form_submit}
