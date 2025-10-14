@@ -1,8 +1,9 @@
+
 import React, { useState, useRef } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 import { db, storage } from '../firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { ref, uploadBytes } from 'firebase/storage';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const EnergyForm: React.FC = () => {
   const t = useTranslations();
@@ -43,23 +44,44 @@ const EnergyForm: React.FC = () => {
     setStatus('sending');
     try {
       let filePath = 'No file uploaded';
+      let fileDownloadURL: string | null = null;
       
-      // 1. Subir el archivo a Storage si existe
+      // 1. Subir el archivo a Storage si existe y obtener la URL de descarga
       if (file) {
-        // Crear una ruta única para evitar sobreescribir archivos
         filePath = `energy-bills/${Date.now()}_${file.name}`;
         const fileRef = ref(storage, filePath);
-        await uploadBytes(fileRef, file);
+        const uploadResult = await uploadBytes(fileRef, file);
+        fileDownloadURL = await getDownloadURL(uploadResult.ref);
       }
 
-      // 2. Guardar los datos en Firestore
+      // 2. Guardar los datos en Firestore para tener un registro
       await addDoc(collection(db, "energyLeads"), {
         name: name,
         phone: phone,
         email: email,
-        filePath: filePath, // Guardar la ruta del archivo en lugar del nombre
+        filePath: filePath,
+        downloadURL: fileDownloadURL,
         sentAt: serverTimestamp()
       });
+
+      // 3. Crear el documento en la colección "mail" para activar el envío de email
+      await addDoc(collection(db, "mail"), {
+        to: ['info@melenamarketing.com'],
+        message: {
+          subject: `Nueva Petición de Factura Energética - ${name}`,
+          html: `
+            <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+              <h2>Nueva petición desde el formulario de factura energética</h2>
+              <p><strong>Nombre:</strong> ${name}</p>
+              <p><strong>Teléfono:</strong> ${phone}</p>
+              <p><strong>Email:</strong> ${email || 'No proporcionado'}</p>
+              <hr>
+              ${fileDownloadURL ? `<p><strong>Factura Adjunta:</strong> <a href="${fileDownloadURL}" target="_blank" rel="noopener noreferrer">Ver/Descargar Factura</a></p>` : '<p><strong>Factura Adjunta:</strong> No se adjuntó ninguna factura.</p>'}
+            </div>
+          `,
+        },
+      });
+
 
       setStatus('success');
       // Resetear el formulario

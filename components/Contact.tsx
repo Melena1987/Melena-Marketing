@@ -27,13 +27,32 @@ const Contact: React.FC = () => {
     
     setStatus('sending');
     try {
-      // Añade un nuevo documento a la colección "messages"
+      // 1. Añade un nuevo documento a la colección "messages" para tener un registro.
       await addDoc(collection(db, "messages"), {
         name: name,
         email: email,
         message: message,
         sentAt: serverTimestamp() // Añade la fecha de envío
       });
+
+      // 2. Crea el documento en la colección "mail" para activar el envío de email.
+      await addDoc(collection(db, "mail"), {
+        to: ['info@melenamarketing.com'],
+        message: {
+          subject: `Nuevo Mensaje de Contacto - ${name}`,
+          html: `
+            <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+              <h2>Nuevo mensaje desde el formulario de contacto</h2>
+              <p><strong>Nombre:</strong> ${name}</p>
+              <p><strong>Email:</strong> ${email || 'No proporcionado'}</p>
+              <hr>
+              <p><strong>Mensaje:</strong></p>
+              <p style="white-space: pre-wrap;">${message}</p>
+            </div>
+          `,
+        },
+      });
+
       setStatus('success');
       // Limpia el formulario
       setName('');
