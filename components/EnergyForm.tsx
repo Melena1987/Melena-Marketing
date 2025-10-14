@@ -79,7 +79,7 @@ const EnergyForm: React.FC = () => {
   };
 
   return (
-    <section className="bg-blue-100 py-12">
+    <section id="energy-form-section" className="bg-blue-100 py-12 scroll-mt-24">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800" style={{fontFamily: "'Oswald', sans-serif"}}>{t.energy_form_title}</h1>
