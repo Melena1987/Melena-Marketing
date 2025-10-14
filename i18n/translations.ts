@@ -101,6 +101,7 @@ export const translations: Translations = {
         smart_cards: "TARJETAS DE VISITA INTELIGENTES",
         photo_sessions: "SESIONES FOTOGRÁFicas",
         video_reports: "VIDEO REPORTAJES",
+        energy_management: "GESTIÓN FACTURA ENERGÉTICA",
     },
     services_descriptions: {
         graphic_design: "Creamos identidades visuales impactantes y materiales de marketing que comunican la esencia de tu marca, desde folletos hasta banners digitales.",
@@ -117,6 +118,7 @@ export const translations: Translations = {
         smart_cards: "Moderniza tu networking con tarjetas de visita digitales e interactivas que tus clientes pueden guardar con un solo toque.",
         photo_sessions: "Realizamos sesiones fotográficas profesionales de producto, equipo o instalaciones para potenciar la imagen de tu empresa.",
         video_reports: "Producimos vídeos corporativos, promocionales y para redes sociales que cuentan tu historia y conectan con tu audiencia.",
+        energy_management: "",
     },
     service_modal_cta: "Consultar por WhatsApp",
     service_modal_whatsapp_text: "Hola, me gustaría recibir más información sobre el servicio de {service}.",
@@ -228,6 +230,7 @@ export const translations: Translations = {
         smart_cards: "SMART BUSINESS CARDS",
         photo_sessions: "PHOTO SESSIONS",
         video_reports: "VIDEO REPORTS",
+        energy_management: "ENERGY BILL MANAGEMENT",
     },
     services_descriptions: {
         graphic_design: "We create impactful visual identities and marketing materials that communicate the essence of your brand, from brochures to digital banners.",
@@ -244,6 +247,7 @@ export const translations: Translations = {
         smart_cards: "Modernize your networking with digital and interactive business cards that your clients can save with a single tap.",
         photo_sessions: "We conduct professional photo shoots of products, teams, or facilities to enhance your company's image.",
         video_reports: "We produce corporate, promotional, and social media videos that tell your story and connect with your audience.",
+        energy_management: "",
     },
     service_modal_cta: "Consult on WhatsApp",
     service_modal_whatsapp_text: "Hello, I would like to receive more information about the {service} service.",
@@ -355,6 +359,7 @@ export const translations: Translations = {
         smart_cards: "УМНЫЕ ВИЗИТКИ",
         photo_sessions: "ФОТОСЕССИИ",
         video_reports: "ВИДЕОРЕПОРТАЖИ",
+        energy_management: "УПРАВЛЕНИЕ СЧЕТАМИ ЗА ЭНЕРГИЮ",
     },
     services_descriptions: {
         graphic_design: "Мы создаем впечатляющие визуальные идентичности и маркетинговые материалы, которые передают суть вашего бренда, от брошюр до цифровых баннеров.",
@@ -371,6 +376,7 @@ export const translations: Translations = {
         smart_cards: "Модернизируйте свой нетворкинг с помощью цифровых и интерактивных визитных карточек, которые ваши клиенты могут сохранить одним касанием.",
         photo_sessions: "Мы проводим профессиональные фотосессии продуктов, команды или помещений для улучшения имиджа вашей компании.",
         video_reports: "Мы производим корпоративные, рекламные и видео для социальных сетей, которые рассказывают вашу историю и находят отклик у вашей аудитории.",
+        energy_management: "",
     },
     service_modal_cta: "Связаться по WhatsApp",
     service_modal_whatsapp_text: "Здравствуйте, я хотел бы получить больше информации об услуге {service}.",

@@ -16,6 +16,7 @@ export const SERVICES_STRUCTURE: Omit<Service, 'title'>[] = [
   { id: 'smart_cards', color: 'yellow' },
   { id: 'photo_sessions', color: 'blue' },
   { id: 'video_reports', color: 'yellow' },
+  { id: 'energy_management', color: 'blue' },
 ];
 
 // Text content for these is now in i18n/translations.ts

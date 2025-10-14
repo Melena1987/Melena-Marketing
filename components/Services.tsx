@@ -9,7 +9,18 @@ const Services: React.FC = () => {
   const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
 
   const handleCardClick = (serviceId: string) => {
-    setSelectedServiceId(serviceId);
+    if (serviceId === 'energy_management') {
+      const path = '/gestion-de-tu-factura-energetica';
+      if (path !== window.location.pathname) {
+        window.history.pushState({}, '', path);
+        // Dispatch popstate event to trigger the router in App.tsx
+        window.dispatchEvent(new PopStateEvent('popstate'));
+        // Scroll to top of the new page
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    } else {
+      setSelectedServiceId(serviceId);
+    }
   };
 
   const handleCloseModal = () => {
