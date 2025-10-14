@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
-import { db } from '../firebase';
+import { db, storage } from '../firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { ref, uploadBytes } from 'firebase/storage';
 
 const EnergyForm: React.FC = () => {
   const t = useTranslations();
@@ -33,7 +34,7 @@ const EnergyForm: React.FC = () => {
       return;
     }
 
-    if (!db) {
+    if (!db || !storage) {
       console.error("Firebase no está configurado. No se puede enviar el formulario.");
       setStatus('error');
       return;
@@ -41,15 +42,27 @@ const EnergyForm: React.FC = () => {
 
     setStatus('sending');
     try {
+      let filePath = 'No file uploaded';
+      
+      // 1. Subir el archivo a Storage si existe
+      if (file) {
+        // Crear una ruta única para evitar sobreescribir archivos
+        filePath = `energy-bills/${Date.now()}_${file.name}`;
+        const fileRef = ref(storage, filePath);
+        await uploadBytes(fileRef, file);
+      }
+
+      // 2. Guardar los datos en Firestore
       await addDoc(collection(db, "energyLeads"), {
         name: name,
         phone: phone,
         email: email,
-        fileName: file ? file.name : 'No file uploaded',
-        fileSize: file ? file.size : 0,
+        filePath: filePath, // Guardar la ruta del archivo en lugar del nombre
         sentAt: serverTimestamp()
       });
+
       setStatus('success');
+      // Resetear el formulario
       setName('');
       setPhone('');
       setEmail('');

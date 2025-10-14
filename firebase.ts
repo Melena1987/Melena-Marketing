@@ -16,6 +16,7 @@ declare global {
 
 import { initializeApp } from "firebase/app";
 import { getFirestore, Firestore } from "firebase/firestore";
+import { getStorage, FirebaseStorage } from "firebase/storage";
 
 // Safely access environment variables to prevent crashes when import.meta.env is undefined.
 const env = (import.meta as any).env || {};
@@ -30,6 +31,8 @@ const firebaseConfig = {
 };
 
 let db: Firestore | null = null;
+let storage: FirebaseStorage | null = null;
+
 
 // Check if all required config values are present and are non-empty strings
 const isConfigValid = Object.values(firebaseConfig).every(
@@ -40,9 +43,11 @@ if (isConfigValid) {
   try {
     const app = initializeApp(firebaseConfig);
     db = getFirestore(app);
+    storage = getStorage(app);
   } catch (error) {
     console.error("Firebase initialization failed:", error);
     db = null; // Ensure db is null if initialization fails
+    storage = null;
   }
 } else {
   // This message is helpful for developers in the console.
@@ -52,5 +57,5 @@ if (isConfigValid) {
   );
 }
 
-// Export the db instance, which will be null if initialization fails
-export { db };
+// Export the instances, which will be null if initialization fails
+export { db, storage };
