@@ -31,6 +31,7 @@ interface Translations {
     blog_title: string;
     blog_subtitle: string;
     blog_read_more: string;
+    blog_view_all: string;
     blog_posts: Omit<BlogPost, 'imageUrl' | 'slug'>[];
     contact_title: string;
     contact_subtitle: string;
@@ -161,6 +162,7 @@ export const translations: Translations = {
     blog_title: "Desde Nuestro Blog",
     blog_subtitle: "Ideas, consejos y estrategias para que tu PYME destaque en el mundo digital.",
     blog_read_more: "Leer más",
+    blog_view_all: "Ver todos los artículos",
     blog_posts: [
       { 
         title: '5 Consejos de SEO Local para Tiendas en Málaga', 
@@ -304,6 +306,7 @@ export const translations: Translations = {
     blog_title: "From Our Blog",
     blog_subtitle: "Ideas, tips, and strategies for your SME to stand out in the digital world.",
     blog_read_more: "Read more",
+    blog_view_all: "View All Articles",
     blog_posts: [
       { 
         title: '5 Local SEO Tips for Shops in Malaga', 
@@ -447,6 +450,7 @@ export const translations: Translations = {
     blog_title: "Из нашего блога",
     blog_subtitle: "Идеи, советы и стратегии, чтобы ваше МСП выделялось в цифровом мире.",
     blog_read_more: "Читать далее",
+    blog_view_all: "Посмотреть все статьи",
     blog_posts: [
       { 
         title: '5 советов по локальному SEO для магазинов в Малаге', 

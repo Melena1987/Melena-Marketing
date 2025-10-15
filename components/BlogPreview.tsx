@@ -45,6 +45,14 @@ const BlogPreview: React.FC = () => {
             )
           })}
         </div>
+        <div className="text-center mt-16">
+          <a
+            href="/blog"
+            className="inline-block bg-yellow-400 text-blue-800 font-bold py-3 px-10 rounded-full text-lg hover:bg-yellow-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+          >
+            {t.blog_view_all}
+          </a>
+        </div>
       </div>
     </section>
   );
