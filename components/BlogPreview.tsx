@@ -1,10 +1,14 @@
 
+
 import React from 'react';
 import { BLOG_POSTS_STRUCTURE } from '../constants';
 import { useTranslations } from '../hooks/useTranslations';
 
 const BlogPreview: React.FC = () => {
   const t = useTranslations();
+  
+  // Get the last 3 blog posts and reverse them to show newest first.
+  const latestPosts = BLOG_POSTS_STRUCTURE.slice(-3).reverse();
 
   return (
     <section id="blog" className="py-20 bg-gray-50">
@@ -16,8 +20,14 @@ const BlogPreview: React.FC = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          {BLOG_POSTS_STRUCTURE.map((postStructure, index) => {
-            const postContent = t.blog_posts[index];
+          {latestPosts.map((postStructure) => {
+            // Find the index of the post in the original array to get the correct translation
+            const originalIndex = BLOG_POSTS_STRUCTURE.findIndex(p => p.id === postStructure.id);
+            const postContent = t.blog_posts[originalIndex];
+
+            // If for some reason content is not found, skip rendering
+            if (!postContent) return null;
+            
             return (
               <div key={postStructure.id} className="bg-white rounded-lg shadow-lg overflow-hidden group">
                 <a href={`/blog/${postStructure.slug}`} className="block">

@@ -37,7 +37,17 @@ export const BLOG_POSTS_STRUCTURE = [
   {
     id: 'blog3',
     slug: 'importancia-logotipo-profesional-pyme',
-    imageUrl: 'https://images.unsplash.com/photo-1559028006-44a36f1159d5?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop',
+  },
+  {
+    id: 'blog4',
+    slug: 'como-editar-roles-pagina-facebook',
+    imageUrl: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
+  },
+  {
+    id: 'blog5',
+    slug: 'ahorra-factura-energetica-servicio-gratuito',
+    imageUrl: 'https://images.unsplash.com/photo-1544322234-92e663a131b2?q=80&w=2070&auto=format&fit=crop',
   },
 ];
 
