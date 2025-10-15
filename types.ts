@@ -10,7 +10,8 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   imageUrl: string;
-  link: string;
+  slug: string;
+  content: string;
 }
 
 export interface SocialLink {

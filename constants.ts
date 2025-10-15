@@ -26,18 +26,18 @@ export const TESTIMONIALS_KEYS = ['testimonial1', 'testimonial2', 'testimonial3'
 export const BLOG_POSTS_STRUCTURE = [
   {
     id: 'blog1',
-    imageUrl: 'https://picsum.photos/600/400?random=1',
-    link: '#',
+    slug: '5-consejos-seo-local-malaga',
+    imageUrl: 'https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?q=80&w=2070&auto=format&fit=crop',
   },
   {
     id: 'blog2',
-    imageUrl: 'https://picsum.photos/600/400?random=2',
-    link: '#',
+    slug: 'como-usar-instagram-para-restaurante',
+    imageUrl: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop',
   },
   {
     id: 'blog3',
-    imageUrl: 'https://picsum.photos/600/400?random=3',
-    link: '#',
+    slug: 'importancia-logotipo-profesional-pyme',
+    imageUrl: 'https://images.unsplash.com/photo-1559028006-44a36f1159d5?q=80&w=2070&auto=format&fit=crop',
   },
 ];
 
@@ -47,6 +47,6 @@ export const NAV_LINKS_STRUCTURE = [
   { key: 'home', href: '/' },
   { key: 'services', href: '#servicios' },
   { key: 'about', href: '#sobre-nosotros' },
-  { key: 'blog', href: '#blog' },
+  { key: 'blog', href: '/blog' },
   { key: 'contact', href: '#contacto' },
 ];

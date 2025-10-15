@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 import LegalPage from './pages/LegalPage';
 import CookieConsent from './components/CookieConsent';
 import EnergyPage from './pages/EnergyPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 const App: React.FC = () => {
   const [pathname, setPathname] = useState(window.location.pathname);
@@ -77,12 +79,19 @@ const App: React.FC = () => {
   }, []);
 
   const renderPage = () => {
+    if (pathname.startsWith('/blog/')) {
+      const slug = pathname.substring('/blog/'.length);
+      return <BlogPostPage slug={slug} />;
+    }
+
     switch (pathname) {
       case '/terminos-y-condiciones':
         // The privacy policy is a hash on this page, so it should render the same component
         return <LegalPage />;
       case '/gestion-de-tu-factura-energetica':
         return <EnergyPage />;
+      case '/blog':
+        return <BlogPage />;
       default:
         return <HomePage />;
     }
