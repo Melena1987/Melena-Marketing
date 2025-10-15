@@ -219,7 +219,7 @@ export const translations: Translations = {
     hero_description: "We are a digital marketing agency specializing in helping small and medium-sized businesses improve their online presence and attract more potential customers.",
     hero_cta: "Request a Quote",
     services_title: "Our Services",
-    services_subtitle: "We create custom quotes for each client.<br/>Don't pay a euro more, only what you need.",
+    services_subtitle: "We create custom quotes for each client.<br/>Don't pay a cent more, only for what you need.",
     services: {
         graphic_design: "GRAPHIC DESIGN",
         web_page: "WEBSITE",
@@ -274,8 +274,8 @@ export const translations: Translations = {
         link: "https://www.showtimeexperience.com/the-one"
       },
       { 
-        title: "King's Cup of Beach Volleyball 2025", 
-        description: "Marbella becomes the national capital of beach volleyball. A prestigious tournament that will bring the best players from Spain to our shores, consolidating the city as a top-tier sports destination.",
+        title: "2025 King's Cup (Beach Volleyball)", 
+        description: "Marbella becomes the national capital of beach volleyball. A prestigious tournament that will bring the best players from Spain to our shores, solidifying the city's status as a premier sports destination.",
         link: "https://www.showtimeexperience.com/eventos/copa-del-rey-y-de-la-reina-de-voley-playa"
       },
       {
@@ -326,7 +326,7 @@ export const translations: Translations = {
     // Energy Page
     energy_form_title: "We improve your energy bill",
     energy_form_subtitle1: "Do you want to start saving on your electricity bill today?",
-    energy_form_subtitle2: "Add your electricity bill now and let us do the work for you! FREE",
+    energy_form_subtitle2: "Upload your electricity bill now and let us do the work for you! FREE",
     energy_form_more_info: "More info",
     energy_form_upload_label: "Upload your bill here +",
     energy_form_phone: "Phone",
@@ -336,7 +336,7 @@ export const translations: Translations = {
     energy_page_send_error: "There was an error sending the form. Please try again.",
     energy_page_content_title: "Save time and money: Discover our free energy bill management service",
     energy_page_content_p1: "Are you tired of receiving electricity bills every month and not having time to review them? If so, keep reading because we have good news for you. Melena Marketing, in collaboration with OE (Observatorio Energético), has created a free energy bill management service that will allow you to save time and money.",
-    energy_page_content_p2: "You may not have realized it, but electricity companies often apply charges they shouldn't. But don't worry, we're here to help. With our service, you won't have to worry about reviewing your bills and comparing rates; we'll do it for you.",
+    energy_page_content_p2: "You may not have realized it, but electricity companies often include incorrect or unjustified charges. But don't worry, we're here to help. With our service, you won't have to worry about reviewing your bills and comparing rates; we'll do it for you.",
     energy_page_content_p3: "In addition to saving money, you'll also have the peace of mind of knowing you're paying the right amount for the service you receive. And best of all, our service is completely free. Yes, you read that right, you won't have to pay a single cent to use it.",
     energy_page_content_how_title: "How does it work?",
     energy_page_content_how_p1: "It's very simple. Just leave us your bill and your phone number in the <a href=\"#energy-form-section\">form above</a>, and we'll take care of everything for you. We review your bill to make sure you are paying the minimum price for electricity that you should be paying. Furthermore, if there's anything that can be improved, we'll call you to manage it and ensure you save on your energy bills.",
@@ -350,7 +350,7 @@ export const translations: Translations = {
     hero_description: "Мы — агентство цифрового маркетинга, специализирующееся на помощи малым и средним предприятиям в улучшении их онлайн-присутствия и привлечении большего числа потенциальных клиентов.",
     hero_cta: "Запросить расчет",
     services_title: "Наши услуги",
-    services_subtitle: "Мы составляем индивидуальные сметы для каждого клиента.<br/>Не платите ни евро больше, только то, что вам нужно.",
+    services_subtitle: "Мы составляем индивидуальные сметы для каждого клиента.<br/>Не переплачивайте, платите только за то, что вам нужно.",
     services: {
         graphic_design: "ГРАФИЧЕСКИЙ ДИЗАЙН",
         web_page: "ВЕБ-САЙТ",
@@ -359,7 +359,7 @@ export const translations: Translations = {
         logo_brand: "ЛОГОТИП И БРЕНД",
         corp_emails: "КОРПОРАТИВНЫЕ EMAIL",
         online_ads: "ОНЛАЙН-РЕКЛАМА",
-        translations: "ПЕРЕВОДЫ АНГЛ-ИСП-РУС",
+        translations: "ПЕРЕВОДЫ: АНГЛИЙСКИЙ, ИСПАНСКИЙ, РУССКИЙ",
         press_articles: "СТАТЬИ В ПРЕССЕ",
         online_store: "ИНТЕРНЕТ-МАГАЗИН",
         signage_design: "ДИЗАЙН ВЫВЕСОК",
@@ -405,7 +405,7 @@ export const translations: Translations = {
         link: "https://www.showtimeexperience.com/the-one"
       },
       { 
-        title: "Кубок Короля по пляжному волейболу 2025", 
+        title: "Кубок Испании по пляжному волейболу 2025", 
         description: "Марбелья становится национальной столицей пляжного волейбола. Престижный турнир, который соберет лучших игроков Испании, укрепляя город как первоклассное спортивное направление.",
         link: "https://www.showtimeexperience.com/eventos/copa-del-rey-y-de-la-reina-de-voley-playa"
       },
@@ -457,7 +457,7 @@ export const translations: Translations = {
     // Energy Page
     energy_form_title: "Мы улучшаем ваш счет за электроэнергию",
     energy_form_subtitle1: "Хотите начать экономить на счетах за электричество уже сегодня?",
-    energy_form_subtitle2: "Прикрепите свой счет сейчас и позвольте нам сделать работу за вас! БЕСПЛАТНО",
+    energy_form_subtitle2: "Загрузите ваш счёт сейчас и позвольте нам сделать работу за вас! БЕСПЛАТНО",
     energy_form_more_info: "Подробнее",
     energy_form_upload_label: "Загрузите ваш счет сюда +",
     energy_form_phone: "Телефон",
@@ -470,7 +470,7 @@ export const translations: Translations = {
     energy_page_content_p2: "Возможно, вы этого не замечали, но электроэнергетические компании часто применяют тарифы, которые не должны. Но не волнуйтесь, мы здесь, чтобы помочь. С нашей услугой вам не придется беспокоиться о проверке счетов и сравнении тарифов, мы сделаем это за вас.",
     energy_page_content_p3: "Помимо экономии денег, вы также будете спокойны, зная, что платите справедливую цену за получаемые услуги. И самое главное, наша услуга абсолютно бесплатна. Да, вы правильно прочитали, вам не придется платить ни цента за ее использование.",
     energy_page_content_how_title: "Как это работает?",
-    energy_page_content_how_p1: "Это очень просто. Просто оставьте нам свой счет и номер телефона в <a href=\"#energy-form-section\">форме выше</a>, и мы обо всем позаботимся. Мы проверим ваш счет, чтобы убедиться, что вы платите минимально возможную цену за электроэнергию. Кроме того, если что-то можно улучшить, мы позвоним вам, чтобы уладить это и убедиться, что вы экономите на счетах за электроэнергию.",
+    energy_page_content_how_p1: "Это очень просто. Просто загрузите ваш счёт и оставьте номер телефона в <a href=\"#energy-form-section\">форме выше</a>, и мы обо всем позаботимся. Мы проверим ваш счет, чтобы убедиться, что вы платите минимально возможную цену за электроэнергию. Кроме того, если что-то можно улучшить, мы позвоним вам, чтобы уладить это и убедиться, что вы экономите на счетах за электроэнергию.",
     energy_page_content_how_p2: "Не упускайте возможность сэкономить. Если у вас есть вопросы, напишите нам по адресу info@melenamarketing.com и начните наслаждаться спокойствием, зная, что вы платите справедливую цену за услуги электроснабжения. Теперь вам больше не придется беспокоиться о проверке счетов каждый месяц, и вы сможете посвятить свое время действительно важным вещам.",
   },
 };
