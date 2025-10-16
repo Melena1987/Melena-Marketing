@@ -27,5 +27,167 @@ export default {
       excerpt: '¿Pagas de más en tu factura de la luz? Te explicamos cómo nuestro servicio gratuito analiza tu factura y te ayuda a ahorrar sin coste ni compromiso.',
       content: `<h2>¿Estás seguro de que no pagas de más en tu factura de la luz?</h2><p>Cada mes recibes una factura de electricidad y, seamos sinceros, la mayoría de las veces la pagamos sin revisar la letra pequeña. El problema es que, a menudo, las compañías eléctricas aplican tarifas que no deberían o existen opciones más económicas que no conocemos. Esto se traduce en un gasto innecesario que, a final de año, puede sumar una cantidad considerable.</p><p>En Melena Marketing, en colaboración con el Observatorio Energético (OE), hemos lanzado un servicio diseñado para solucionar este problema de una vez por todas.</p><h2>Un Servicio Gratuito para Optimizar tu Gasto</h2><p>Te ofrecemos un <strong>servicio completamente gratuito</strong> de gestión y análisis de tu factura energética. Nuestro objetivo es simple: asegurarnos de que pagues lo justo y ayudarte a ahorrar tiempo y dinero. Sin costes ocultos ni compromiso.</p><h3>¿Cómo funciona? Es muy sencillo:</h3><ol class="list-decimal list-inside space-y-2"><li><strong>Nos envías tu factura:</strong> Simplemente sube una copia de tu última factura de la luz a través de nuestro formulario seguro.</li><li><strong>La analizamos por ti:</strong> Nuestro equipo de expertos revisará cada detalle para asegurarse de que estás pagando el precio mínimo que te corresponde.</li><li><strong>Te contactamos con mejoras:</strong> Si detectamos cualquier oportunidad de ahorro o mejora, nos pondremos en contacto contigo para gestionar los cambios y garantizar que tus próximas facturas sean más bajas.</li></ol><h2>Toma el Control de tu Factura Hoy Mismo</h2><p>No dejes pasar la oportunidad de reducir tus gastos. Dedica tu tiempo y tu dinero a lo que de verdad importa. Nuestro servicio es transparente, fácil y, lo más importante, gratuito.</p><p>¿Listo para empezar a ahorrar? Haz clic en el siguiente enlace, déjanos tu factura y tu número de teléfono, y nosotros nos encargamos del resto.</p><p class="not-prose text-center mt-8"><a href="/gestion-de-tu-factura-energetica" class="inline-block bg-yellow-400 text-blue-800 font-bold py-3 px-10 rounded-full text-lg hover:bg-yellow-500 hover:text-blue-800 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">Quiero Ahorrar en mi Factura</a></p><p>Si tienes cualquier duda, no dudes en escribirnos a <strong>info@melenamarketing.com</strong>. ¡Estamos aquí para ayudarte!</p>`
     },
+    {
+      title: 'Guía Rápida: Cómo Configurar tu Email Corporativo de Hostinger',
+      excerpt: 'Aprende a configurar tu correo de Hostinger en Apple Mail, Gmail y Outlook con nuestra guía paso a paso actualizada.',
+      content: `<h2>Tener una dirección de correo con tu propio dominio (como contacto@tuempresa.com) proyecta profesionalismo y confianza.</h2>
+<p>Si usas Hostinger, configurar tu email corporativo en tus aplicaciones de correo favoritas como Apple Mail, Gmail y Outlook es un proceso sencillo. Esta guía paso a paso te mostrará cómo hacerlo con los datos de configuración actualizados para 2025.</p>
+
+<h3>Paso 0: Localiza tus Datos de Configuración en Hostinger</h3>
+<p>Antes de empezar, necesitas los datos de tu servidor de correo. ¡No te preocupes, son siempre los mismos para todas las cuentas de Hostinger!</p>
+<ol>
+  <li>Accede a tu hPanel de Hostinger.</li>
+  <li>Ve a la sección "Emails" y selecciona el dominio para el que quieres configurar el correo.</li>
+  <li>En el menú lateral, busca "Conectar aplicaciones y dispositivos".</li>
+</ol>
+<p>Ahí encontrarás los siguientes parámetros, que son los que usarás en los siguientes pasos:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parámetro</th>
+      <th>Protocolo</th>
+      <th>Servidor (Hostname)</th>
+      <th>Puerto</th>
+      <th>Cifrado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Correo Entrante</td>
+      <td>IMAP (Recomendado)</td>
+      <td>imap.hostinger.com</td>
+      <td>993</td>
+      <td>SSL/TLS</td>
+    </tr>
+    <tr>
+      <td>Correo Entrante</td>
+      <td>POP3 (Alternativo)</td>
+      <td>pop.hostinger.com</td>
+      <td>995</td>
+      <td>SSL/TLS</td>
+    </tr>
+    <tr>
+      <td>Correo Saliente</td>
+      <td>SMTP</td>
+      <td>smtp.hostinger.com</td>
+      <td>465</td>
+      <td>SSL/TLS</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Nota importante:</strong> Se recomienda usar IMAP en lugar de POP3. IMAP sincroniza tus correos en todos tus dispositivos, lo que significa que si lees o eliminas un email en tu móvil, el cambio se reflejará en tu ordenador y viceversa.</p>
+
+<h3>1. Cómo Configurar tu Correo en Apple Mail (iPhone, iPad y Mac)</h3>
+<p>La interfaz de Apple hace que este proceso sea muy intuitivo.</p>
+<ol>
+  <li>Abre "Ajustes" en tu iPhone/iPad o "Mail" > "Añadir cuenta" en tu Mac.</li>
+  <li>Selecciona "Mail" > "Cuentas" > "Añadir cuenta".</li>
+  <li>En la lista de proveedores, elige la opción "Otra".</li>
+  <li>Pulsa en "Añadir cuenta de correo".</li>
+  <li>Rellena tus datos:
+    <ul>
+      <li><strong>Nombre:</strong> El nombre que quieres que vean los destinatarios.</li>
+      <li><strong>Correo electrónico:</strong> Tu dirección de email completa (tu@tudominio.com).</li>
+      <li><strong>Contraseña:</strong> La contraseña de esa cuenta de correo.</li>
+      <li><strong>Descripción:</strong> Un nombre para identificar la cuenta (ej. "Trabajo").</li>
+    </ul>
+  </li>
+  <li>Pulsa "Siguiente". Mail intentará verificar la cuenta automáticamente. Si no lo consigue, te pedirá los datos del servidor.</li>
+  <li>Asegúrate de que esté seleccionado IMAP y rellena los campos con los datos de Hostinger:
+    <ul>
+      <li><strong>Servidor de correo entrante:</strong>
+        <ul>
+          <li>Nombre de host: imap.hostinger.com</li>
+          <li>Nombre de usuario: Tu dirección de email completa.</li>
+          <li>Contraseña: La contraseña de tu email.</li>
+        </ul>
+      </li>
+      <li><strong>Servidor de correo saliente:</strong>
+        <ul>
+          <li>Nombre de host: smtp.hostinger.com</li>
+          <li>Nombre de usuario: Tu dirección de email completa.</li>
+          <li>Contraseña: La contraseña de tu email.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Pulsa "Siguiente" y luego "Guardar". ¡Listo! Tu cuenta ya estará configurada en Apple Mail.</li>
+</ol>
+
+<h3>2. Cómo Configurar tu Correo en Gmail (Web y App Móvil)</h3>
+<p>Puedes usar la interfaz de Gmail tanto para recibir los correos de tu cuenta de Hostinger como para enviarlos usando tu dirección corporativa.</p>
+<ol>
+  <li>Abre Gmail en tu navegador de escritorio.</li>
+  <li>Haz clic en el icono de engranaje (⚙️) en la esquina superior derecha y selecciona "Ver todos los ajustes".</li>
+  <li>Ve a la pestaña "Cuentas e importación".</li>
+  <li><strong>Para recibir correos:</strong>
+    <ul>
+      <li>Busca la sección "Consultar el correo de otras cuentas" y haz clic en "Añadir una cuenta de correo".</li>
+      <li>Introduce tu dirección de email corporativa en la ventana emergente y pulsa "Siguiente".</li>
+      <li>Selecciona "Importar correos electrónicos de mi otra cuenta (POP3)" y pulsa "Siguiente".</li>
+      <li>Rellena los datos con la configuración POP3 de Hostinger (Gmail no permite importar por IMAP en esta sección):
+        <ul>
+          <li>Nombre de usuario: Tu email completo.</li>
+          <li>Contraseña: Tu contraseña.</li>
+          <li>Servidor POP: pop.hostinger.com</li>
+          <li>Puerto: 995</li>
+        </ul>
+      </li>
+      <li>Marca la casilla "Utilizar siempre una conexión segura (SSL)".</li>
+      <li>Opcional: Marca "Etiquetar los mensajes entrantes" para organizarlos mejor.</li>
+      <li>Haz clic en "Añadir cuenta".</li>
+    </ul>
+  </li>
+  <li><strong>Para enviar correos (muy importante):</strong>
+    <ul>
+      <li>Tras añadir la cuenta, Gmail te preguntará si quieres poder enviar correos como tu@tudominio.com. Selecciona "Sí" y pulsa "Siguiente".</li>
+      <li>Configura el servidor de salida (SMTP) con los datos de Hostinger:
+        <ul>
+          <li>Servidor SMTP: smtp.hostinger.com</li>
+          <li>Puerto: 465</li>
+          <li>Nombre de usuario: Tu email completo.</li>
+          <li>Contraseña: Tu contraseña.</li>
+        </ul>
+      </li>
+      <li>Asegúrate de que esté marcada la opción "Conexión segura mediante SSL".</li>
+      <li>Haz clic en "Añadir cuenta".</li>
+    </ul>
+  </li>
+  <li>Gmail enviará un correo de verificación a tu dirección de Hostinger. Ábrelo (ya debería llegarte a tu bandeja de entrada de Gmail) y haz clic en el enlace de confirmación o introduce el código.</li>
+</ol>
+<p>¡Ya puedes recibir y enviar correos con tu dirección corporativa directamente desde Gmail!</p>
+
+<h3>3. Cómo Configurar tu Correo en Outlook (Microsoft 365, 2021, etc.)</h3>
+<p>Outlook permite una configuración manual detallada para asegurar que todo funcione correctamente.</p>
+<ol>
+  <li>Abre Outlook y ve a "Archivo" en la esquina superior izquierda.</li>
+  <li>Haz clic en "Añadir cuenta".</li>
+  <li>Escribe tu dirección de correo corporativo.</li>
+  <li>Haz clic en "Opciones avanzadas" y marca la casilla "Permitirme configurar manualmente mi cuenta".</li>
+  <li>Pulsa "Conectar".</li>
+  <li>En la siguiente pantalla, elige el tipo de cuenta: IMAP.</li>
+  <li>Introduce los datos de configuración de Hostinger:
+    <ul>
+      <li><strong>Correo entrante (IMAP):</strong>
+        <ul>
+          <li>Servidor: imap.hostinger.com</li>
+          <li>Puerto: 993</li>
+          <li>Método de cifrado: SSL/TLS</li>
+        </ul>
+      </li>
+      <li><strong>Correo saliente (SMTP):</strong>
+        <ul>
+          <li>Servidor: smtp.hostinger.com</li>
+          <li>Puerto: 465</li>
+          <li>Método de cifrado: SSL/TLS</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Haz clic en "Siguiente".</li>
+  <li>Introduce tu contraseña y pulsa "Conectar".</li>
+</ol>
+<p>Outlook verificará la configuración y, si todo es correcto, tu cuenta quedará añadida y lista para usar.</p>`
+    }
   ] as Omit<BlogPost, 'imageUrl' | 'slug'>[],
 };

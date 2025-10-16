@@ -49,6 +49,11 @@ export const BLOG_POSTS_STRUCTURE = [
     slug: 'ahorra-factura-energetica-servicio-gratuito',
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1759772038064_vertical-shot-wooden-fence-with-high-rocky-cliffs-funes-valley-st-italy.jpg?alt=media&token=e34414f0-563b-4367-bebb-2a2e2a3b9e2f',
   },
+  {
+    id: 'blog6',
+    slug: 'como-configurar-email-corporativo-hostinger',
+    imageUrl: 'https://cdn.mos.cms.futurecdn.net/Jq4dWecMBJANS7xpBbv35j-970-80.jpg',
+  }
 ];
 
 

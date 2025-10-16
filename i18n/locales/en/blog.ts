@@ -27,5 +27,167 @@ export default {
       excerpt: 'Are you overpaying on your electricity bill? We explain how our free service analyzes your bill and helps you save with no cost or commitment.',
       content: `<h2>Are You Sure You're Not Overpaying on Your Electricity Bill?</h2><p>Every month you receive an electricity bill and, let's be honest, most of the time we pay it without reading the fine print. The problem is that, often, utility companies apply rates they shouldn't or there are more affordable options we don't know about. This translates into unnecessary expense that can add up to a considerable amount by the end of the year.</p><p>At Melena Marketing, in collaboration with the Energy Observatory (OE), we have launched a service designed to solve this problem once and for all.</p><h2>A Free Service to Optimize Your Spending</h2><p>We offer a <strong>completely free service</strong> for managing and analyzing your energy bill. Our goal is simple: to make sure you pay what's fair and help you save time and money. No hidden costs or commitments.</p><h3>How does it work? It's very simple:</h3><ol class="list-decimal list-inside space-y-2"><li><strong>You send us your bill:</strong> Simply upload a copy of your latest electricity bill through our secure form.</li><li><strong>We analyze it for you:</strong> Our team of experts will review every detail to ensure you're paying the minimum price you should be.</li><li><strong>We contact you with improvements:</strong> If we detect any opportunity for savings or improvement, we will get in touch with you to manage the changes and ensure your next bills are lower.</li></ol><h2>Take Control of Your Bill Today</h2><p>Don't miss the opportunity to reduce your expenses. Spend your time and money on what really matters. Our service is transparent, easy, and, most importantly, free.</p><p>Ready to start saving? Click the link below, leave us your bill and phone number, and we'll take care of the rest.</p><p class="not-prose text-center mt-8"><a href="/gestion-de-tu-factura-energetica" class="inline-block bg-yellow-400 text-blue-800 font-bold py-3 px-10 rounded-full text-lg hover:bg-yellow-500 hover:text-blue-800 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">I Want to Save on My Bill</a></p><p>If you have any questions, don't hesitate to write to us at <strong>info@melenamarketing.com</strong>. We're here to help!</p>`
     },
+    {
+      title: 'Quick Guide: How to Set Up Your Hostinger Business Email',
+      excerpt: 'Learn how to set up your Hostinger email on Apple Mail, Gmail, and Outlook with our updated step-by-step guide.',
+      content: `<h2>Having an email address with your own domain (like contact@yourcompany.com) projects professionalism and trust.</h2>
+<p>If you use Hostinger, setting up your business email in your favorite mail apps like Apple Mail, Gmail, and Outlook is a straightforward process. This step-by-step guide will show you how to do it with the updated configuration settings for 2025.</p>
+
+<h3>Step 0: Locate Your Configuration Settings in Hostinger</h3>
+<p>Before you start, you need your mail server details. Don't worry, they are always the same for all Hostinger accounts!</p>
+<ol>
+  <li>Access your Hostinger hPanel.</li>
+  <li>Go to the "Emails" section and select the domain for which you want to configure the email.</li>
+  <li>In the side menu, look for "Connect Apps & Devices".</li>
+</ol>
+<p>There you will find the following parameters, which you will use in the next steps:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Protocol</th>
+      <th>Server (Hostname)</th>
+      <th>Port</th>
+      <th>Encryption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Incoming Mail</td>
+      <td>IMAP (Recommended)</td>
+      <td>imap.hostinger.com</td>
+      <td>993</td>
+      <td>SSL/TLS</td>
+    </tr>
+    <tr>
+      <td>Incoming Mail</td>
+      <td>POP3 (Alternative)</td>
+      <td>pop.hostinger.com</td>
+      <td>995</td>
+      <td>SSL/TLS</td>
+    </tr>
+    <tr>
+      <td>Outgoing Mail</td>
+      <td>SMTP</td>
+      <td>smtp.hostinger.com</td>
+      <td>465</td>
+      <td>SSL/TLS</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Important note:</strong> It is recommended to use IMAP instead of POP3. IMAP syncs your emails across all your devices, which means if you read or delete an email on your phone, the change will be reflected on your computer and vice versa.</p>
+
+<h3>1. How to Set Up Your Email in Apple Mail (iPhone, iPad, and Mac)</h3>
+<p>Apple's interface makes this process very intuitive.</p>
+<ol>
+  <li>Open "Settings" on your iPhone/iPad or "Mail" > "Add Account" on your Mac.</li>
+  <li>Select "Mail" > "Accounts" > "Add Account".</li>
+  <li>In the list of providers, choose the "Other" option.</li>
+  <li>Tap "Add Mail Account".</li>
+  <li>Fill in your details:
+    <ul>
+      <li><strong>Name:</strong> The name you want recipients to see.</li>
+      <li><strong>Email:</strong> Your full email address (you@yourdomain.com).</li>
+      <li><strong>Password:</strong> The password for that email account.</li>
+      <li><strong>Description:</strong> A name to identify the account (e.g., "Work").</li>
+    </ul>
+  </li>
+  <li>Tap "Next". Mail will try to verify the account automatically. If it fails, it will ask for the server details.</li>
+  <li>Make sure IMAP is selected and fill in the fields with the Hostinger data:
+    <ul>
+      <li><strong>Incoming Mail Server:</strong>
+        <ul>
+          <li>Host Name: imap.hostinger.com</li>
+          <li>User Name: Your full email address.</li>
+          <li>Password: Your email password.</li>
+        </ul>
+      </li>
+      <li><strong>Outgoing Mail Server:</strong>
+        <ul>
+          <li>Host Name: smtp.hostinger.com</li>
+          <li>User Name: Your full email address.</li>
+          <li>Password: Your email password.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tap "Next" and then "Save". Done! Your account is now set up in Apple Mail.</li>
+</ol>
+
+<h3>2. How to Set Up Your Email in Gmail (Web and Mobile App)</h3>
+<p>You can use the Gmail interface to both receive emails from your Hostinger account and send them using your business address.</p>
+<ol>
+  <li>Open Gmail in your desktop browser.</li>
+  <li>Click the gear icon (⚙️) in the top-right corner and select "See all settings".</li>
+  <li>Go to the "Accounts and Import" tab.</li>
+  <li><strong>To receive emails:</strong>
+    <ul>
+      <li>Find the "Check mail from other accounts" section and click "Add a mail account".</li>
+      <li>Enter your business email address in the pop-up window and click "Next".</li>
+      <li>Select "Import emails from my other account (POP3)" and click "Next".</li>
+      <li>Fill in the details with Hostinger's POP3 settings (Gmail does not allow importing via IMAP in this section):
+        <ul>
+          <li>Username: Your full email.</li>
+          <li>Password: Your password.</li>
+          <li>POP Server: pop.hostinger.com</li>
+          <li>Port: 995</li>
+        </ul>
+      </li>
+      <li>Check the "Always use a secure connection (SSL)" box.</li>
+      <li>Optional: Check "Label incoming messages" for better organization.</li>
+      <li>Click "Add Account".</li>
+    </ul>
+  </li>
+  <li><strong>To send emails (very important):</strong>
+    <ul>
+      <li>After adding the account, Gmail will ask if you want to be able to send mail as you@yourdomain.com. Select "Yes" and click "Next".</li>
+      <li>Configure the outgoing (SMTP) server with Hostinger's data:
+        <ul>
+          <li>SMTP Server: smtp.hostinger.com</li>
+          <li>Port: 465</li>
+          <li>Username: Your full email.</li>
+          <li>Password: Your password.</li>
+        </ul>
+      </li>
+      <li>Make sure the "Secured connection using SSL" option is checked.</li>
+      <li>Click "Add Account".</li>
+    </ul>
+  </li>
+  <li>Gmail will send a verification email to your Hostinger address. Open it (it should already arrive in your Gmail inbox) and click the confirmation link or enter the code.</li>
+</ol>
+<p>You can now receive and send emails with your business address directly from Gmail!</p>
+
+<h3>3. How to Set Up Your Email in Outlook (Microsoft 365, 2021, etc.)</h3>
+<p>Outlook allows for detailed manual configuration to ensure everything works correctly.</p>
+<ol>
+  <li>Open Outlook and go to "File" in the top-left corner.</li>
+  <li>Click "Add Account".</li>
+  <li>Type your business email address.</li>
+  <li>Click "Advanced options" and check the "Let me set up my account manually" box.</li>
+  <li>Click "Connect".</li>
+  <li>On the next screen, choose the account type: IMAP.</li>
+  <li>Enter the Hostinger configuration settings:
+    <ul>
+      <li><strong>Incoming mail (IMAP):</strong>
+        <ul>
+          <li>Server: imap.hostinger.com</li>
+          <li>Port: 993</li>
+          <li>Encryption method: SSL/TLS</li>
+        </ul>
+      </li>
+      <li><strong>Outgoing mail (SMTP):</strong>
+        <ul>
+          <li>Server: smtp.hostinger.com</li>
+          <li>Port: 465</li>
+          <li>Encryption method: SSL/TLS</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Click "Next".</li>
+  <li>Enter your password and click "Connect".</li>
+</ol>
+<p>Outlook will verify the settings, and if everything is correct, your account will be added and ready to use.</p>`
+    }
   ] as Omit<BlogPost, 'imageUrl' | 'slug'>[],
 };
