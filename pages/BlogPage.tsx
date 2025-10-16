@@ -33,6 +33,8 @@ const BlogPage: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const postsToShow = [...BLOG_POSTS_STRUCTURE].reverse();
+
   return (
     <div className="pt-32 pb-20 bg-gray-50 min-h-screen">
       <div className="container mx-auto px-6">
@@ -48,8 +50,12 @@ const BlogPage: React.FC = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-          {BLOG_POSTS_STRUCTURE.map((post, index) => {
-            const postContent = t.blog_posts[index];
+          {postsToShow.map((post, index) => {
+            const originalIndex = BLOG_POSTS_STRUCTURE.findIndex(p => p.id === post.id);
+            const postContent = t.blog_posts[originalIndex];
+
+            if (!postContent) return null;
+
             return (
               <div key={post.id} className="animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
                 <BlogCard post={post} content={postContent} readMoreText={t.blog_read_more} />
