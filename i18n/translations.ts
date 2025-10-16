@@ -208,8 +208,62 @@ export const translations: Translations = {
     cookie_message: "Usamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.",
     cookie_accept: "Aceptar",
     cookie_learn_more: "Saber más",
-    terms_content: `...`, // Content omitted for brevity
-    privacy_content: `...`, // Content omitted for brevity
+    terms_content: `<h2>1. DATOS IDENTIFICATIVOS</h2>
+<p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, a continuación se reflejan los siguientes datos: la empresa titular de dominio web es Melena Marketing (en adelante Melena Marketing), con domicilio a estos efectos en Marbella, Málaga, España. Correo electrónico de contacto: info@melenamarketing.com del sitio web.</p>
+<h2>2. USUARIOS</h2>
+<p>El acceso y/o uso de este portal de Melena Marketing atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o uso, las Condiciones Generales de Uso aquí reflejadas. Las citadas Condiciones serán de aplicación independientemente de las Condiciones Generales de Contratación que en su caso resulten de obligado cumplimiento.</p>
+<h2>3. USO DEL PORTAL</h2>
+<p>melenamarketing.com proporciona el acceso a multitud de informaciones, servicios, programas o datos (en adelante, "los contenidos") en Internet pertenecientes a Melena Marketing o a sus licenciantes a los que el USUARIO pueda tener acceso. El USUARIO asume la responsabilidad del uso del portal. Dicha responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos.</p>
+<p>El USUARIO se compromete a hacer un uso adecuado de los contenidos y servicios que Melena Marketing ofrece a través de su portal y con carácter enunciativo pero no limitativo, a no emplearlos para (i) incurrir en actividades ilícitas, ilegales o contrarias a la buena fe y al orden público; (ii) difundir contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de apología del terrorismo o atentatorio contra los derechos humanos; (iii) provocar daños en los sistemas físicos y lógicos de Melena Marketing, de sus proveedores o de terceras personas, introducir o difundir en la red virus informáticos o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar los daños anteriormente mencionados.</p>
+<h2>4. PROPIEDAD INTELECTUAL E INDUSTRIAL</h2>
+<p>Melena Marketing por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo, imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.), titularidad de Melena Marketing o bien de sus licenciantes.</p>
+<p>Todos los derechos reservados. En virtud de lo dispuesto en los artículos 8 y 32.1, párrafo segundo, de la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Melena Marketing.</p>
+<h2>5. EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD</h2>
+<p>Melena Marketing no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.</p>
+<h2>6. MODIFICACIONES</h2>
+<p>Melena Marketing se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados en su portal.</p>
+<h2>7. ENLACES</h2>
+<p>En el caso de que en melenamarketing.com se dispusiesen enlaces o hipervínculos hacía otros sitios de Internet, Melena Marketing no ejercerá ningún tipo de control sobre dichos sitios y contenidos. En ningún caso Melena Marketing asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web ajeno, ni garantizará la disponibilidad técnica, calidad, fiabilidad, exactitud, amplitud, veracidad, validez y constitucionalidad de cualquier material o información contenida en ninguno de dichos hipervínculos u otros sitios de Internet.</p>
+<h2>8. DERECHO DE EXCLUSIÓN</h2>
+<p>Melena Marketing se reserva el derecho a denegar o retirar el acceso al portal y/o los servicios ofrecidos sin necesidad de preaviso, a instancia propia o de un tercero, a aquellos usuarios que incumplan las presentes Condiciones Generales de Uso.</p>
+<h2>9. LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h2>
+<p>La relación entre Melena Marketing y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Málaga.</p>`,
+    privacy_content: `<h2>1. RESPONSABLE DEL TRATAMIENTO DE SUS DATOS</h2>
+<p><strong>Identidad:</strong> Melena Marketing<br><strong>Email:</strong> info@melenamarketing.com<br><strong>Actividad:</strong> Servicios de Marketing Digital</p>
+<h2>2. ¿CON QUÉ FINALIDAD TRATAMOS SUS DATOS PERSONALES?</h2>
+<p>En Melena Marketing tratamos la información que nos facilitan las personas interesadas con el fin de gestionar las solicitudes de información, consultas y la prestación de los servicios contratados. Las finalidades principales son:</p>
+<ul>
+  <li><strong>Formulario de Contacto:</strong> Atender y gestionar las consultas o solicitudes de información recibidas a través del formulario de contacto. La base de legitimación es el consentimiento expreso del usuario al marcar la casilla de aceptación y enviar el formulario.</li>
+  <li><strong>Formulario de Gestión Energética:</strong> Recoger los datos de contacto y la factura energética del usuario para analizarla y contactarle con el fin de proponerle mejoras y ahorros. La base de legitimación es el consentimiento expreso del usuario. Al solicitar este servicio, el usuario entiende que sus datos podrán ser compartidos con empresas colaboradoras del sector energético con el único fin de realizar el estudio y la gestión solicitada.</li>
+</ul>
+<p>No se tomarán decisiones automatizadas en base a los datos proporcionados.</p>
+<h2>3. ¿POR CUÁNTO TIEMPO CONSERVAREMOS SUS DATOS?</h2>
+<p>Los datos personales proporcionados se conservarán mientras se mantenga la relación con el interesado o no se solicite su supresión. Se conservarán durante el tiempo necesario para cumplir con las obligaciones legales.</p>
+<h2>4. ¿CUÁL ES LA LEGITIMACIÓN PARA EL TRATAMIENTO DE SUS DATOS?</h2>
+<p>La base legal para el tratamiento de sus datos es el consentimiento que usted nos otorga al marcar la casilla de aceptación de la política de privacidad antes de enviar cualquier formulario. Usted tiene derecho a retirar su consentimiento en cualquier momento sin que ello afecte a la licitud del tratamiento basado en el consentimiento previo a su retirada.</p>
+<h2>5. ¿A QUÉ DESTINATARIOS SE COMUNICARÁN SUS DATOS?</h2>
+<p>Los datos no se cederán a terceros, salvo obligación legal. Para el servicio de gestión energética, los datos de contacto y la factura podrán ser compartidos con empresas colaboradoras expertas en el sector energético, con el único objetivo de llevar a cabo el análisis y la propuesta de mejora solicitada.</p>
+<p>Utilizamos proveedores de servicios tecnológicos como hosting y plataformas de gestión de correo electrónico (basados en Firebase/Google Cloud) que actúan como encargados del tratamiento y que han suscrito los correspondientes contratos de confidencialidad y tratamiento de datos exigidos por la normativa vigente.</p>
+<h2>6. ¿CUÁLES SON SUS DERECHOS CUANDO NOS FACILITA SUS DATOS?</h2>
+<p>Cualquier persona tiene derecho a obtener confirmación sobre si en Melena Marketing estamos tratando datos personales que les conciernan, o no.</p>
+<p>Las personas interesadas tienen derecho a <strong>acceder</strong> a sus datos personales, así como a solicitar la <strong>rectificación</strong> de los datos inexactos o, en su caso, solicitar su <strong>supresión</strong> cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos. En determinadas circunstancias, los interesados podrán solicitar la <strong>limitación del tratamiento</strong> de sus datos, en cuyo caso únicamente los conservaremos para el ejercicio o la defensa de reclamaciones. También podrán <strong>oponerse</strong> al tratamiento de sus datos.</p>
+<p>Para ejercer sus derechos, puede enviar un correo electrónico a <strong>info@melenamarketing.com</strong>, indicando el derecho que desea ejercer y adjuntando una copia de su DNI o documento identificativo.</p>
+<h2>7. POLÍTICA DE COOKIES</h2>
+<h3>¿Qué son las cookies?</h3>
+<p>Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.</p>
+<h3>¿Qué tipos de cookies utiliza esta página web?</h3>
+<ul>
+  <li><strong>Cookies técnicas:</strong> Son aquéllas que permiten al usuario la navegación a través de una página web y la utilización de las diferentes opciones o servicios que en ella existan. Por ejemplo, la que utilizamos para recordar la preferencia de idioma o el consentimiento de cookies.</li>
+  <li><strong>Cookies de análisis:</strong> Son aquéllas que bien tratadas por nosotros o por terceros, nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios del servicio ofertado. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la oferta de productos o servicios que le ofrecemos (actualmente no utilizamos cookies de análisis de terceros como Google Analytics, pero nos reservamos el derecho a hacerlo en el futuro).</li>
+</ul>
+<h3>¿Cómo puedo gestionar o desactivar las cookies?</h3>
+<p>Usted puede permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador. A continuación, le ofrecemos enlaces en los que encontrará información sobre cómo puede activar sus preferencias en los principales navegadores:</p>
+<ul>
+  <li><a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+  <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+  <li><a href="https://support.microsoft.com/es-es/windows/eliminar-y-administrar-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener noreferrer">Internet Explorer / Edge</a></li>
+  <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+</ul>`,
     collaboration_title: "¿Quieres trabajar o colaborar con nosotros?",
     collaboration_subtitle: "Rellena este formulario y nos pondremos en contacto contigo.",
     collaboration_cta: "Trabaja con nosotros",
@@ -229,7 +283,7 @@ export const translations: Translations = {
     energy_page_send_success: "¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.",
     energy_page_send_error: "Hubo un error al enviar el formulario. Inténtalo de nuevo.",
     energy_page_content_title: "Ahorra tiempo y dinero: Descubre nuestro servicio gratuito de gestión de factura energética",
-    energy_page_content_p1: "¿Estás cansado de recibir facturas de electricidad cada mes y no tener tiempo para revisarlas? Si es así, sigue leyendo porque tenemos buenas noticias para ti. Melena Marketing en colaboración con el OE (Observatorio Energético), hemos creado un servicio gratuito de gestión de factura energética que te permitirá ahorrar tiempo y dinero.",
+    energy_page_content_p1: "Estás cansado de recibir facturas de electricidad cada mes y no tener tiempo para revisarlas? Si es así, sigue leyendo porque tenemos buenas noticias para ti. Melena Marketing en colaboración con el OE (Observatorio Energético), hemos creado un servicio gratuito de gestión de factura energética que te permitirá ahorrar tiempo y dinero.",
     energy_page_content_p2: "Es posible que no te hayas dado cuenta, pero las compañías eléctricas a menudo aplican tarifas que no deberían. Pero no te preocupes, estamos aquí para ayudarte. Con nuestro servicio, no tendrás que preocuparte por revisar tus facturas y comparar tarifas, nosotros lo haremos por ti.",
     energy_page_content_p3: "Además de ahorrar dinero, también tendrás la tranquilidad de saber que estás pagando lo justo por el servicio que recibes. Y lo mejor de todo, es que nuestro servicio es completamente gratuito. Sí, has leído bien, no tendrás que pagar un solo céntimo por utilizarlo.",
     energy_page_content_how_title: "¿Cómo funciona?",
@@ -362,8 +416,62 @@ export const translations: Translations = {
     cookie_message: "We use cookies to enhance your experience. By continuing to browse, you agree to our use of cookies.",
     cookie_accept: "Accept",
     cookie_learn_more: "Learn more",
-    terms_content: `...`, // Content omitted for brevity
-    privacy_content: `...`, // Content omitted for brevity
+    terms_content: `<h2>1. IDENTIFICATION DATA</h2>
+<p>In compliance with the duty of information set out in Article 10 of Law 34/2002, of July 11, on Information Society Services and Electronic Commerce, the following data is provided: the owner of the web domain is Melena Marketing (hereinafter Melena Marketing), with its address for these purposes in Marbella, Malaga, Spain. Contact email: info@melenamarketing.com of the website.</p>
+<h2>2. USERS</h2>
+<p>Access and/or use of this Melena Marketing portal attributes the condition of USER, who accepts, from said access and/or use, the General Conditions of Use reflected here. The aforementioned Conditions will be applicable regardless of the General Contracting Conditions that may be mandatory.</p>
+<h2>3. USE OF THE PORTAL</h2>
+<p>melenamarketing.com provides access to a multitude of information, services, programs, or data (hereinafter, "the content") on the Internet belonging to Melena Marketing or its licensors to which the USER may have access. The USER assumes responsibility for the use of the portal. This responsibility extends to the registration that may be necessary to access certain services or content.</p>
+<p>The USER agrees to make appropriate use of the content and services that Melena Marketing offers through its portal and, by way of example but not limitation, not to use them to (i) engage in illicit, illegal or contrary to good faith and public order activities; (ii) disseminate content or propaganda of a racist, xenophobic, pornographic-illegal nature, in apology of terrorism or that violates human rights; (iii) cause damage to the physical and logical systems of Melena Marketing, its suppliers or third parties, introduce or spread computer viruses or any other physical or logical systems that are likely to cause the aforementioned damage.</p>
+<h2>4. INTELLECTUAL AND INDUSTRIAL PROPERTY</h2>
+<p>Melena Marketing, by itself or as an assignee, is the owner of all intellectual and industrial property rights of its website, as well as the elements contained therein (by way of example, images, sound, audio, video, software or texts; trademarks or logos, color combinations, structure and design, selection of materials used, computer programs necessary for its operation, access and use, etc.), owned by Melena Marketing or its licensors.</p>
+<p>All rights reserved. By virtue of the provisions of articles 8 and 32.1, second paragraph, of the Intellectual Property Law, the reproduction, distribution and public communication, including its method of making available, of all or part of the contents of this website, for commercial purposes, on any support and by any technical means, without the authorization of Melena Marketing, are expressly prohibited.</p>
+<h2>5. EXCLUSION OF GUARANTEES AND LIABILITY</h2>
+<p>Melena Marketing is not responsible, in any case, for damages of any kind that may cause, by way of example: errors or omissions in the content, lack of availability of the portal or the transmission of viruses or malicious or harmful programs in the content, despite having adopted all the necessary technological measures to avoid it.</p>
+<h2>6. MODIFICATIONS</h2>
+<p>Melena Marketing reserves the right to make the modifications it deems appropriate to its portal without prior notice, being able to change, delete or add both the content and services provided through it and the way in which they are presented or located on its portal.</p>
+<h2>7. LINKS</h2>
+<p>In the event that melenamarketing.com contains links or hyperlinks to other Internet sites, Melena Marketing will not exercise any type of control over said sites and content. In no case will Melena Marketing assume any responsibility for the contents of any link belonging to a third-party website, nor will it guarantee the technical availability, quality, reliability, accuracy, breadth, veracity, validity and constitutionality of any material or information contained in any of said hyperlinks or other Internet sites.</p>
+<h2>8. RIGHT OF EXCLUSION</h2>
+<p>Melena Marketing reserves the right to deny or withdraw access to the portal and/or the services offered without prior notice, at its own request or that of a third party, to those users who violate these General Conditions of Use.</p>
+<h2>9. APPLICABLE LEGISLATION AND JURISDICTION</h2>
+<p>The relationship between Melena Marketing and the USER will be governed by current Spanish regulations and any controversy will be submitted to the Courts and tribunals of the city of Malaga.</p>`,
+    privacy_content: `<h2>1. DATA CONTROLLER</h2>
+<p><strong>Identity:</strong> Melena Marketing<br><strong>Email:</strong> info@melenamarketing.com<br><strong>Activity:</strong> Digital Marketing Services</p>
+<h2>2. FOR WHAT PURPOSE DO WE PROCESS YOUR PERSONAL DATA?</h2>
+<p>At Melena Marketing, we process the information provided by interested parties to manage information requests, inquiries, and the provision of contracted services. The main purposes are:</p>
+<ul>
+  <li><strong>Contact Form:</strong> To address and manage inquiries or information requests received through the contact form. The basis for legitimacy is the user's express consent by checking the acceptance box and submitting the form.</li>
+  <li><strong>Energy Management Form:</strong> To collect the user's contact details and energy bill to analyze it and contact them to propose improvements and savings. The basis for legitimacy is the user's express consent. By requesting this service, the user understands that their data may be shared with collaborating companies in the energy sector for the sole purpose of carrying out the requested study and management.</li>
+</ul>
+<p>No automated decisions will be made based on the data provided.</p>
+<h2>3. HOW LONG WILL WE KEEP YOUR DATA?</h2>
+<p>The personal data provided will be kept as long as the relationship with the interested party is maintained or its deletion is not requested. They will be kept for the time necessary to comply with legal obligations.</p>
+<h2>4. WHAT IS THE LEGITIMACY FOR THE PROCESSING OF YOUR DATA?</h2>
+<p>The legal basis for processing your data is the consent you give us by checking the privacy policy acceptance box before submitting any form. You have the right to withdraw your consent at any time without affecting the legality of the processing based on the consent prior to its withdrawal.</p>
+<h2>5. TO WHICH RECIPIENTS WILL YOUR DATA BE COMMUNICATED?</h2>
+<p>The data will not be transferred to third parties, except for legal obligations. For the energy management service, contact details and the bill may be shared with expert collaborating companies in the energy sector, with the sole objective of carrying out the analysis and improvement proposal requested.</p>
+<p>We use technology service providers such as hosting and email management platforms (based on Firebase/Google Cloud) that act as data processors and have signed the corresponding confidentiality and data processing contracts required by current regulations.</p>
+<h2>6. WHAT ARE YOUR RIGHTS WHEN YOU PROVIDE US WITH YOUR DATA?</h2>
+<p>Anyone has the right to obtain confirmation as to whether or not Melena Marketing is processing personal data concerning them.</p>
+<p>Interested parties have the right to <strong>access</strong> their personal data, as well as to request the <strong>rectification</strong> of inaccurate data or, where appropriate, request its <strong>deletion</strong> when, among other reasons, the data is no longer necessary for the purposes for which it was collected. In certain circumstances, interested parties may request the <strong>limitation of the processing</strong> of their data, in which case we will only keep them for the exercise or defense of claims. They may also <strong>object</strong> to the processing of their data.</p>
+<p>To exercise your rights, you can send an email to <strong>info@melenamarketing.com</strong>, indicating the right you wish to exercise and attaching a copy of your ID or identification document.</p>
+<h2>7. COOKIE POLICY</h2>
+<h3>What are cookies?</h3>
+<p>A cookie is a file that is downloaded to your computer when you access certain web pages. Cookies allow a web page, among other things, to store and retrieve information about the browsing habits of a user or their equipment and, depending on the information they contain and the way you use your equipment, they can be used to recognize the user.</p>
+<h3>What types of cookies does this website use?</h3>
+<ul>
+  <li><strong>Technical cookies:</strong> These are those that allow the user to navigate through a web page and use the different options or services that exist on it. For example, the one we use to remember language preference or cookie consent.</li>
+  <li><strong>Analysis cookies:</strong> These are those that, whether processed by us or by third parties, allow us to quantify the number of users and thus carry out the measurement and statistical analysis of the use made by users of the service offered. For this, your browsing on our website is analyzed in order to improve the range of products or services that we offer (we do not currently use third-party analysis cookies such as Google Analytics, but we reserve the right to do so in the future).</li>
+</ul>
+<h3>How can I manage or disable cookies?</h3>
+<p>You can allow, block or delete the cookies installed on your computer by configuring the browser options installed on your computer. Below, we provide links where you will find information on how you can activate your preferences in the main browsers:</p>
+<ul>
+  <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+  <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+  <li><a href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener noreferrer">Internet Explorer / Edge</a></li>
+  <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+</ul>`,
     collaboration_title: "Want to work or collaborate with us?",
     collaboration_subtitle: "Fill out this form and we will get in touch with you.",
     collaboration_cta: "Work with us",
@@ -516,8 +624,62 @@ export const translations: Translations = {
     cookie_message: "Мы используем файлы cookie для улучшения вашего опыта. Продолжая просмотр, вы соглашаетесь на использование нами файлов cookie.",
     cookie_accept: "Принять",
     cookie_learn_more: "Узнать больше",
-    terms_content: `...`, // Content omitted for brevity
-    privacy_content: `...`, // Content omitted for brevity
+    terms_content: `<h2>1. ИДЕНТИФИКАЦИОННЫЕ ДАННЫЕ</h2>
+<p>В соответствии с обязанностью предоставления информации, изложенной в статье 10 Закона 34/2002 от 11 июля об услугах информационного общества и электронной коммерции, ниже приводятся следующие данные: владельцем веб-домена является Melena Marketing (далее Melena Marketing), с юридическим адресом для этих целей в Марбелье, Малага, Испания. Контактный адрес электронной почты: info@melenamarketing.com.</p>
+<h2>2. ПОЛЬЗОВАТЕЛИ</h2>
+<p>Доступ и/или использование этого портала Melena Marketing наделяет статусом ПОЛЬЗОВАТЕЛЯ, который с момента такого доступа и/или использования принимает изложенные здесь Общие условия использования. Указанные Условия применяются независимо от Общих условий заключения договоров, которые могут быть обязательными для исполнения.</p>
+<h2>3. ИСПОЛЬЗОВАНИЕ ПОРТАЛА</h2>
+<p>melenamarketing.com предоставляет доступ к множеству информации, услуг, программ или данных (далее «содержимое») в Интернете, принадлежащих Melena Marketing или ее лицензиарам, к которым ПОЛЬЗОВАТЕЛЬ может иметь доступ. ПОЛЬЗОВАТЕЛЬ принимает на себя ответственность за использование портала. Эта ответственность распространяется на регистрацию, которая может потребоваться для доступа к определенным услугам или содержимому.</p>
+<p>ПОЛЬЗОВАТЕЛЬ обязуется надлежащим образом использовать содержимое и услуги, которые Melena Marketing предлагает через свой портал, и, в качестве примера, но не ограничиваясь этим, не использовать их для (i) совершения незаконных, противоправных действий или действий, противоречащих добросовестности и общественному порядку; (ii) распространения контента или пропаганды расистского, ксенофобского, порнографически-незаконного характера, в поддержку терроризма или нарушающих права человека; (iii) причинения вреда физическим и логическим системам Melena Marketing, ее поставщиков или третьих лиц, внедрения или распространения в сети компьютерных вирусов или любых других физических или логических систем, способных причинить вышеупомянутый вред.</p>
+<h2>4. ИНТЕЛЛЕКТУАЛЬНАЯ И ПРОМЫШЛЕННАЯ СОБСТВЕННОСТЬ</h2>
+<p>Melena Marketing, самостоятельно или в качестве цессионария, является владельцем всех прав на интеллектуальную и промышленную собственность своего веб-сайта, а также элементов, содержащихся в нем (включая, но не ограничиваясь, изображения, звук, аудио, видео, программное обеспечение или тексты; товарные знаки или логотипы, цветовые сочетания, структуру и дизайн, выбор используемых материалов, компьютерные программы, необходимые для его функционирования, доступа и использования и т.д.), принадлежащих Melena Marketing или ее лицензиарам.</p>
+<p>Все права защищены. В соответствии с положениями статей 8 и 32.1, второго абзаца, Закона об интеллектуальной собственности, прямо запрещается воспроизведение, распространение и публичное сообщение, включая способ предоставления доступа, всего или части содержимого этого веб-сайта в коммерческих целях, на любом носителе и любыми техническими средствами, без разрешения Melena Marketing.</p>
+<h2>5. ИСКЛЮЧЕНИЕ ГАРАНТИЙ И ОТВЕТСТВЕННОСТИ</h2>
+<p>Melena Marketing ни в коем случае не несет ответственности за ущерб любого рода, который может быть вызван, в качестве примера: ошибками или упущениями в содержании, отсутствием доступности портала или передачей вирусов или вредоносных программ в содержании, несмотря на принятие всех необходимых технологических мер для его предотвращения.</p>
+<h2>6. ИЗМЕНЕНИЯ</h2>
+<p>Melena Marketing оставляет за собой право вносить без предварительного уведомления изменения, которые сочтет необходимыми, в свой портал, имея возможность изменять, удалять или добавлять как содержимое и услуги, предоставляемые через него, так и способ их представления или размещения на портале.</p>
+<h2>7. ССЫЛКИ</h2>
+<p>В случае, если на melenamarketing.com размещены ссылки или гиперссылки на другие интернет-сайты, Melena Marketing не будет осуществлять никакого контроля над такими сайтами и их содержимым. Melena Marketing ни в коем случае не несет никакой ответственности за содержимое любой ссылки, принадлежащей стороннему веб-сайту, и не гарантирует техническую доступность, качество, надежность, точность, широту, достоверность, действительность и конституционность любого материала или информации, содержащейся в любой из таких гиперссылок или на других интернет-сайтах.</p>
+<h2>8. ПРАВО НА ОТКАЗ В ДОСТУПЕ</h2>
+<p>Melena Marketing оставляет за собой право отказать или отозвать доступ к порталу и/или предлагаемым услугам без предварительного уведомления, по собственной инициативе или по требованию третьей стороны, тем пользователям, которые нарушают настоящие Общие условия использования.</p>
+<h2>9. ПРИМЕНИМОЕ ЗАКОНОДАТЕЛЬСТВО И ЮРИСДИКЦИЯ</h2>
+<p>Отношения между Melena Marketing и ПОЛЬЗОВАТЕЛЕМ будут регулироваться действующим испанским законодательством, и любой спор будет передан на рассмотрение судов и трибуналов города Малага.</p>`,
+    privacy_content: `<h2>1. КОНТРОЛЛЕР ДАННЫХ</h2>
+<p><strong>Наименование:</strong> Melena Marketing<br><strong>Электронная почта:</strong> info@melenamarketing.com<br><strong>Деятельность:</strong> Услуги цифрового маркетинга</p>
+<h2>2. С КАКОЙ ЦЕЛЬЮ МЫ ОБРАБАТЫВАЕМ ВАШИ ПЕРСОНАЛЬНЫЕ ДАННЫЕ?</h2>
+<p>В Melena Marketing мы обрабатываем информацию, предоставленную заинтересованными лицами, для управления запросами информации, консультациями и предоставлением заказанных услуг. Основные цели:</p>
+<ul>
+  <li><strong>Контактная форма:</strong> Обработка и управление запросами или запросами информации, полученными через контактную форму. Правовым основанием является явное согласие пользователя путем установки флажка в поле согласия и отправки формы.</li>
+  <li><strong>Форма управления счетами за энергию:</strong> Сбор контактных данных и счетов за энергию пользователя для их анализа и связи с целью предложения улучшений и экономии. Правовым основанием является явное согласие пользователя. Запрашивая эту услугу, пользователь понимает, что его данные могут быть переданы сотрудничающим компаниям в энергетическом секторе с единственной целью проведения запрошенного анализа и управления.</li>
+</ul>
+<p>Автоматизированные решения на основе предоставленных данных приниматься не будут.</p>
+<h2>3. КАК ДОЛГО МЫ БУДЕМ ХРАНИТЬ ВАШИ ДАННЫЕ?</h2>
+<p>Предоставленные персональные данные будут храниться до тех пор, пока поддерживаются отношения с заинтересованным лицом или не будет запрошено их удаление. Они будут храниться в течение времени, необходимого для выполнения юридических обязательств.</p>
+<h2>4. КАКИМ ЯВЛЯЕТСЯ ПРАВОВОЕ ОСНОВАНИЕ ДЛЯ ОБРАБОТКИ ВАШИХ ДАННЫХ?</h2>
+<p>Правовой основой для обработки ваших данных является ваше согласие, которое вы даете, устанавливая флажок в поле согласия с политикой конфиденциальности перед отправкой любой формы. Вы имеете право отозвать свое согласие в любое время, что не повлияет на законность обработки, основанной на согласии до его отзыва.</p>
+<h2>5. КАКИМ ПОЛУЧАТЕЛЯМ БУДУТ ПЕРЕДАНЫ ВАШИ ДАННЫЕ?</h2>
+<p>Данные не будут передаваться третьим лицам, за исключением случаев, предусмотренных законом. Для услуги управления счетами за энергию контактные данные и счет могут быть переданы экспертным сотрудничающим компаниям в энергетическом секторе с единственной целью проведения анализа и предложения по улучшению.</p>
+<p>Мы используем поставщиков технологических услуг, таких как хостинг и платформы управления электронной почтой (на базе Firebase/Google Cloud), которые действуют в качестве обработчиков данных и подписали соответствующие договоры о конфиденциальности и обработке данных, требуемые действующим законодательством.</p>
+<h2>6. КАКОВЫ ВАШИ ПРАВА, КОГДА ВЫ ПРЕДОСТАВЛЯЕТЕ НАМ СВОИ ДАННЫЕ?</h2>
+<p>Любое лицо имеет право получить подтверждение того, обрабатываются ли в Melena Marketing персональные данные, касающиеся его, или нет.</p>
+<p>Заинтересованные лица имеют право на <strong>доступ</strong> к своим персональным данным, а также на запрос <strong>исправления</strong> неточных данных или, в соответствующем случае, на запрос их <strong>удаления</strong>, когда, среди прочего, данные больше не нужны для целей, для которых они были собраны. В определенных обстоятельствах заинтересованные лица могут запросить <strong>ограничение обработки</strong> своих данных, в этом случае мы будем хранить их только для осуществления или защиты претензий. Они также могут <strong>возражать</strong> против обработки своих данных.</p>
+<p>Для осуществления своих прав вы можете отправить электронное письмо по адресу <strong>info@melenamarketing.com</strong>, указав право, которое вы хотите осуществить, и приложив копию вашего удостоверения личности или идентификационного документа.</p>
+<h2>7. ПОЛИТИКА ИСПОЛЬЗОВАНИЯ ФАЙЛОВ COOKIE</h2>
+<h3>Что такое файлы cookie?</h3>
+<p>Файл cookie — это файл, который загружается на ваш компьютер при доступе к определенным веб-страницам. Файлы cookie позволяют веб-странице, среди прочего, хранить и извлекать информацию о привычках просмотра пользователя или его оборудования и, в зависимости от содержащейся в них информации и способа использования вашего оборудования, могут использоваться для распознавания пользователя.</p>
+<h3>Какие типы файлов cookie использует этот веб-сайт?</h3>
+<ul>
+  <li><strong>Технические файлы cookie:</strong> Это те, которые позволяют пользователю перемещаться по веб-странице и использовать различные опции или услуги, существующие на ней. Например, тот, который мы используем для запоминания языковых предпочтений или согласия на использование файлов cookie.</li>
+  <li><strong>Аналитические файлы cookie:</strong> Это те, которые, обрабатываемые нами или третьими лицами, позволяют нам количественно определять количество пользователей и, таким образом, проводить измерение и статистический анализ использования пользователями предлагаемой услуги. Для этого анализируется ваш просмотр нашего веб-сайта с целью улучшения предложения продуктов или услуг, которые мы вам предлагаем (в настоящее время мы не используем сторонние аналитические файлы cookie, такие как Google Analytics, но оставляем за собой право делать это в будущем).</li>
+</ul>
+<h3>Как я могу управлять файлами cookie или отключить их?</h3>
+<p>Вы можете разрешить, заблокировать или удалить файлы cookie, установленные на вашем компьютере, настроив параметры браузера, установленного на вашем компьютере. Ниже мы предоставляем ссылки, по которым вы найдете информацию о том, как вы можете активировать свои предпочтения в основных браузерах:</p>
+<ul>
+  <li><a href="https://support.google.com/chrome/answer/95647?hl=ru" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+  <li><a href="https://support.mozilla.org/ru/kb/vklyuchenie-i-otklyuchenie-kukov-ispolzuemyh-veb-s" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+  <li><a href="https://support.microsoft.com/ru-ru/windows/удаление-файлов-cookie-и-управление-ими-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener noreferrer">Internet Explorer / Edge</a></li>
+  <li><a href="https://support.apple.com/ru-ru/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+</ul>`,
     collaboration_title: "Хотите работать или сотрудничать с нами?",
     collaboration_subtitle: "Заполните эту форму, и мы свяжемся с вами.",
     collaboration_cta: "Работать с нами",
