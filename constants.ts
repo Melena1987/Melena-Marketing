@@ -47,7 +47,7 @@ export const BLOG_POSTS_STRUCTURE = [
   {
     id: 'blog5',
     slug: 'ahorra-factura-energetica-servicio-gratuito',
-    imageUrl: 'https://images.unsplash.com/photo-1616892308910-6c8412a2e212?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1487875961445-47a00398c267?q=80&w=2070&auto=format&fit=crop',
   },
 ];
 
