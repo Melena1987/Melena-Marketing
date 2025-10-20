@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
@@ -6,6 +5,7 @@ const LegalPage: React.FC = () => {
   const t = useTranslations();
 
   React.useEffect(() => {
+    document.title = `${t.footer_terms} & ${t.footer_privacy_policy} | Melena Marketing`;
     const hash = window.location.hash;
     if (hash) {
       const id = hash.replace('#', '');
@@ -21,7 +21,7 @@ const LegalPage: React.FC = () => {
     } else {
       window.scrollTo(0, 0);
     }
-  }, []);
+  }, [t]);
 
   return (
     <div className="pt-32 pb-16 bg-gray-50 min-h-screen">

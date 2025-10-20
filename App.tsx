@@ -7,9 +7,15 @@ import CookieConsent from './components/CookieConsent';
 import EnergyPage from './pages/EnergyPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
+import { useLanguage } from './context/LanguageContext';
 
 const App: React.FC = () => {
   const [pathname, setPathname] = useState(window.location.pathname);
+  const { language } = useLanguage();
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   useEffect(() => {
     // This function will be called when the user clicks the back/forward buttons.

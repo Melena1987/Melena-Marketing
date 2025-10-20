@@ -15,7 +15,59 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ slug }) => {
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+
+    if (postContent && postStructure) {
+      // Set document title
+      document.title = `${postContent.title} | Melena Marketing`;
+      
+      // Add structured data for the article
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": postContent.title,
+        "name": postContent.title,
+        "description": postContent.excerpt,
+        "image": postStructure.imageUrl,
+        "author": {
+          "@type": "Organization",
+          "name": "Melena Marketing"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Melena Marketing",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://melenamarketing.com/favicon.svg"
+          }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://melenamarketing.com/blog/${slug}`
+        },
+        "datePublished": "2024-05-20", 
+        "dateModified": "2024-05-20"
+      };
+
+      // Fix: Cast the element to HTMLScriptElement to allow accessing the 'type' property.
+      let script = document.getElementById('seo-schema') as HTMLScriptElement | null;
+      if (!script) {
+          script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.id = 'seo-schema';
+          document.head.appendChild(script);
+      }
+      script.innerHTML = JSON.stringify(schema);
+    } else {
+        document.title = "404 - Artículo no encontrado | Melena Marketing";
+    }
+
+    return () => {
+        const scriptToRemove = document.getElementById('seo-schema');
+        if (scriptToRemove) {
+            document.head.removeChild(scriptToRemove);
+        }
+    };
+  }, [slug, postContent, postStructure]);
 
   if (!postStructure || !postContent) {
     return (
@@ -30,6 +82,8 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ slug }) => {
       </div>
     );
   }
+
+  const contentWithStyledHeadings = postContent.content.replace(/<h2/g, '<h2 class="text-3xl font-bold text-blue-800 mt-8 mb-4" style="font-family: \'Oswald\', sans-serif;"');
 
   return (
     <div className="pt-32 pb-16 bg-gray-50">
@@ -52,8 +106,8 @@ const BlogPostPage: React.FC<BlogPostPageProps> = ({ slug }) => {
             className="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-lg mb-8 bg-gray-200"
           />
           <article 
-            className="prose prose-lg max-w-none prose-h2:text-blue-800 prose-h2:font-bold prose-h2:font-oswald prose-a:text-blue-600 hover:prose-a:text-yellow-500 prose-ul:list-disc prose-ul:ml-5 prose-li:my-1"
-            dangerouslySetInnerHTML={{ __html: postContent.content }}
+            className="prose prose-lg max-w-none prose-a:text-blue-600 hover:prose-a:text-yellow-500 prose-table:w-full prose-th:bg-gray-100 prose-th:p-2 prose-td:p-2"
+            dangerouslySetInnerHTML={{ __html: contentWithStyledHeadings }} 
           />
         </div>
       </div>

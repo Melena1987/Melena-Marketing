@@ -54,19 +54,63 @@ const CollaborationCTA: React.FC = () => {
 }
 
 const HomePage: React.FC = () => {
+  const t = useTranslations();
+
   useEffect(() => {
+    // SEO: Title and structured data
+    document.title = `Melena Marketing | ${t.hero_title} en el Mundo Digital`;
+
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Melena Marketing",
+      "url": "https://melenamarketing.com/",
+      "logo": "https://melenamarketing.com/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34-660-532-823",
+        "contactType": "customer service",
+        "email": "info@melenamarketing.com",
+        "areaServed": "ES",
+        "availableLanguage": ["es", "en", "ru"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/Melena-100210731713512",
+        "https://www.instagram.com/manu.melenamarketing/",
+        "https://x.com/Manolo_Ele",
+        "https://tevienes.com/es/u/melena-marketing"
+      ]
+    };
+
+    // Fix: Cast the element to HTMLScriptElement to allow accessing the 'type' property.
+    let script = document.getElementById('seo-schema') as HTMLScriptElement | null;
+    if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = 'seo-schema';
+        document.head.appendChild(script);
+    }
+    script.innerHTML = JSON.stringify(schema);
+    
+    // Hash scrolling logic
     const hash = window.location.hash;
     if (hash) {
       const id = hash.substring(1);
       const element = document.getElementById(id);
       if (element) {
-        // A timeout ensures the element is rendered and ready before scrolling.
         setTimeout(() => {
           element.scrollIntoView({ behavior: 'smooth' });
         }, 100);
       }
     }
-  }, []);
+
+    return () => {
+      const scriptToRemove = document.getElementById('seo-schema');
+      if (scriptToRemove) {
+        document.head.removeChild(scriptToRemove);
+      }
+    };
+  }, [t]);
 
   return (
     <div className="pt-24">

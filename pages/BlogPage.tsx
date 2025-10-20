@@ -30,8 +30,9 @@ const BlogPage: React.FC = () => {
   const t = useTranslations();
   
   React.useEffect(() => {
+    document.title = `${t.blog_title} | Melena Marketing`;
     window.scrollTo(0, 0);
-  }, []);
+  }, [t]);
 
   const postsToShow = [...BLOG_POSTS_STRUCTURE].reverse();
 

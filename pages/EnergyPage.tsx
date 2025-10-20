@@ -6,8 +6,9 @@ const EnergyPage: React.FC = () => {
   const t = useTranslations();
 
   React.useEffect(() => {
+    document.title = `${t.energy_form_title} | Melena Marketing`;
     window.scrollTo(0, 0);
-  }, []);
+  }, [t]);
 
   return (
     <div className="pt-24 pb-16 bg-gray-50">
