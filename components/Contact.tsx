@@ -113,6 +113,18 @@ const Contact: React.FC = () => {
               </svg>
               {t.contact_whatsapp}
             </a>
+            <a 
+              href="https://qrco.de/bcuiQW"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block transition-transform transform hover:scale-105"
+            >
+              <img 
+                src="https://cdn.qr-code-generator.com/qrcode-preview?background_color=%23ffffff&foreground_color=%23000000&marker_left_inner_color=%23000000&marker_left_outer_color=%23000000&marker_right_inner_color=%23000000&marker_right_outer_color=%23000000&marker_bottom_inner_color=%23000000&marker_bottom_outer_color=%23000000&marker_left_template=version17&marker_right_template=version17&marker_bottom_template=version17&qr_code_pattern=rounded-1&qr_code_text=https%3A%2F%2Fqrco.de%2FbcuiQW&frame_name=no-frame&frame_color=%23000000&frame_icon_name=&frame_text=SCAN%20ME&frame_text_color=%23FFFFFF&frame_text_font=&frame_text_alignment=&Expires=1761155211&Signature=WXu7zZgLnaEy-VlfG3m51~1RwKrLAILcQXCGAq5GviVRXud~tpHMx4ZTC1SQ7BXYI-i8JsXqDo5RTDGlix9nukURDf--mB1wcK307vhRFmUWAEHEycXU~f-v9HCTeGJlWinSXvMwREFPoZ~PdzCZcPbKImLiXIkUN3mfU05gGG26MCJF2VIp3ljGS8pdNavHq0A0HxVUDT28gZBbU6QWGjUtg4Ia1E4iwJv3sKfFOLyENg75Qi-7KL8vsDh0LTI7cJWAy4bE2WjO4sxB-Qi1vtheUSWQRSfai0enqF8SimEz-X-QJyPhO3eQH9bRmRrvYqVJjSgq2Dd0o3vnjo-I9w__&Key-Pair-Id=KKMPOJU8AYATR"
+                alt="QR Code to contact Melena Marketing"
+                className="w-32 h-32 rounded-lg shadow-md"
+              />
+            </a>
           </div>
           <form onSubmit={handleSubmit} noValidate>
             <div className="space-y-4">
