@@ -10,7 +10,7 @@ export default {
   energy_page_send_success: "¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.",
   energy_page_send_error: "Hubo un error al enviar el formulario. Inténtalo de nuevo.",
   energy_page_content_title: "Ahorra tiempo y dinero: Descubre nuestro servicio gratuito de gestión de factura energética",
-  energy_page_content_p1: "Estás cansado de recibir facturas de electricidad cada mes y no tener tiempo para revisarlas? Si es así, sigue leyendo porque tenemos buenas noticias para ti. Melena Marketing en colaboración con el OE (Observatorio Energético), hemos creado un servicio gratuito de gestión de factura energética que te permitirá ahorrar tiempo y dinero.",
+  energy_page_content_p1: "Estás cansado de recibir facturas de electricidad cada mes y no tener tiempo para revisarlas? Si es así, sigue leyendo porque tenemos buenas noticias para ti. Melena Marketing en colaboración con el OE, hemos creado un servicio gratuito de gestión de factura energética que te permitirá ahorrar tiempo y dinero.",
   energy_page_content_p2: "Es posible que no te hayas dado cuenta, pero las compañías eléctricas a menudo aplican tarifas que no deberían. Pero no te preocupes, estamos aquí para ayudarte. Con nuestro servicio, no tendrás que preocuparte por revisar tus facturas y comparar tarifas, nosotros lo haremos por ti.",
   energy_page_content_p3: "Además de ahorrar dinero, también tendrás la tranquilidad de saber que estás pagando lo justo por el servicio que recibes. Y lo mejor de todo, es que nuestro servicio es completamente gratuito. Sí, has leído bien, no tendrás que pagar un solo céntimo por utilizarlo.",
   energy_page_content_how_title: "¿Cómo funciona?",

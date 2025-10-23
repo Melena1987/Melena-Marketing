@@ -10,7 +10,7 @@ export default {
   energy_page_send_success: "Form submitted successfully! We will contact you soon.",
   energy_page_send_error: "There was an error sending the form. Please try again.",
   energy_page_content_title: "Save time and money: Discover our free energy bill management service",
-  energy_page_content_p1: "Are you tired of receiving electricity bills every month and not having time to review them? If so, keep reading because we have good news for you. Melena Marketing, in collaboration with OE (Observatorio Energético), has created a free energy bill management service that will allow you to save time and money.",
+  energy_page_content_p1: "Are you tired of receiving electricity bills every month and not having time to review them? If so, keep reading because we have good news for you. Melena Marketing, in collaboration with OE, has created a free energy bill management service that will allow you to save time and money.",
   energy_page_content_p2: "You may not have realized it, but electricity companies often include incorrect or unjustified charges. But don't worry, we're here to help. With our service, you won't have to worry about reviewing your bills and comparing rates; we'll do it for you.",
   energy_page_content_p3: "In addition to saving money, you'll also have the peace of mind of knowing you're paying the right amount for the service you receive. And best of all, our service is completely free. Yes, you read that right, you won't have to pay a single cent to use it.",
   energy_page_content_how_title: "How does it work?",
