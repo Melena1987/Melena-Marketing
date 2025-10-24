@@ -1,6 +1,16 @@
 import React from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
+const optimizeImageUrl = (url: string, width: number = 400, quality: number = 80): string => {
+    // Use images.weserv.nl to resize and compress images on-the-fly.
+    // This avoids loading large original images for small cards.
+    const proxyUrl = 'https://images.weserv.nl/';
+    // The original URL must be encoded to be safely passed as a query parameter.
+    const encodedUrl = encodeURIComponent(url);
+    return `${proxyUrl}?url=${encodedUrl}&w=${width}&q=${quality}&output=jpg`;
+};
+
+
 const ProjectCard: React.FC<{ title: string; description: string; imageUrl: string; href?: string }> = ({ title, description, imageUrl, href }) => {
     const cardContent = (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full group transform hover:-translate-y-2 transition-transform duration-300">
@@ -34,14 +44,17 @@ const ProjectCard: React.FC<{ title: string; description: string; imageUrl: stri
 const Testimonials: React.FC = () => {
   const t = useTranslations();
   
-  // Specific images for the projects
-  const projectImages = [
+  // Original high-resolution images
+  const originalProjectImages = [
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1759258933122_idP_MARBELLA-116.jpg?alt=media&token=d1f9faf0-f992-49b4-b572-cac41ad9e7a3',
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1760372783660_ATALAYA-263.jpg?alt=media&token=ed30545d-d387-4330-abfc-fa67e97c7ab9',
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757279516770_COPA-144.jpg?alt=media&token=cad899d1-3ef2-4b32-9644-b127058bfd37',
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1758464596036_DSC_8149.JPG?alt=media&token=e4a6919b-2261-4d42-b558-65e1e230aae4',
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757441458744_THE_EMBASSY_FUENGIROLA_NBA_1.jpg?alt=media&token=41a8229a-907d-42c5-9652-608fbba59b73'
   ];
+
+  // Generate optimized image URLs
+  const projectImages = originalProjectImages.map(url => optimizeImageUrl(url));
 
   return (
     <section className="py-20 bg-blue-800 text-white">
