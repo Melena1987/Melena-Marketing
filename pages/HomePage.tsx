@@ -62,24 +62,38 @@ const HomePage: React.FC = () => {
 
     const schema = {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Melena Marketing",
+      "@type": "WebPage",
       "url": "https://melenamarketing.com/",
-      "logo": "https://melenamarketing.com/favicon.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+34-660-532-823",
-        "contactType": "customer service",
-        "email": "info@melenamarketing.com",
-        "areaServed": "ES",
-        "availableLanguage": ["es", "en", "ru"]
+      "name": `Melena Marketing | ${t.hero_title} en el Mundo Digital`,
+      "description": t.hero_description,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Melena Marketing",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://melenamarketing.com/favicon.svg"
+        }
       },
-      "sameAs": [
-        "https://www.facebook.com/Melena-100210731713512",
-        "https://www.instagram.com/manu.melenamarketing/",
-        "https://x.com/Manolo_Ele",
-        "https://tevienes.com/es/u/melena-marketing"
-      ]
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Melena Marketing",
+        "url": "https://melenamarketing.com/",
+        "logo": "https://melenamarketing.com/favicon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+34-660-532-823",
+          "contactType": "customer service",
+          "email": "info@melenamarketing.com",
+          "areaServed": "ES",
+          "availableLanguage": ["es", "en", "ru"]
+        },
+        "sameAs": [
+          "https://www.facebook.com/Melena-100210731713512",
+          "https://www.instagram.com/manu.melenamarketing/",
+          "https://x.com/Manolo_Ele",
+          "https://tevienes.com/es/u/melena-marketing"
+        ]
+      }
     };
 
     // Fix: Cast the element to HTMLScriptElement to allow accessing the 'type' property.

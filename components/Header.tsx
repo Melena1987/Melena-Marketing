@@ -48,8 +48,32 @@ const Header: React.FC = () => {
             setIsScrolled(window.scrollY > 50);
         };
         window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+
+        // Structured data for site navigation to improve sitelinks in search results
+        const navSchema = {
+          "@context": "https://schema.org",
+          "@type": "SiteNavigationElement",
+          "name": NAV_LINKS_STRUCTURE.map(link => t.nav_links[link.key]),
+          "url": NAV_LINKS_STRUCTURE.map(link => new URL(link.href, 'https://melenamarketing.com/').href)
+        };
+
+        let script = document.getElementById('nav-schema') as HTMLScriptElement | null;
+        if (!script) {
+            script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.id = 'nav-schema';
+            document.head.appendChild(script);
+        }
+        script.innerHTML = JSON.stringify(navSchema);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            const scriptToRemove = document.getElementById('nav-schema');
+            if (scriptToRemove) {
+                document.head.removeChild(scriptToRemove);
+            }
+        };
+    }, [t]);
     
     const getLinkHref = (href: string) => {
         if (href.startsWith('#') && !isHomePage) {
