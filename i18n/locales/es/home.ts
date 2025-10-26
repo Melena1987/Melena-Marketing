@@ -12,7 +12,7 @@ export default {
   about_p2: "Ofrecemos una amplia gama de servicios personalizados para <strong>adaptarnos a las necesidades de cada uno de nuestros clientes.</strong> Desde la creación de una página web profesional hasta la gestión de redes sociales, pasando por el diseño de cartelería y la realización de sesiones fotográficas, trabajamos de la mano con nuestros clientes para ayudarles a mejorar su presencia en Internet y a alcanzar sus objetivos de negocio.",
   about_p3: "Si estás interesado en nuestros servicios y quieres saber cómo podemos ayudar a tu empresa, no dudes en ponerte en contacto con nosotros. <strong>Estaremos encantados de atenderte y ofrecerte una solución a medida.</strong>",
   projects_title: "Algunos de nuestros proyectos deportivos",
-  projects_subtitle: "Nos enorgullece colaborar en eventos de primer nivel que fomentan el deporte y posicionan a Marbella como un destino de referencia.",
+  projects_subtitle: "Nos enorgullece colaborar en eventos de primer nivel que fomentan el deporte y posicionan a la Costa del Sol como un destino de referencia.",
   projects_list: [
     { 
       title: "SBE Marbella Media Maratón", 

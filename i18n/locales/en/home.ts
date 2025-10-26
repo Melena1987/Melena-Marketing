@@ -12,7 +12,7 @@ export default {
   about_p2: "We offer a wide range of personalized services to <strong>adapt to the needs of each of our clients.</strong> From creating a professional website to managing social media, designing posters, and conducting photo shoots, we work hand-in-hand with our clients to help them improve their online presence and achieve their business goals.",
   about_p3: "If you are interested in our services and want to know how we can help your company, do not hesitate to contact us. <strong>We will be delighted to assist you and offer you a tailor-made solution.</strong>",
   projects_title: "Some of Our Sports Projects",
-  projects_subtitle: "We are proud to collaborate on top-level events that promote sport and position Marbella as a benchmark destination.",
+  projects_subtitle: "We are proud to collaborate on top-level events that promote sport and position the Costa del Sol as a benchmark destination.",
   projects_list: [
     { 
       title: "SBE Marbella Half Marathon", 
