@@ -1,3 +1,4 @@
+
 import type { Project } from '../../../types';
 
 export default {
@@ -38,6 +39,11 @@ export default {
       title: "The Embassy Basketball Centre",
       description: "We collaborate with The Embassy, the high-performance basketball center in Fuengirola, an international benchmark in training elite players.",
       link: "https://www.theembassytc.com/"
+    },
+    {
+      title: "Carrera Fundación JLML Linares",
+      description: "The 1st José Luis Martín López Foundation Race establishes itself as a top-level sports and charity event. Organized by the Foundation itself with the support of the City Council and Show Time, the race stood out not only for its charitable purpose but also for bringing together great legends of Spanish athletics such as Fermín Cacho, Martín Fiz, Abel Antón, Reyes Estévez, and Jesús España.",
+      link: "https://carreralinares.es"
     }
   ] as Project[],
   blog_title: "From Our Blog",

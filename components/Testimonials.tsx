@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
@@ -50,7 +51,8 @@ const Testimonials: React.FC = () => {
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1760372783660_ATALAYA-263.jpg?alt=media&token=ed30545d-d387-4330-abfc-fa67e97c7ab9',
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757279516770_COPA-144.jpg?alt=media&token=cad899d1-3ef2-4b32-9644-b127058bfd37',
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1758464596036_DSC_8149.JPG?alt=media&token=e4a6919b-2261-4d42-b558-65e1e230aae4',
-    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757441458744_THE_EMBASSY_FUENGIROLA_NBA_1.jpg?alt=media&token=41a8229a-907d-42c5-9652-608fbba59b73'
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757441458744_THE_EMBASSY_FUENGIROLA_NBA_1.jpg?alt=media&token=41a8229a-907d-42c5-9652-608fbba59b73',
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1764058889805_dron-7_400x400.jpg?alt=media&token=b9826791-08fe-4119-8d40-e07daa9de4a5'
   ];
 
   // Generate optimized image URLs

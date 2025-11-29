@@ -1,3 +1,4 @@
+
 import type { Project } from '../../../types';
 
 export default {
@@ -38,6 +39,11 @@ export default {
       title: "The Embassy Basketball Centre",
       description: "Colaboramos con The Embassy, el centro de alto rendimiento de baloncesto en Fuengirola, un referente internacional en la formación de jugadores de élite.",
       link: "https://www.theembassytc.com/"
+    },
+    {
+      title: "Carrera Fundación JLML Linares",
+      description: "La I Carrera Fundación José Luis Martín López se consolida como un evento deportivo y solidario de primer nivel. Organizada por la propia Fundación con el respaldo del Ayuntamiento y Show Time, la prueba destacó no solo por su fin benéfico, sino por reunir a grandes leyendas del atletismo español como Fermín Cacho, Martín Fiz, Abel Antón, Reyes Estévez y Jesús España.",
+      link: "https://carreralinares.es"
     }
   ] as Project[],
   blog_title: "Desde Nuestro Blog",
