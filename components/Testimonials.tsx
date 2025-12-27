@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
@@ -15,14 +14,16 @@ const optimizeImageUrl = (url: string, width: number = 400, quality: number = 80
 const ProjectCard: React.FC<{ title: string; description: string; imageUrl: string; href?: string }> = ({ title, description, imageUrl, href }) => {
     const cardContent = (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full group transform hover:-translate-y-2 transition-transform duration-300">
-            <img 
-              src={imageUrl} 
-              alt={title} 
-              className="w-full h-48 object-cover bg-gray-200" 
-              loading="lazy" 
-              width="288" 
-              height="192"
-            />
+            <div className="overflow-hidden">
+              <img 
+                src={imageUrl} 
+                alt={title} 
+                className="w-full h-48 object-cover bg-gray-200 transform group-hover:scale-110 transition-transform duration-500" 
+                loading="lazy" 
+                width="288" 
+                height="192"
+              />
+            </div>
             <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-blue-800 mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>{title}</h3>
                 <p className="text-gray-700 text-sm flex-grow">{description}</p>
@@ -52,7 +53,8 @@ const Testimonials: React.FC = () => {
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757279516770_COPA-144.jpg?alt=media&token=cad899d1-3ef2-4b32-9644-b127058bfd37',
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1758464596036_DSC_8149.JPG?alt=media&token=e4a6919b-2261-4d42-b558-65e1e230aae4',
     'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757441458744_THE_EMBASSY_FUENGIROLA_NBA_1.jpg?alt=media&token=41a8229a-907d-42c5-9652-608fbba59b73',
-    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1764058889805_dron-7_400x400.jpg?alt=media&token=b9826791-08fe-4119-8d40-e07daa9de4a5'
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1764058889805_dron-7_400x400.jpg?alt=media&token=b9826791-08fe-4119-8d40-e07daa9de4a5',
+    'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1761945946387_AVANCE_BASKETBALL_SanDiego_D2-12_400x400.jpg?alt=media&token=528b931d-8ae2-44b7-af4e-a2cf197a42b9'
   ];
 
   // Generate optimized image URLs

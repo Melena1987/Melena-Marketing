@@ -1,4 +1,3 @@
-
 import type { Project } from '../../../types';
 
 export default {
@@ -42,8 +41,13 @@ export default {
     },
     {
       title: "Carrera Fundación JLML Linares",
-      description: "La I Carrera Fundación José Luis Martín López se consolida como un evento deportivo y solidario de primer nivel. Organizada por la propia Fundación con el respaldo del Ayuntamiento y Show Time, la prueba destacó no solo por su fin benéfico, sino por reunir a grandes leyendas del atletismo español como Fermín Cacho, Martín Fiz, Abel Antón, Reyes Estévez y Jesús España.",
+      description: "La I Carrera Fundación José Luis Martín López se consolida como un evento deportivo y solidario de primer nivel con grandes leyendas del atletismo español como Fermín Cacho y Martín Fiz.",
       link: "https://carreralinares.es"
+    },
+    {
+      title: "Avance Global Cup",
+      description: "Torneo internacional de baloncesto de élite que reúne a los mejores equipos de high school y clubes junior del mundo. Próxima edición: 29 al 31 de enero de 2026 en The Embassy.",
+      link: "https://www.avanceglobalcup.com/"
     }
   ] as Project[],
   blog_title: "Desde Nuestro Blog",

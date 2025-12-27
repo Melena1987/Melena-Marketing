@@ -1,4 +1,3 @@
-
 import type { Project } from '../../../types';
 
 export default {
@@ -27,12 +26,12 @@ export default {
     },
     { 
       title: "2025 King's Cup (Beach Volleyball)", 
-      description: "Marbella becomes the national capital of beach volleyball. A prestigious tournament that will bring the best players from Spain to our shores, solidifying the city's status as a premier sports destination.",
+      description: "Marbella becomes the national capital of beach volleyball. A prestigious tournament that will bring the best players from Spain to our shores, solidifying the city's status.",
       link: "https://www.showtimeexperience.com/eventos/copa-del-rey-y-de-la-reina-de-voley-playa"
     },
     {
       title: "Partners of CB Marbella",
-      description: "We support the city's main basketball club. We collaborate on their communication and marketing to strengthen their connection with fans and promote grassroots sports in the community.",
+      description: "We support the city's main basketball club. We collaborate on their communication and marketing to strengthen their connection with fans and promote grassroots sports.",
       link: "https://www.instagram.com/cbmarbella/"
     },
     {
@@ -42,8 +41,13 @@ export default {
     },
     {
       title: "Carrera Fundación JLML Linares",
-      description: "The 1st José Luis Martín López Foundation Race establishes itself as a top-level sports and charity event. Organized by the Foundation itself with the support of the City Council and Show Time, the race stood out not only for its charitable purpose but also for bringing together great legends of Spanish athletics such as Fermín Cacho, Martín Fiz, Abel Antón, Reyes Estévez, and Jesús España.",
+      description: "The 1st José Luis Martín López Foundation Race establishes itself as a top-level sports and charity event featuring Spanish athletics legends like Fermín Cacho.",
       link: "https://carreralinares.es"
+    },
+    {
+      title: "Avance Global Cup",
+      description: "Elite international basketball tournament gathering the best high school teams and junior clubs in the world. Next edition: Jan 29-31, 2026 at The Embassy.",
+      link: "https://www.avanceglobalcup.com/"
     }
   ] as Project[],
   blog_title: "From Our Blog",
