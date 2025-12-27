@@ -1,4 +1,3 @@
-
 export default {
   services: {
     graphic_design: "DISEÑO GRÁFICO",
@@ -15,7 +14,6 @@ export default {
     smart_cards: "TARJETAS DE VISITA INTELIGENTES",
     photo_sessions: "SESIONES FOTOGRÁFicas",
     video_reports: "VIDEO REPORTAJES",
-    energy_management: "GESTIÓN FACTURA ENERGÉTICA",
   },
   services_descriptions: {
     graphic_design: "Creamos identidades visuales impactantes y materiales de marketing que comunican la esencia de tu marca, desde folletos hasta banners digitales.",
@@ -32,7 +30,6 @@ export default {
     smart_cards: "Moderniza tu networking con tarjetas de visita digitales e interactivas que tus clientes pueden guardar con un solo toque.",
     photo_sessions: "Realizamos sesiones fotográficas profesionales de producto, equipo o instalaciones para potenciar la imagen de tu empresa.",
     video_reports: "Producimos vídeos corporativos, promocionales y para redes sociales que cuentan tu historia y inconectan con tu audiencia.",
-    energy_management: "",
   },
   service_modal_cta: "Consultar por WhatsApp",
   service_modal_whatsapp_text: "Hola, me gustaría recibir más información sobre el servicio de {service}.",

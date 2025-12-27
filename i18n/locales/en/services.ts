@@ -1,4 +1,3 @@
-
 export default {
   services: {
     graphic_design: "GRAPHIC DESIGN",
@@ -15,7 +14,6 @@ export default {
     smart_cards: "SMART BUSINESS CARDS",
     photo_sessions: "PHOTO SESSIONS",
     video_reports: "VIDEO REPORTS",
-    energy_management: "ENERGY BILL MANAGEMENT",
   },
   services_descriptions: {
     graphic_design: "We create impactful visual identities and marketing materials that communicate the essence of your brand, from brochures to digital banners.",
@@ -32,7 +30,6 @@ export default {
     smart_cards: "Modernize your networking with digital and interactive business cards that your clients can save with a single tap.",
     photo_sessions: "We conduct professional photo shoots of products, teams, or facilities to enhance your company's image.",
     video_reports: "We produce corporate, promotional, and social media videos that tell your story and connect with your audience.",
-    energy_management: "",
   },
   service_modal_cta: "Consult on WhatsApp",
   service_modal_whatsapp_text: "Hello, I would like to receive more information about the {service} service.",

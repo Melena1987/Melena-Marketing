@@ -1,4 +1,3 @@
-
 import { Service } from './types';
 
 // The text 'title' is now handled by the translation file. We use an 'id' for mapping.
@@ -17,7 +16,6 @@ export const SERVICES_STRUCTURE: Omit<Service, 'title'>[] = [
   { id: 'smart_cards', color: 'yellow' },
   { id: 'photo_sessions', color: 'blue' },
   { id: 'video_reports', color: 'yellow' },
-  { id: 'energy_management', color: 'blue' },
 ];
 
 export const PARTNERS_STRUCTURE = [
