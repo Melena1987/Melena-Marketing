@@ -1,6 +1,8 @@
+
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
+import PartnerSection from '../components/PartnerSection';
 import About from '../components/About';
 import Testimonials from '../components/Testimonials';
 import BlogPreview from '../components/BlogPreview';
@@ -132,6 +134,7 @@ const HomePage: React.FC = () => {
       <Services />
       <About />
       <Testimonials />
+      <PartnerSection />
       <BlogPreview />
       <EnergyPromo />
       <Contact />

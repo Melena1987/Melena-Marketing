@@ -1,3 +1,4 @@
+
 import { Service } from './types';
 
 // The text 'title' is now handled by the translation file. We use an 'id' for mapping.
@@ -17,6 +18,54 @@ export const SERVICES_STRUCTURE: Omit<Service, 'title'>[] = [
   { id: 'photo_sessions', color: 'blue' },
   { id: 'video_reports', color: 'yellow' },
   { id: 'energy_management', color: 'blue' },
+];
+
+export const PARTNERS_STRUCTURE = [
+  { 
+    id: 'az_juridicos', 
+    url: 'https://www.azjuridicos.es/', 
+    imageUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'tramisur', 
+    url: 'https://tramisur.netlify.app/', 
+    imageUrl: 'https://images.unsplash.com/photo-1554224155-169641357599?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'beta_asesores', 
+    url: 'https://betaasesores.es/', 
+    imageUrl: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'energy_group', 
+    url: '/gestion-de-tu-factura-energetica', 
+    imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'irina_teacher', 
+    url: 'https://www.irinateacher.com/', 
+    imageUrl: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'best_ai', 
+    url: 'https://www.bestai.es/', 
+    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'aedificia_nobile', 
+    url: 'https://www.aedificianobile.com/', 
+    imageUrl: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'racket_monteros', 
+    url: 'https://www.racketmonteros.com/', 
+    imageUrl: 'https://images.unsplash.com/photo-1595435064212-c48482bc8c05?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'showtime_experience', 
+    url: 'https://www.showtimeexperience.com/', 
+    imageUrl: 'https://images.unsplash.com/photo-1461896715004-9475947b73bb?q=80&w=200&auto=format&fit=crop' 
+  },
 ];
 
 // Text content for these is now in i18n/translations.ts

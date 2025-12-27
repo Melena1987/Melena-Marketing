@@ -1,9 +1,18 @@
+
 import React from 'react';
 
 export interface Service {
   id: string;
   title: string;
   color: 'blue' | 'yellow';
+}
+
+export interface Partner {
+  id: string;
+  name: string;
+  description: string;
+  url: string;
+  imageUrl: string;
 }
 
 export interface BlogPost {
@@ -39,6 +48,14 @@ export interface TranslationSet {
   services_descriptions: { [key: string]: string };
   service_modal_cta: string;
   service_modal_whatsapp_text: string;
+  group_services_title: string;
+  group_services_subtitle: string;
+  partners: {
+    [key: string]: {
+      name: string;
+      description: string;
+    }
+  };
   about_title: string;
   about_p1: string;
   about_p2: string;

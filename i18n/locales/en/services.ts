@@ -1,3 +1,4 @@
+
 export default {
   services: {
     graphic_design: "GRAPHIC DESIGN",
@@ -35,4 +36,44 @@ export default {
   },
   service_modal_cta: "Consult on WhatsApp",
   service_modal_whatsapp_text: "Hello, I would like to receive more information about the {service} service.",
+  group_services_title: "Our Network of Companies & Partners",
+  group_services_subtitle: "We offer comprehensive solutions through our group of specialized companies.",
+  partners: {
+    az_juridicos: {
+      name: "AZ Jurídicos",
+      description: "Multidisciplinary legal advice and comprehensive legal defense for companies and individuals."
+    },
+    tramisur: {
+      name: "Tramisur",
+      description: "Specialists in administrative management for vehicles and vessels: transfers, registrations, and fast imports."
+    },
+    beta_asesores: {
+      name: "Beta Asesores",
+      description: "Comprehensive consulting for companies and freelancers. Experts in tax, labor, and accounting management."
+    },
+    energy_group: {
+      name: "Energy Management",
+      description: "Energy cost optimization. We analyze your bill so you pay only what is necessary."
+    },
+    irina_teacher: {
+      name: "Irina Teacher",
+      description: "Personalized online English classes for professionals. Certified training with a practical focus and extensive experience."
+    },
+    best_ai: {
+      name: "Best AI",
+      description: "Smart real estate investment. We use AI to identify premium assets and maximize your investment returns."
+    },
+    aedificia_nobile: {
+      name: "Aedificia Nobile",
+      description: "Specialists in integral renovations and high-end interior design to transform homes into unique spaces."
+    },
+    racket_monteros: {
+      name: "Racket Monteros",
+      description: "Elite sports club and social center focused on padel, tennis, and physical well-being."
+    },
+    showtime_experience: {
+      name: "Show Time Experience",
+      description: "Organization of top-level sports events and exclusive experience marketing."
+    }
+  }
 };
