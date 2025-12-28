@@ -5,6 +5,8 @@ export interface Service {
   id: string;
   title: string;
   color: 'blue' | 'yellow';
+  isFree?: boolean;
+  externalUrl?: string;
 }
 
 export interface Partner {
@@ -48,6 +50,7 @@ export interface TranslationSet {
   services_descriptions: { [key: string]: string };
   service_modal_cta: string;
   service_modal_whatsapp_text: string;
+  service_modal_external_cta?: string;
   group_services_title: string;
   group_services_subtitle: string;
   partners: {

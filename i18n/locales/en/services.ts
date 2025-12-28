@@ -1,3 +1,4 @@
+
 export default {
   services: {
     graphic_design: "GRAPHIC DESIGN",
@@ -7,7 +8,8 @@ export default {
     logo_brand: "LOGO & BRAND",
     corp_emails: "CORPORATE EMAILS",
     online_ads: "ONLINE ADVERTISING",
-    translations: "ENGLISH SPANISH RUSSIAN TRANSLATIONS",
+    pdf_flipbook: "INTERACTIVE DIGITAL MAGAZINES",
+    translations: "TRANSLATIONS",
     press_articles: "PRESS ARTICLES",
     online_store: "ONLINE STORE",
     signage_design: "SIGNAGE DESIGNS",
@@ -23,6 +25,7 @@ export default {
     logo_brand: "We develop memorable logos and a coherent brand identity that sets you apart from the competition.",
     corp_emails: "We set up professional email addresses with your own domain to project a more serious and trustworthy image to your clients.",
     online_ads: "We create and manage advertising campaigns on social media and Google to reach your target audience and maximize return on investment.",
+    pdf_flipbook: "Transform your PDFs into digital flipbook experiences. Perfect for catalogs, magazines, and interactive presentations with real page-turning effects. Free tool created by us!",
     translations: "We offer professional translation services in English, Spanish, and Russian so your message can reach a global audience without barriers.",
     press_articles: "We write and manage the publication of press articles to increase your brand's awareness and credibility.",
     online_store: "We build functional and attractive online stores, integrated with secure payment gateways so you can start selling online.",
@@ -42,6 +45,7 @@ export default {
     cta: "Digitalize my business"
   },
   service_modal_cta: "Consult on WhatsApp",
+  service_modal_external_cta: "Visit Tool",
   service_modal_whatsapp_text: "Hello, I would like to receive more information about the {service} service.",
   group_services_title: "Our Network of Companies & Partners",
   group_services_subtitle: "We offer comprehensive solutions through our group of specialized companies.",

@@ -1,3 +1,4 @@
+
 export default {
   services: {
     graphic_design: "DISEÑO GRÁFICO",
@@ -7,12 +8,13 @@ export default {
     logo_brand: "LOGOTIPO Y MARCA",
     corp_emails: "EMAILS CORPORATIVOS",
     online_ads: "PUBLICIDAD ONLINE",
-    translations: "TRADUCCIONES INGLÉS ESPAÑOL RUSO",
+    pdf_flipbook: "REVISTAS DIGITALES INTERACTIVAS",
+    translations: "TRADUCCIONES",
     press_articles: "ARTÍCULOS DE PRENSA",
     online_store: "TIENDA ONLINE",
     signage_design: "DISEÑOS DE CARTELERÍA",
     smart_cards: "TARJETAS DE VISITA INTELIGENTES",
-    photo_sessions: "SESIONES FOTOGRÁFicas",
+    photo_sessions: "SESIONES FOTOGRÁficas",
     video_reports: "VIDEO REPORTAJES",
   },
   services_descriptions: {
@@ -23,6 +25,7 @@ export default {
     logo_brand: "Desarrollamos logotipos memorables y una identidad de marca coherente que te diferencie de la competencia.",
     corp_emails: "Configuramos correos electrónicos profesionales con tu propio dominio para dar una imagen más seria y confiable a tus clientes.",
     online_ads: "Creamos y gestionamos campañas de publicidad en redes sociales y Google para llegar a tu público objetivo y maximizar el retorno de inversión.",
+    pdf_flipbook: "Convierte tus PDFs en experiencias de lectura digital tipo flipbook. Ideal para catálogos, revistas y presentaciones interactivas con efecto de página real. ¡Herramienta gratuita creada por nosotros!",
     translations: "Ofrecemos servicios de traducción profesionales en inglés, español y ruso para que tu mensaje llegue a un público global sin barreras.",
     press_articles: "Redactamos y gestionamos la publicación de artículos de prensa para aumentar la notoriedad y credibilidad de tu marca.",
     online_store: "Construimos tiendas online funcionales y atractivas, integradas con pasarelas de pago seguras para que empieces a vender por internet.",
@@ -42,6 +45,7 @@ export default {
     cta: "Digitaliza mi negocio"
   },
   service_modal_cta: "Consultar por WhatsApp",
+  service_modal_external_cta: "Ir a la Herramienta",
   service_modal_whatsapp_text: "Hola, me gustaría recibir más información sobre el servicio de {service}.",
   group_services_title: "Nuestra Red de Empresas y Colaboradores",
   group_services_subtitle: "Ofrecemos soluciones integrales a través de nuestro grupo de empresas especializadas.",

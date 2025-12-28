@@ -1,3 +1,4 @@
+
 import { Service } from './types';
 
 // The text 'title' is now handled by the translation file. We use an 'id' for mapping.
@@ -9,13 +10,14 @@ export const SERVICES_STRUCTURE: Omit<Service, 'title'>[] = [
   { id: 'logo_brand', color: 'blue' },
   { id: 'corp_emails', color: 'yellow' },
   { id: 'online_ads', color: 'blue' },
-  { id: 'translations', color: 'yellow' },
-  { id: 'press_articles', color: 'blue' },
-  { id: 'online_store', color: 'yellow' },
-  { id: 'signage_design', color: 'blue' },
-  { id: 'smart_cards', color: 'yellow' },
-  { id: 'photo_sessions', color: 'blue' },
-  { id: 'video_reports', color: 'yellow' },
+  { id: 'pdf_flipbook', color: 'yellow', isFree: true, externalUrl: 'https://revistapdf.com' },
+  { id: 'translations', color: 'blue' },
+  { id: 'press_articles', color: 'yellow' },
+  { id: 'online_store', color: 'blue' },
+  { id: 'signage_design', color: 'yellow' },
+  { id: 'smart_cards', color: 'blue' },
+  { id: 'photo_sessions', color: 'yellow' },
+  { id: 'video_reports', color: 'blue' },
 ];
 
 export const PARTNERS_STRUCTURE = [
