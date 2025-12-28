@@ -62,23 +62,23 @@ const PdfPortfolioPage: React.FC = () => {
 
         {/* PÁGINA 2: QUIÉNES SOMOS & NUESTROS SERVICIOS */}
         <section className="h-[297mm] p-12 print:break-after-page flex flex-col bg-white">
-          <div className="mb-6">
-            <h2 className="text-3xl font-bold text-blue-800 uppercase mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>¿QUIÉNES SOMOS?</h2>
-            <div className="text-gray-700 leading-relaxed text-[11px] space-y-2 text-justify">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-blue-800 uppercase mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>¿QUIÉNES SOMOS?</h2>
+            <div className="text-gray-700 leading-relaxed text-[12.5px] space-y-3 text-justify">
                <p dangerouslySetInnerHTML={{ __html: t.about_p1 }} />
                <p dangerouslySetInnerHTML={{ __html: t.about_p2 }} />
             </div>
           </div>
 
           <div className="flex-grow">
-            <h2 className="text-3xl font-bold text-blue-800 uppercase mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>NUESTROS SERVICIOS</h2>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+            <h2 className="text-3xl font-bold text-blue-800 uppercase mb-5" style={{ fontFamily: "'Oswald', sans-serif" }}>NUESTROS SERVICIOS</h2>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-2.5">
               {SERVICES_STRUCTURE.map((service) => (
-                <div key={service.id} className="flex items-start gap-2 p-2 border border-gray-100 rounded-lg bg-gray-50/40">
-                  <div className={`w-2 h-2 rounded-full mt-1 flex-shrink-0 ${service.color === 'blue' ? 'bg-blue-800' : 'bg-yellow-400'}`}></div>
+                <div key={service.id} className="flex items-start gap-3 p-2.5 border border-gray-100 rounded-lg bg-gray-50/40">
+                  <div className={`w-2.5 h-2.5 rounded-full mt-1 flex-shrink-0 ${service.color === 'blue' ? 'bg-blue-800' : 'bg-yellow-400'}`}></div>
                   <div>
-                    <h3 className="font-bold text-blue-900 uppercase text-[10px] leading-tight mb-0.5" style={{ fontFamily: "'Oswald', sans-serif" }}>{t.services[service.id]}</h3>
-                    <p className="text-[9px] text-gray-500 leading-tight line-clamp-2">{t.services_descriptions[service.id]}</p>
+                    <h3 className="font-bold text-blue-900 uppercase text-[11px] leading-tight mb-1" style={{ fontFamily: "'Oswald', sans-serif" }}>{t.services[service.id]}</h3>
+                    <p className="text-[10px] text-gray-500 leading-tight line-clamp-2">{t.services_descriptions[service.id]}</p>
                   </div>
                 </div>
               ))}
@@ -88,29 +88,29 @@ const PdfPortfolioPage: React.FC = () => {
 
         {/* PÁGINA 3: SOFTWARE A MEDIDA & PROYECTOS DEPORTIVOS */}
         <section className="h-[297mm] p-12 print:break-after-page flex flex-col bg-white">
-          <div className="bg-blue-900 text-white p-8 rounded-2xl mb-8" style={{ WebkitPrintColorAdjust: 'exact' }}>
-            <h2 className="text-3xl font-bold uppercase mb-2" style={{ fontFamily: "'Oswald', sans-serif" }}>{tCustom.title}</h2>
-            <p className="text-yellow-400 font-medium mb-2 italic text-[11px]">{tCustom.subtitle}</p>
-            <p className="text-blue-100 mb-4 text-[10px] leading-relaxed text-justify">{tCustom.description}</p>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+          <div className="bg-blue-900 text-white p-10 rounded-2xl mb-8" style={{ WebkitPrintColorAdjust: 'exact' }}>
+            <h2 className="text-3xl font-bold uppercase mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>{tCustom.title}</h2>
+            <p className="text-yellow-400 font-medium mb-3 italic text-[12px]">{tCustom.subtitle}</p>
+            <p className="text-blue-100 mb-5 text-[11px] leading-relaxed text-justify">{tCustom.description}</p>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-3">
               {[tCustom.feature_forms, tCustom.feature_shifts, tCustom.feature_crm, tCustom.feature_custom].map((f: string, i: number) => (
-                <div key={i} className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 font-bold text-[8px] flex-shrink-0">✓</div>
-                  <span className="text-[9px] font-medium">{f}</span>
+                <div key={i} className="flex items-center gap-3">
+                  <div className="w-4.5 h-4.5 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 font-bold text-[9px] flex-shrink-0">✓</div>
+                  <span className="text-[10px] font-medium">{f}</span>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="flex-grow">
-            <h2 className="text-3xl font-bold text-blue-800 uppercase mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>PROYECTOS DEPORTIVOS</h2>
-            <div className="grid grid-cols-1 gap-3">
+            <h2 className="text-3xl font-bold text-blue-800 uppercase mb-5" style={{ fontFamily: "'Oswald', sans-serif" }}>PROYECTOS DEPORTIVOS</h2>
+            <div className="grid grid-cols-1 gap-4">
               {t.projects_list.map((project, index) => (
-                <div key={index} className="border-l-4 border-yellow-400 pl-4 py-0.5">
-                  <h3 className="text-[13px] font-bold text-blue-800 uppercase leading-tight" style={{ fontFamily: "'Oswald', sans-serif" }}>{project.title}</h3>
-                  <p className="text-[10px] text-gray-600 mt-1 leading-snug text-justify">{project.description}</p>
+                <div key={index} className="border-l-4 border-yellow-400 pl-5 py-0.5">
+                  <h3 className="text-[14px] font-bold text-blue-800 uppercase leading-tight" style={{ fontFamily: "'Oswald', sans-serif" }}>{project.title}</h3>
+                  <p className="text-[11px] text-gray-600 mt-1 leading-snug text-justify">{project.description}</p>
                   {project.link && (
-                    <span className="text-blue-600 text-[9px] font-bold mt-0.5 block">
+                    <span className="text-blue-600 text-[9.5px] font-bold mt-1 block">
                       {project.link.replace('https://', '')}
                     </span>
                   )}
@@ -122,18 +122,24 @@ const PdfPortfolioPage: React.FC = () => {
 
         {/* PÁGINA 4: RED DE COLABORADORES & CONTACTO */}
         <section className="h-[297mm] p-12 flex flex-col bg-white">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-blue-800 uppercase mb-6" style={{ fontFamily: "'Oswald', sans-serif" }}>RED DE COLABORADORES</h2>
-            <div className="grid grid-cols-2 gap-3">
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-blue-800 uppercase mb-7" style={{ fontFamily: "'Oswald', sans-serif" }}>RED DE COLABORADORES</h2>
+            <div className="grid grid-cols-2 gap-4">
               {PARTNERS_STRUCTURE.map((partner) => (
                 <div 
                   key={partner.id} 
-                  className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex flex-col justify-center"
+                  className="p-3.5 bg-gray-50 rounded-xl border border-gray-100 flex flex-col justify-center"
                 >
-                  <h3 className="font-bold text-blue-800 uppercase text-[11px] leading-tight mb-0.5" style={{ fontFamily: "'Oswald', sans-serif" }}>
+                  <a 
+                    href={partner.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="font-bold text-blue-800 hover:text-blue-600 transition-colors uppercase text-[12px] leading-tight mb-1" 
+                    style={{ fontFamily: "'Oswald', sans-serif" }}
+                  >
                     {t.partners[partner.id]?.name}
-                  </h3>
-                  <p className="text-[9px] text-gray-500 leading-tight">
+                  </a>
+                  <p className="text-[10.5px] text-gray-500 leading-tight">
                     {t.partners[partner.id]?.description}
                   </p>
                 </div>
@@ -141,20 +147,20 @@ const PdfPortfolioPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-auto bg-yellow-400 p-10 rounded-[2rem] flex flex-col items-center text-center" style={{ WebkitPrintColorAdjust: 'exact' }}>
-            <h2 className="text-4xl font-bold text-blue-800 uppercase mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>¿HABLAMOS?</h2>
-            <p className="text-blue-900 font-semibold mb-8 text-base">Estamos listos para impulsar tu negocio al siguiente nivel.</p>
-            <div className="grid grid-cols-2 gap-12 w-full max-w-md">
+          <div className="mt-auto bg-yellow-400 p-12 rounded-[2.5rem] flex flex-col items-center text-center" style={{ WebkitPrintColorAdjust: 'exact' }}>
+            <h2 className="text-5xl font-bold text-blue-800 uppercase mb-5" style={{ fontFamily: "'Oswald', sans-serif" }}>¿HABLAMOS?</h2>
+            <p className="text-blue-900 font-semibold mb-10 text-lg">Estamos listos para impulsar tu negocio al siguiente nivel.</p>
+            <div className="grid grid-cols-2 gap-16 w-full max-w-lg">
               <div className="text-center">
-                <p className="text-[10px] uppercase font-bold text-blue-800 mb-1 tracking-widest">WHATSAPP</p>
-                <p className="text-xl font-bold text-blue-900">+34 660 532 823</p>
+                <p className="text-[11px] uppercase font-bold text-blue-800 mb-2 tracking-widest">WHATSAPP</p>
+                <p className="text-2xl font-bold text-blue-900">+34 660 532 823</p>
               </div>
               <div className="text-center">
-                <p className="text-[10px] uppercase font-bold text-blue-800 mb-1 tracking-widest">EMAIL</p>
-                <p className="text-lg font-bold text-blue-900">info@melenamarketing.com</p>
+                <p className="text-[11px] uppercase font-bold text-blue-800 mb-2 tracking-widest">EMAIL</p>
+                <p className="text-xl font-bold text-blue-900">info@melenamarketing.com</p>
               </div>
             </div>
-            <p className="mt-8 text-blue-800 font-bold text-base">www.melenamarketing.com</p>
+            <p className="mt-10 text-blue-800 font-bold text-lg underline decoration-2 underline-offset-4">www.melenamarketing.com</p>
           </div>
         </section>
 
