@@ -39,7 +39,8 @@ export const PARTNERS_STRUCTURE = [
   { 
     id: 'energy_group', 
     url: '/gestion-de-tu-factura-energetica', 
-    imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=200&auto=format&fit=crop' 
+    imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=200&auto=format&fit=crop',
+    isFree: true
   },
   { 
     id: 'irina_teacher', 

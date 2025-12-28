@@ -9,8 +9,9 @@ const PartnerCard: React.FC<{
   description: string; 
   url: string;
   isActive: boolean;
+  isFree?: boolean;
   onToggle: (e: React.MouseEvent) => void;
-}> = ({ id, name, description, url, isActive, onToggle }) => {
+}> = ({ id, name, description, url, isActive, isFree, onToggle }) => {
   return (
     <a 
       href={url} 
@@ -22,6 +23,15 @@ const PartnerCard: React.FC<{
       {/* Background Decorative Element */}
       <div className={`absolute top-0 left-0 w-full h-1 bg-yellow-400 transform transition-transform duration-700 ease-in-out ${isActive ? 'translate-x-0' : '-translate-x-full group-hover:translate-x-0'}`}></div>
       
+      {/* GRATIS Badge */}
+      {isFree && (
+        <div className="absolute top-0 right-0 z-20">
+          <div className="bg-red-600 text-white text-[10px] font-bold px-4 py-1 transform rotate-45 translate-x-4 translate-y-1 shadow-md">
+            GRATIS
+          </div>
+        </div>
+      )}
+
       {/* Subtle Background Text Effect */}
       <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-700 pointer-events-none ${isActive ? 'opacity-[0.08]' : 'opacity-[0.03] group-hover:opacity-[0.08]'}`}>
         <span className="text-8xl font-black uppercase tracking-tighter select-none">
@@ -98,6 +108,7 @@ const PartnerSection: React.FC = () => {
                 name={t.partners[partner.id]?.name}
                 description={t.partners[partner.id]?.description}
                 url={partner.url}
+                isFree={(partner as any).isFree}
                 isActive={activePartnerId === partner.id}
                 onToggle={(e) => handlePartnerToggle(partner.id, e)}
               />

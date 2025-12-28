@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
@@ -12,8 +13,11 @@ import { useTranslations } from '../hooks/useTranslations';
 const EnergyPromo: React.FC = () => {
   const t = useTranslations();
   return (
-    <section className="bg-blue-50 py-20">
-      <div className="container mx-auto px-6 text-center max-w-4xl">
+    <section className="bg-blue-50 py-20 relative overflow-hidden">
+      <div className="container mx-auto px-6 text-center max-w-4xl relative z-10">
+        <div className="inline-block bg-red-600 text-white text-xs font-bold px-4 py-1 rounded-full uppercase mb-4 tracking-widest animate-pulse">
+           Servicio Gratuito
+        </div>
         <h2 className="text-4xl md:text-5xl font-bold text-blue-800 uppercase mb-4" style={{fontFamily: "'Oswald', sans-serif"}}>
           {t.energy_promo_title}
         </h2>
