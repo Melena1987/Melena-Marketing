@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -7,6 +8,7 @@ import CookieConsent from './components/CookieConsent';
 import EnergyPage from './pages/EnergyPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
+import PdfPortfolioPage from './pages/PdfPortfolioPage';
 import { useLanguage } from './context/LanguageContext';
 
 const App: React.FC = () => {
@@ -92,25 +94,28 @@ const App: React.FC = () => {
 
     switch (pathname) {
       case '/terminos-y-condiciones':
-        // The privacy policy is a hash on this page, so it should render the same component
         return <LegalPage />;
       case '/gestion-de-tu-factura-energetica':
         return <EnergyPage />;
       case '/blog':
         return <BlogPage />;
+      case '/presentacion-corporativa':
+        return <PdfPortfolioPage />;
       default:
         return <HomePage />;
     }
   };
 
+  const isPdfPage = pathname === '/presentacion-corporativa';
+
   return (
     <div className="bg-white text-gray-800">
-      <Header />
+      {!isPdfPage && <Header />}
       <main>
         {renderPage()}
       </main>
-      <Footer />
-      <CookieConsent />
+      {!isPdfPage && <Footer />}
+      {!isPdfPage && <CookieConsent />}
     </div>
   );
 };
