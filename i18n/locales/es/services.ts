@@ -31,6 +31,16 @@ export default {
     photo_sessions: "Realizamos sesiones fotográficas profesionales de producto, equipo o instalaciones para potenciar la imagen de tu empresa.",
     video_reports: "Producimos vídeos corporativos, promocionales y para redes sociales que cuentan tu historia y inconectan con tu audiencia.",
   },
+  custom_platforms: {
+    title: "Software a Medida para tu Empresa",
+    subtitle: "Digitaliza tu operativa con plataformas 100% personalizables",
+    description: "Desarrollamos ecosistemas digitales completos que automatizan tu día a día. Desde la captación hasta la gestión interna, todo en un solo lugar.",
+    feature_forms: "Formularios inteligentes y captación de leads.",
+    feature_shifts: "Gestión de turnos y cuadrantes para empleados.",
+    feature_crm: "CRM y seguimiento de clientes en tiempo real.",
+    feature_custom: "Arquitectura modular: solo lo que tu negocio necesita.",
+    cta: "Digitaliza mi negocio"
+  },
   service_modal_cta: "Consultar por WhatsApp",
   service_modal_whatsapp_text: "Hola, me gustaría recibir más información sobre el servicio de {service}.",
   group_services_title: "Nuestra Red de Empresas y Colaboradores",

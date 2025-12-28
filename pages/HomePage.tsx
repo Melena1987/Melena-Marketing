@@ -1,7 +1,7 @@
-
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
+import CustomPlatforms from '../components/CustomPlatforms';
 import PartnerSection from '../components/PartnerSection';
 import About from '../components/About';
 import Testimonials from '../components/Testimonials';
@@ -132,6 +132,7 @@ const HomePage: React.FC = () => {
     <div className="pt-24">
       <Hero />
       <Services />
+      <CustomPlatforms />
       <About />
       <Testimonials />
       <PartnerSection />

@@ -31,6 +31,16 @@ export default {
     photo_sessions: "We conduct professional photo shoots of products, teams, or facilities to enhance your company's image.",
     video_reports: "We produce corporate, promotional, and social media videos that tell your story and connect with your audience.",
   },
+  custom_platforms: {
+    title: "Custom Software for Your Business",
+    subtitle: "Digitalize your operations with 100% customizable platforms",
+    description: "We develop complete digital ecosystems that automate your daily tasks. From lead generation to internal management, all in one place.",
+    feature_forms: "Smart forms and lead generation.",
+    feature_shifts: "Shift management and scheduling for employees.",
+    feature_crm: "CRM and real-time customer tracking.",
+    feature_custom: "Modular architecture: only what your business needs.",
+    cta: "Digitalize my business"
+  },
   service_modal_cta: "Consult on WhatsApp",
   service_modal_whatsapp_text: "Hello, I would like to receive more information about the {service} service.",
   group_services_title: "Our Network of Companies & Partners",
