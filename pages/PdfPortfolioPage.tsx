@@ -5,7 +5,6 @@ import { SERVICES_STRUCTURE, PARTNERS_STRUCTURE } from '../constants';
 
 const PdfPortfolioPage: React.FC = () => {
   const t = useTranslations();
-  const tServices = (t as any).services;
   const tCustom = (t as any).custom_platforms;
 
   const handlePrint = () => {
@@ -26,7 +25,7 @@ const PdfPortfolioPage: React.FC = () => {
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
           </svg>
-          Descargar Presentación (PDF)
+          Generar PDF
         </button>
       </div>
 
@@ -62,8 +61,8 @@ const PdfPortfolioPage: React.FC = () => {
         </section>
 
         {/* PAGE 2: ABOUT & SERVICES */}
-        <section className="min-h-[297mm] p-16 print:break-after-page">
-          <div className="mb-16">
+        <section className="p-16 print:break-after-page print:min-h-[297mm]">
+          <div className="mb-16 print:break-inside-avoid">
             <h2 className="text-4xl font-bold text-blue-800 uppercase mb-6" style={{ fontFamily: "'Oswald', sans-serif" }}>{t.about_title}</h2>
             <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed">
                <p dangerouslySetInnerHTML={{ __html: t.about_p1 }} />
@@ -75,11 +74,11 @@ const PdfPortfolioPage: React.FC = () => {
             <h2 className="text-4xl font-bold text-blue-800 uppercase mb-8" style={{ fontFamily: "'Oswald', sans-serif" }}>Nuestros Servicios</h2>
             <div className="grid grid-cols-2 gap-4">
               {SERVICES_STRUCTURE.map((service) => (
-                <div key={service.id} className="flex items-start gap-4 p-4 border border-gray-100 rounded-lg">
+                <div key={service.id} className="flex items-start gap-4 p-5 border border-gray-100 rounded-lg print:break-inside-avoid shadow-sm">
                   <div className={`w-3 h-3 rounded-full mt-2 flex-shrink-0 ${service.color === 'blue' ? 'bg-blue-800' : 'bg-yellow-400'}`}></div>
                   <div>
-                    <h3 className="font-bold text-gray-800 uppercase text-sm" style={{ fontFamily: "'Oswald', sans-serif" }}>{t.services[service.id]}</h3>
-                    <p className="text-xs text-gray-500 mt-1">{t.services_descriptions[service.id]}</p>
+                    <h3 className="font-bold text-gray-800 uppercase text-sm leading-tight" style={{ fontFamily: "'Oswald', sans-serif" }}>{t.services[service.id]}</h3>
+                    <p className="text-[11px] text-gray-500 mt-1.5 leading-snug">{t.services_descriptions[service.id]}</p>
                   </div>
                 </div>
               ))}
@@ -88,8 +87,8 @@ const PdfPortfolioPage: React.FC = () => {
         </section>
 
         {/* PAGE 3: CUSTOM SOFTWARE & SPORTS */}
-        <section className="min-h-[297mm] p-16 print:break-after-page">
-          <div className="bg-blue-900 text-white p-12 rounded-2xl mb-16" style={{ WebkitPrintColorAdjust: 'exact' }}>
+        <section className="p-16 print:break-after-page print:min-h-[297mm]">
+          <div className="bg-blue-900 text-white p-12 rounded-2xl mb-16 print:break-inside-avoid" style={{ WebkitPrintColorAdjust: 'exact' }}>
             <h2 className="text-4xl font-bold uppercase mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>{tCustom.title}</h2>
             <p className="text-yellow-400 font-medium mb-6 italic">{tCustom.subtitle}</p>
             <p className="text-blue-100 mb-8">{tCustom.description}</p>
@@ -107,13 +106,13 @@ const PdfPortfolioPage: React.FC = () => {
             <h2 className="text-4xl font-bold text-blue-800 uppercase mb-8" style={{ fontFamily: "'Oswald', sans-serif" }}>{t.projects_title}</h2>
             <div className="space-y-6">
               {t.projects_list.slice(0, 5).map((project, index) => (
-                <div key={index} className="border-l-4 border-yellow-400 pl-6 py-2">
+                <div key={index} className="border-l-4 border-yellow-400 pl-6 py-2 print:break-inside-avoid">
                   <h3 className="text-xl font-bold text-blue-800 uppercase" style={{ fontFamily: "'Oswald', sans-serif" }}>{project.title}</h3>
                   <p className="text-sm text-gray-600 mt-1">{project.description}</p>
                   {project.link && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xs font-bold hover:underline mt-2 inline-block">
-                      Ver Proyecto Online →
-                    </a>
+                    <span className="text-blue-600 text-xs font-bold mt-2 inline-block">
+                      {project.link.replace('https://', '')}
+                    </span>
                   )}
                 </div>
               ))}
@@ -122,37 +121,34 @@ const PdfPortfolioPage: React.FC = () => {
         </section>
 
         {/* PAGE 4: NETWORK & CONTACT */}
-        <section className="h-[297mm] flex flex-col justify-between p-16 print:break-after-page">
+        <section className="p-16 print:min-h-[297mm] flex flex-col justify-between">
           <div>
             <h2 className="text-4xl font-bold text-blue-800 uppercase mb-8" style={{ fontFamily: "'Oswald', sans-serif" }}>{t.group_services_title}</h2>
             <div className="grid grid-cols-2 gap-6">
               {PARTNERS_STRUCTURE.map((partner) => (
-                <div key={partner.id} className="p-6 bg-gray-50 rounded-xl">
+                <div key={partner.id} className="p-6 bg-gray-50 rounded-xl print:break-inside-avoid border border-gray-100">
                   <h3 className="font-bold text-blue-800 uppercase text-lg" style={{ fontFamily: "'Oswald', sans-serif" }}>
                     {t.partners[partner.id]?.name}
                   </h3>
-                  <p className="text-xs text-gray-500 mt-2 leading-relaxed">
+                  <p className="text-[11px] text-gray-500 mt-2 leading-relaxed">
                     {t.partners[partner.id]?.description}
                   </p>
-                  <a href={partner.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 text-[10px] font-bold block mt-3 uppercase tracking-wider">
-                    Visitar Web
-                  </a>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-yellow-400 p-12 rounded-2xl flex flex-col items-center text-center" style={{ WebkitPrintColorAdjust: 'exact' }}>
+          <div className="bg-yellow-400 p-12 rounded-2xl flex flex-col items-center text-center mt-12 print:break-inside-avoid" style={{ WebkitPrintColorAdjust: 'exact' }}>
             <h2 className="text-3xl font-bold text-blue-800 uppercase mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>¿Hablamos?</h2>
             <p className="text-blue-900 font-medium mb-8">Estamos listos para impulsar tu negocio al siguiente nivel.</p>
             <div className="flex gap-10">
               <div className="text-center">
                 <p className="text-[10px] uppercase font-bold text-blue-800 mb-1">WhatsApp</p>
-                <a href="https://api.whatsapp.com/send?phone=34660532823" className="text-xl font-bold text-blue-900">+34 660 532 823</a>
+                <span className="text-xl font-bold text-blue-900">+34 660 532 823</span>
               </div>
               <div className="text-center">
                 <p className="text-[10px] uppercase font-bold text-blue-800 mb-1">Email</p>
-                <a href="mailto:info@melenamarketing.com" className="text-xl font-bold text-blue-900">info@melenamarketing.com</a>
+                <span className="text-xl font-bold text-blue-900">info@melenamarketing.com</span>
               </div>
             </div>
             <p className="mt-10 text-blue-800 font-bold text-sm">www.melenamarketing.com</p>
@@ -167,14 +163,30 @@ const PdfPortfolioPage: React.FC = () => {
             size: A4;
             margin: 0;
           }
+          html, body {
+            height: 100%;
+            margin: 0 !important;
+            padding: 0 !important;
+            background: #fff !important;
+          }
           body {
             print-color-adjust: exact;
             -webkit-print-color-adjust: exact;
           }
           .container {
-            width: 210mm;
-            height: auto;
-            margin: 0;
+            width: 210mm !important;
+            max-width: 210mm !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+          }
+          section {
+            width: 210mm !important;
+            box-sizing: border-box !important;
+          }
+          h1, h2, h3, p, span {
+            orphans: 3;
+            widows: 3;
           }
         }
       `}</style>
