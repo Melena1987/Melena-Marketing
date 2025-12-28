@@ -5,6 +5,10 @@ import { useTranslations } from '../hooks/useTranslations';
 
 const Footer: React.FC = () => {
   const t = useTranslations();
+  // Forzamos 2026 según requerimiento del usuario, o usamos lógica dinámica si ya es 2026.
+  const currentYear = new Date().getFullYear();
+  const displayYear = currentYear < 2026 ? 2026 : currentYear;
+
   return (
     <footer className="bg-blue-800 text-blue-200">
       <div className="container mx-auto px-6 py-12">
@@ -15,7 +19,7 @@ const Footer: React.FC = () => {
             <p className="mt-2 text-sm">{t.header_slogan}</p>
           </div>
           <div className="mb-6 md:mb-0 text-center">
-            <p>&copy; {new Date().getFullYear()} {t.footer_copyright}</p>
+            <p>&copy; {displayYear} {t.footer_copyright}</p>
             <div className="flex flex-col sm:flex-row sm:space-x-4 mt-2 justify-center md:justify-start">
               <a href="/terminos-y-condiciones" className="text-sm hover:text-white underline">{t.footer_terms}</a>
               <a href="/terminos-y-condiciones#privacy-policy" className="text-sm hover:text-white underline">{t.footer_privacy_policy}</a>

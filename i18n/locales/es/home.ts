@@ -1,3 +1,4 @@
+
 import type { Project } from '../../../types';
 
 export default {
@@ -25,7 +26,7 @@ export default {
       link: "https://www.showtimeexperience.com/the-one"
     },
     { 
-      title: "Copa del Rey de Voley Playa 2025", 
+      title: "Copa del Rey de Voley Playa 2026", 
       description: "Marbella se convierte en la capital nacional del vóley playa. Un prestigioso torneo que traerá a los mejores jugadores de España a nuestras costas, consolidando la ciudad como destino deportivo.",
       link: "https://www.showtimeexperience.com/eventos/copa-del-rey-y-de-la-reina-de-voley-playa"
     },
