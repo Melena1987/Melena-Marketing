@@ -135,10 +135,10 @@ const HomePage: React.FC = () => {
   return (
     <div className="pt-24">
       <Hero />
+      <Testimonials />
       <Services />
       <CustomPlatforms />
       <About />
-      <Testimonials />
       <PartnerSection />
       <BlogPreview />
       <EnergyPromo />
