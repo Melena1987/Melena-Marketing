@@ -1,3 +1,4 @@
+
 import type { Project } from '../../../types';
 
 export default {
@@ -48,6 +49,11 @@ export default {
       title: "Avance Global Cup",
       description: "Элитный международный баскетбольный турнир, собирающий лучшие команды старших школ и юниорских клубов мира. 29–31 января 2026 в The Embassy.",
       link: "https://www.avanceglobalcup.com/"
+    },
+    {
+      title: "Ноэлия Масия — Атлет и Диетолог",
+      description: "Комплексный подход: объединение опыта профессионального баскетбола с наукой о питании для достижения высоких результатов и благополучия.",
+      link: "https://www.noemasia.com/"
     }
   ] as Project[],
   blog_title: "Из нашего блога",

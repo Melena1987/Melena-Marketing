@@ -49,6 +49,11 @@ export default {
       title: "Avance Global Cup",
       description: "Torneo internacional de baloncesto de élite que reúne a los mejores equipos de high school y clubes junior del mundo. Próxima edición: 29 al 31 de enero de 2026 en The Embassy.",
       link: "https://www.avanceglobalcup.com/"
+    },
+    {
+      title: "Noelia Masiá - Athlete & Dietitian",
+      description: "Rendimiento integral: uniendo la experiencia del baloncesto profesional con la ciencia de la nutrición para optimizar el rendimiento y el bienestar.",
+      link: "https://www.noemasia.com/"
     }
   ] as Project[],
   blog_title: "Desde Nuestro Blog",

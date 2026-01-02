@@ -1,3 +1,4 @@
+
 import type { Project } from '../../../types';
 
 export default {
@@ -48,6 +49,11 @@ export default {
       title: "Avance Global Cup",
       description: "Elite international basketball tournament gathering the best high school teams and junior clubs in the world. Next edition: Jan 29-31, 2026 at The Embassy.",
       link: "https://www.avanceglobalcup.com/"
+    },
+    {
+      title: "Noelia Masiá - Athlete & Dietitian",
+      description: "Integral performance: uniting professional basketball experience with nutritional science to optimize performance and well-being.",
+      link: "https://www.noemasia.com/"
     }
   ] as Project[],
   blog_title: "From Our Blog",
