@@ -70,10 +70,20 @@ export default {
       tagline: "Smart and conscious savings.",
       description: "Energy cost optimization. We analyze your bill so you pay only what is necessary."
     },
+    the_embassy: {
+      name: "The Embassy",
+      tagline: "Where legends are born.",
+      description: "International elite basketball training center. High-performance training for professional athletes."
+    },
     irina_teacher: {
       name: "Irina Teacher",
       tagline: "Words that connect worlds.",
       description: "Personalized online English classes for professionals. Certified training with a practical focus and extensive experience."
+    },
+    noe_masia: {
+      name: "Noelia Masiá",
+      tagline: "The science of high performance.",
+      description: "Elite sports nutrition to optimize physical and mental performance, bridging professional experience and science."
     },
     best_ai: {
       name: "Best AI",

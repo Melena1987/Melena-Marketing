@@ -43,9 +43,19 @@ export const PARTNERS_STRUCTURE = [
     isFree: true
   },
   { 
+    id: 'the_embassy', 
+    url: 'https://www.theembassytc.com/', 
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1757441458744_THE_EMBASSY_FUENGIROLA_NBA_1.jpg?alt=media&token=41a8229a-907d-42c5-9652-608fbba59b73' 
+  },
+  { 
     id: 'irina_teacher', 
     url: 'https://www.irinateacher.com/', 
     imageUrl: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=200&auto=format&fit=crop' 
+  },
+  { 
+    id: 'noe_masia', 
+    url: 'https://www.noemasia.com/', 
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/galeriaoficialapp.firebasestorage.app/o/users%2FI5KZz4BuUEfxcoAvSCAWllkQtwt1%2Fphotos%2F1764344002071_noe_masia_sport.jpeg?alt=media&token=1c1ce43f-93cc-4f90-b48f-ae33234934d3' 
   },
   { 
     id: 'best_ai', 

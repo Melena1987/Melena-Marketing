@@ -70,10 +70,20 @@ export default {
       tagline: "Ahorro inteligente y consciente.",
       description: "Optimización de costes energéticos. Analizamos tu factura para que pagues solo lo necesario."
     },
+    the_embassy: {
+      name: "The Embassy",
+      tagline: "Donde nacen las leyendas.",
+      description: "Centro de entrenamiento de baloncesto de élite internacional. Formación de alto rendimiento para deportistas profesionales."
+    },
     irina_teacher: {
       name: "Irina Teacher",
       tagline: "Palabras que conectan mundos.",
       description: "Clases de inglés online personalizadas para profesionales. Formación certificada con enfoque práctico y amplia experiencia."
+    },
+    noe_masia: {
+      name: "Noelia Masiá",
+      tagline: "La ciencia del alto rendimiento.",
+      description: "Nutrición deportiva de élite para optimizar el rendimiento físico y mental, uniendo experiencia profesional y ciencia."
     },
     best_ai: {
       name: "Best AI",
