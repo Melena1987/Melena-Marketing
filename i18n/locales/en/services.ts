@@ -52,38 +52,47 @@ export default {
   partners: {
     az_juridicos: {
       name: "AZ Jurídicos",
+      tagline: "Justice with a human vision.",
       description: "Multidisciplinary legal advice and comprehensive legal defense for companies and individuals."
     },
     tramisur: {
       name: "Tramisur",
+      tagline: "Your way, our management.",
       description: "Specialists in administrative management for vehicles and vessels: transfers, registrations, and fast imports."
     },
     beta_asesores: {
       name: "Beta Asesores",
+      tagline: "Real strategy for your success.",
       description: "Comprehensive consulting for companies and freelancers. Experts in tax, labor, and accounting management."
     },
     energy_group: {
       name: "Energy Management",
+      tagline: "Smart and conscious savings.",
       description: "Energy cost optimization. We analyze your bill so you pay only what is necessary."
     },
     irina_teacher: {
       name: "Irina Teacher",
+      tagline: "Words that connect worlds.",
       description: "Personalized online English classes for professionals. Certified training with a practical focus and extensive experience."
     },
     best_ai: {
       name: "Best AI",
+      tagline: "The future of your investment.",
       description: "Smart real estate investment. We use AI to identify premium assets and maximize your investment returns."
     },
     aedificia_nobile: {
       name: "Aedificia Nobile",
+      tagline: "Architecture of emotions.",
       description: "Specialists in integral renovations and high-end interior design to transform homes into unique spaces."
     },
     racket_monteros: {
       name: "Racket Monteros",
+      tagline: "Passion for play and life.",
       description: "Elite sports club and social center focused on padel, tennis, and physical well-being."
     },
     showtime_experience: {
       name: "Show Time Experience",
+      tagline: "Events that leave a mark.",
       description: "Organization of top-level sports events and exclusive experience marketing."
     }
   }

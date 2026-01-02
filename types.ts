@@ -13,6 +13,7 @@ export interface Partner {
   id: string;
   name: string;
   description: string;
+  tagline?: string;
   url: string;
   imageUrl: string;
 }
@@ -56,6 +57,7 @@ export interface TranslationSet {
   partners: {
     [key: string]: {
       name: string;
+      tagline: string;
       description: string;
     }
   };

@@ -52,38 +52,47 @@ export default {
   partners: {
     az_juridicos: {
       name: "AZ Jurídicos",
+      tagline: "Justicia con visión humana.",
       description: "Asesoramiento legal multidisciplinar y defensa jurídica integral para empresas y particulares."
     },
     tramisur: {
       name: "Tramisur",
+      tagline: "Tu camino, nuestra gestión.",
       description: "Especialistas en la gestión administrativa de vehículos y embarcaciones: transferencias, matriculaciones e importaciones rápidas."
     },
     beta_asesores: {
       name: "Beta Asesores",
+      tagline: "Estrategia real para tu éxito.",
       description: "Asesoría integral para empresas y autónomos. Expertos en gestión fiscal, laboral y contable para optimizar tu negocio."
     },
     energy_group: {
       name: "Gestión Energética",
+      tagline: "Ahorro inteligente y consciente.",
       description: "Optimización de costes energéticos. Analizamos tu factura para que pagues solo lo necesario."
     },
     irina_teacher: {
       name: "Irina Teacher",
+      tagline: "Palabras que conectan mundos.",
       description: "Clases de inglés online personalizadas para profesionales. Formación certificada con enfoque práctico y amplia experiencia."
     },
     best_ai: {
       name: "Best AI",
+      tagline: "El futuro de tu inversión.",
       description: "Inversión inmobiliaria inteligente. Utilizamos IA para identificar activos premium y maximizar la rentabilidad de tus inversiones."
     },
     aedificia_nobile: {
       name: "Aedificia Nobile",
+      tagline: "Arquitectura de emociones.",
       description: "Especialistas en reformas integrales y diseño de interiores de alta gama para transformar viviendas en espacios únicos."
     },
     racket_monteros: {
       name: "Racket Monteros",
+      tagline: "Pasión por el juego y la vida.",
       description: "Club deportivo de élite y centro social enfocado en pádel, tenis y bienestar físico."
     },
     showtime_experience: {
       name: "Show Time Experience",
+      tagline: "Eventos que dejan huella.",
       description: "Organización de eventos deportivos de primer nivel y marketing de experiencias exclusivas."
     }
   }

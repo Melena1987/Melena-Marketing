@@ -1,3 +1,4 @@
+
 import React, { useState, useRef } from 'react';
 import { PARTNERS_STRUCTURE } from '../constants';
 import { useTranslations } from '../hooks/useTranslations';
@@ -5,12 +6,13 @@ import { useTranslations } from '../hooks/useTranslations';
 const PartnerCard: React.FC<{ 
   id: string; 
   name: string; 
+  tagline?: string;
   description: string; 
   url: string;
   isActive: boolean;
   isFree?: boolean;
   onToggle: (e: React.MouseEvent) => void;
-}> = ({ id, name, description, url, isActive, isFree, onToggle }) => {
+}> = ({ id, name, tagline, description, url, isActive, isFree, onToggle }) => {
   return (
     <a 
       href={url} 
@@ -45,10 +47,17 @@ const PartnerCard: React.FC<{
         >
           {name}
         </h3>
+        
+        {tagline && (
+          <p className="text-gray-400 text-sm font-light italic mt-1 tracking-tight leading-relaxed">
+            {tagline}
+          </p>
+        )}
       </div>
 
       <div className={`relative z-10 transition-all duration-700 ease-in-out overflow-hidden ${isActive ? 'max-h-40 opacity-100 mt-4' : 'max-h-0 opacity-0 mt-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-4'}`}>
-        <p className="text-sm text-gray-500 italic leading-relaxed px-2">
+        <div className="h-px w-8 bg-yellow-400/30 mx-auto mb-3"></div>
+        <p className="text-xs text-gray-500 italic leading-relaxed px-2">
           {description}
         </p>
       </div>
@@ -110,6 +119,7 @@ const PartnerSection: React.FC = () => {
                 <PartnerCard 
                     id={partner.id}
                     name={t.partners[partner.id]?.name}
+                    tagline={t.partners[partner.id]?.tagline}
                     description={t.partners[partner.id]?.description}
                     url={partner.url}
                     isFree={(partner as any).isFree}
