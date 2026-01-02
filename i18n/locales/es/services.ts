@@ -81,7 +81,7 @@ export default {
       description: "Clases de inglés online personalizadas para profesionales. Formación certificada con enfoque práctico y amplia experiencia."
     },
     noe_masia: {
-      name: "Noelia Masiá",
+      name: "Noe Masiá",
       tagline: "La ciencia del alto rendimiento.",
       description: "Nutrición deportiva de élite para optimizar el rendimiento físico y mental, uniendo experiencia profesional y ciencia."
     },

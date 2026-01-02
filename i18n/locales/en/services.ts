@@ -81,7 +81,7 @@ export default {
       description: "Personalized online English classes for professionals. Certified training with a practical focus and extensive experience."
     },
     noe_masia: {
-      name: "Noelia Masiá",
+      name: "Noe Masiá",
       tagline: "The science of high performance.",
       description: "Elite sports nutrition to optimize physical and mental performance, bridging professional experience and science."
     },

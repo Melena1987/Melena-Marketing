@@ -1,3 +1,4 @@
+
 import React, { useRef, useState, useEffect } from 'react';
 import { useTranslations } from '../hooks/useTranslations';
 
@@ -98,7 +99,7 @@ const Testimonials: React.FC = () => {
                   description={project.description} 
                   imageUrl={projectImages[index]}
                   href={project.link}
-                  objectPosition={project.title.toLowerCase().includes('noelia') ? 'object-top' : 'object-center'}
+                  objectPosition={project.title.toLowerCase().includes('noe') ? 'object-top' : 'object-center'}
                 />
               </div>
             ))}

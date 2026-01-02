@@ -51,7 +51,7 @@ export default {
       link: "https://www.avanceglobalcup.com/"
     },
     {
-      title: "Noelia Masiá - Athlete & Dietitian",
+      title: "Noe Masiá - Athlete & Dietitian",
       description: "Integral performance: uniting professional basketball experience with nutritional science to optimize performance and well-being.",
       link: "https://www.noemasia.com/"
     }

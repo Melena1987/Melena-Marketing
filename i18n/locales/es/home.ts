@@ -51,7 +51,7 @@ export default {
       link: "https://www.avanceglobalcup.com/"
     },
     {
-      title: "Noelia Masiá - Athlete & Dietitian",
+      title: "Noe Masiá - Athlete & Dietitian",
       description: "Rendimiento integral: uniendo la experiencia del baloncesto profesional con la ciencia de la nutrición para optimizar el rendimiento y el bienestar.",
       link: "https://www.noemasia.com/"
     }
