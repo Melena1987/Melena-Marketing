@@ -1,4 +1,3 @@
-
 import { Service } from './types';
 
 // The text 'title' is now handled by the translation file. We use an 'id' for mapping.
@@ -113,6 +112,11 @@ export const BLOG_POSTS_STRUCTURE = [
     id: 'blog6',
     slug: 'como-configurar-email-corporativo-hostinger',
     imageUrl: 'https://cdn.mos.cms.futurecdn.net/Jq4dWecMBJANS7xpBbv35j-970-80.jpg',
+  },
+  {
+    id: 'blog7',
+    slug: 'guia-emergencia-almacenamiento-lleno-iphone',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxVilKO1Rp8x5DicT1FGKb6xpynJEkULxiww&s',
   }
 ];
 

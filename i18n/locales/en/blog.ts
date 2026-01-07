@@ -188,6 +188,44 @@ export default {
   <li>Enter your password and click "Connect".</li>
 </ol>
 <p>Outlook will verify the settings, and if everything is correct, your account will be added and ready to use.</p>`
+    },
+    {
+      title: '📱 Emergency Guide: How to Fix "Storage Full" on iPhone',
+      excerpt: 'This guide is for when you have plenty of iCloud space, but your iPhone says it\'s full and won\'t let you take photos or send videos.',
+      content: `<p>Has it ever happened to you that you try to take a photo and your iPhone tells you there's no space, even though you pay for iCloud every month? It's a very common and frustrating problem, but it has a simple solution.</p>
+<h2>🧐 Quick Diagnosis</h2>
+<p><strong>The problem:</strong> Even if you pay for iCloud, your mobile is trying to save all photos and videos in original quality inside the physical device. The mobile's "hard drive" has collapsed.</p>
+<p><strong>The solution:</strong> You have to tell the iPhone to upload the originals to the cloud and leave only a lightweight version on the mobile.</p>
+
+<h2>🛠️ STEP 1: The Master Solution (Optimize Photos)</h2>
+<p>This is the most important step and the one that usually fixes 90% of cases.</p>
+<ol>
+  <li>Open <strong>Settings</strong> on the iPhone.</li>
+  <li>Scroll down and find <strong>Photos</strong>.</li>
+  <li>Make sure the "iCloud Photos" toggle is <strong>ON</strong> (green).</li>
+  <li>Just below, you'll see two options. You must select: <strong>[ Optimize iPhone Storage ]</strong>. (Do not select "Download and Keep Originals," as that's what fills up your mobile).</li>
+</ol>
+<p><strong>✅ What will happen?</strong> The iPhone will start deleting large photos from its internal memory and leave only thumbnails. When you want to view an old photo, it will download it from the internet instantly. You'll automatically regain gigabytes of space.</p>
+
+<h2>💬 STEP 2: WhatsApp Cleanup</h2>
+<p>WhatsApp is often a hidden "memory vampire," saving duplicate videos.</p>
+<ol>
+  <li>Open WhatsApp.</li>
+  <li>Go to <strong>Settings > Storage and Data</strong>.</li>
+  <li>Tap <strong>Manage Storage</strong>.</li>
+  <li>You'll see a list of chats sorted by weight.</li>
+  <li>Enter the top ones and delete forwarded videos that don't interest you.</li>
+  <li>Check the "Larger than 5 MB" section to delete large files quickly.</li>
+</ol>
+
+<h2>☁️ STEP 3: The Alternative (Google Photos)</h2>
+<p>If you prefer using Google Photos instead of iCloud (or as an extra):</p>
+<ol>
+  <li>Open the Google Photos app.</li>
+  <li>Tap your profile photo (top right).</li>
+  <li>Look for the button that says <strong>"Free up space"</strong>. (Sometimes it's inside Photo Settings > Free up device space).</li>
+</ol>
+<p><strong>✅ What does it do?</strong> It deletes all photos from your iPhone's gallery that have ALREADY been safely uploaded to the Google cloud.</p>`
     }
   ] as Omit<BlogPost, 'imageUrl' | 'slug'>[],
 };

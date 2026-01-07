@@ -188,6 +188,44 @@ export default {
   <li>Introduce tu contraseña y pulsa "Conectar".</li>
 </ol>
 <p>Outlook verificará la configuración y, si todo es correcto, tu cuenta quedará añadida y lista para usar.</p>`
+    },
+    {
+      title: '📱 Guía de Emergencia: Cómo solucionar "Almacenamiento Lleno" en iPhone',
+      excerpt: 'Esta guía es para cuando tienes espacio de sobra en iCloud, pero el iPhone te dice que está lleno y no te deja hacer fotos ni mandar vídeos.',
+      content: `<p>¿Te ha pasado alguna vez que intentas hacer una foto y tu iPhone te dice que no hay espacio, a pesar de que pagas por iCloud todos los meses? Es un problema muy común y frustrante, pero tiene una solución sencilla.</p>
+<h2>🧐 El Diagnóstico Rápido</h2>
+<p><strong>El problema:</strong> Aunque pagues iCloud, tu móvil está intentando guardar todas las fotos y vídeos en calidad original dentro del aparato físico. El "disco duro" del móvil ha colapsado.</p>
+<p><strong>La solución:</strong> Hay que decirle al iPhone que suba los originales a la nube y deje en el móvil solo una versión ligera.</p>
+
+<h2>🛠️ PASO 1: La Solución Maestra (Optimizar Fotos)</h2>
+<p>Este es el paso más importante y el que suele arreglar el 90% de los casos.</p>
+<ol>
+  <li>Abre <strong>Ajustes</strong> (Configuración) en el iPhone.</li>
+  <li>Baja y busca <strong>Fotos</strong>.</li>
+  <li>Asegúrate de que el interruptor "Fotos en iCloud" esté <strong>ACTIVADO</strong> (en verde).</li>
+  <li>Justo debajo, verás dos opciones. Tienes que marcar la que dice: <strong>[ Optimizar almacenamiento del iPhone ]</strong>. (No selecciones "Descargar y conservar originales", esa es la que te llena el móvil).</li>
+</ol>
+<p><strong>✅ ¿Qué pasará?</strong> El iPhone empezará a borrar las fotos pesadas de su memoria interna y dejará solo las miniaturas. Cuando quieras ver una foto vieja, la descargará de internet al momento. Recuperarás gigas de espacio automáticamente.</p>
+
+<h2>💬 PASO 2: Limpieza de WhatsApp</h2>
+<p>WhatsApp suele ser un "vampiro" de memoria oculto, guardando vídeos repetidos.</p>
+<ol>
+  <li>Abre WhatsApp.</li>
+  <li>Ve a <strong>Configuración > Almacenamiento y datos</strong>.</li>
+  <li>Toca en <strong>Administrar almacenamiento</strong>.</li>
+  <li>Verás una lista de chats ordenados por peso.</li>
+  <li>Entra en los primeros y borra los vídeos reenviados que no te interesen.</li>
+  <li>Revisa la sección "Más de 5 MB" para borrar archivos grandes rápido.</li>
+</ol>
+
+<h2>☁️ PASO 3: La Alternativa (Google Fotos)</h2>
+<p>Si prefieres usar Google Fotos en lugar de iCloud (o como extra):</p>
+<ol>
+  <li>Abre la app Google Fotos.</li>
+  <li>Toca tu foto de perfil (arriba a la derecha).</li>
+  <li>Busca el botón que dice <strong>"Liberar espacio"</strong>. (A veces está dentro de Configuración de Fotos > Liberar espacio en el dispositivo).</li>
+</ol>
+<p><strong>✅ ¿Qué hace?</strong> Borra de la galería del iPhone todas las fotos que YA se han subido a la nube de Google de forma segura.</p>`
     }
   ] as Omit<BlogPost, 'imageUrl' | 'slug'>[],
 };
